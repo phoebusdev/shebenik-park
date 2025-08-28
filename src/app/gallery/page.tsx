@@ -14,7 +14,7 @@ export default function GalleryPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop&crop=center')"
+            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -79,28 +79,28 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center"
-                alt="Pristine glacial lake reflecting mountain peaks"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"
+                alt="Fushë Studë Lake in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Lake Reflection</h3>
-                  <p className="text-white/80 text-sm">Elevation: 1,650m</p>
+                  <h3 className="text-white font-semibold text-lg">Fushë Studë Lake</h3>
+                  <p className="text-white/80 text-sm">Main glacial lake near visitor center</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&h=400&fit=crop&crop=center"
-                alt="Turquoise glacial lake surrounded by dense forest"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Liqeni_i_mrekullu%C3%ABsh%C3%ABm_i_Fush%C3%AB-Stud%C3%ABs.jpg"
+                alt="The marvelous Fushë-Studë Lake in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Forest Lake Sanctuary</h3>
-                  <p className="text-white/80 text-sm">Ancient forest surroundings</p>
+                  <h3 className="text-white font-semibold text-lg">Marvelous Fushë-Studë Lake</h3>
+                  <p className="text-white/80 text-sm">Pristine glacial waters</p>
                 </div>
               </div>
             </div>
@@ -180,13 +180,13 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center"
-                alt="Mount Shebenik peak at 2,253 meters"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
+                alt="Mountain views from within Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mount Shebenik Summit</h3>
+                  <h3 className="text-white font-semibold text-lg">Shebenik Mountains</h3>
                   <p className="text-white/80 text-sm">2,253m - Highest Peak</p>
                 </div>
               </div>
@@ -194,14 +194,14 @@ export default function GalleryPage() {
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1464822759844-d150baec0494?w=600&h=400&fit=crop&crop=center"
-                alt="Mount Jabllanicë with dramatic clouds"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
+                alt="Landscape view from within Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mount Jabllanicë</h3>
-                  <p className="text-white/80 text-sm">Dramatic cloud formations</p>
+                  <h3 className="text-white font-semibold text-lg">Park Landscape</h3>
+                  <p className="text-white/80 text-sm">Scenic mountain vistas</p>
                 </div>
               </div>
             </div>
@@ -281,28 +281,28 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&crop=center"
-                alt="UNESCO beech forest in Rrajca"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+                alt="Forest in Shebenik Mountains - UNESCO World Heritage beech forest"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Rrajca UNESCO Forest</h3>
-                  <p className="text-white/80 text-sm">Ancient beech cathedral</p>
+                  <h3 className="text-white font-semibold text-lg">Shebenik Forest</h3>
+                  <p className="text-white/80 text-sm">UNESCO beech forest</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?w=600&h=400&fit=crop&crop=center"
-                alt="Sunlight filtering through ancient beech trees"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Trees_and_mountain_view_in_Shebenik.jpg"
+                alt="Trees and mountain view in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Forest Cathedral</h3>
-                  <p className="text-white/80 text-sm">Filtered sunlight</p>
+                  <h3 className="text-white font-semibold text-lg">Forest & Mountains</h3>
+                  <p className="text-white/80 text-sm">Trees with mountain backdrop</p>
                 </div>
               </div>
             </div>
