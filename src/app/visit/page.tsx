@@ -2,8 +2,33 @@ import { Metadata } from "next"
 import { MapPin, Clock, Car, Info, Phone, Calendar, Thermometer, Backpack, AlertTriangle, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Plan Your Visit to Shebenik National Park - Practical Information",
-  description: "Essential information for visiting Shebenik National Park: getting there, visitor center, best times to visit, what to bring, and safety guidelines.",
+  title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide | Practical Information",
+  description: "Essential information for visiting Shebenik National Park: getting there, visitor center hours, best times to visit, what to bring, safety guidelines, and park entrance details. Located in Dibër County, Albania.",
+  keywords: "visit Shebenik National Park, Albania national park visits, Dibër County tourism, park visitor center, hiking preparation Albania, national park entrance fees, park opening hours",
+  openGraph: {
+    title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide",
+    description: "Complete visitor guide to Albania's second-largest national park. Practical information, directions, visitor center hours, and preparation tips.",
+    url: "https://shebenik-park.vercel.app/visit",
+    type: "website",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Alpine_Pasture_Shebenik_Jabllanice.JPG",
+        width: 1200,
+        height: 630,
+        alt: "Alpine Pasture in Shebenik-Jabllanice National Park - visitor area",
+        type: "image/jpeg"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Plan Your Visit to Shebenik National Park",
+    description: "Complete visitor guide to Albania's pristine wilderness. Directions, hours, and preparation tips for your adventure.",
+    images: ["https://upload.wikimedia.org/wikipedia/commons/6/6b/Alpine_Pasture_Shebenik_Jabllanice.JPG"]
+  },
+  alternates: {
+    canonical: "https://shebenik-park.vercel.app/visit"
+  }
 }
 
 export default function VisitPage() {

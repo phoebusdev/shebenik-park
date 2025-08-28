@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://shebenik-park.vercel.app/</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg</image:loc>
+      <image:caption>Panoramic view of Shebenik National Park from Black Stone Peak</image:caption>
+      <image:title>Shebenik National Park Panorama</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/about</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg</image:loc>
+      <image:caption>Landscape view from Shebenik National Park</image:caption>
+      <image:title>Shebenik National Park Landscape</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/activities</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg</image:loc>
+      <image:caption>Mountains from Shebenik National Park for hiking activities</image:caption>
+      <image:title>Shebenik National Park Hiking</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/wildlife</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg</image:loc>
+      <image:caption>Forest in Shebenik Mountains - wildlife habitat</image:caption>
+      <image:title>Shebenik National Park Wildlife Habitat</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/visit</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/6/6b/Alpine_Pasture_Shebenik_Jabllanice.JPG</image:loc>
+      <image:caption>Alpine Pasture in Shebenik-Jabllanice National Park</image:caption>
+      <image:title>Shebenik National Park Visitor Area</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/accommodation</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/d/d5/Fusha_Studen_Shebenik.jpg</image:loc>
+      <image:caption>Fusha Studen in Shebenik National Park - accommodation area</image:caption>
+      <image:title>Shebenik National Park Accommodation</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/gallery</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg</image:loc>
+      <image:caption>Fushë Studë Lake in Shebenik National Park</image:caption>
+      <image:title>Shebenik National Park Glacial Lakes</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/faq</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg</image:loc>
+      <image:caption>Landscape view from Shebenik National Park - visitor information</image:caption>
+      <image:title>Shebenik National Park FAQ</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shebenik-park.vercel.app/contact</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg</image:loc>
+      <image:caption>Water stream in Shebenik National Park</image:caption>
+      <image:title>Shebenik National Park Contact</image:title>
+    </image:image>
+  </url>
+</urlset>

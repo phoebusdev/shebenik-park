@@ -1,14 +1,42 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import { Camera, Mountain, Droplets, TreePine, Eye, MapPin } from "lucide-react"
+import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Photo Gallery - Shebenik National Park's Natural Beauty",
-  description: "Explore stunning photography showcasing Shebenik National Park's glacial lakes, ancient forests, mountain peaks, and diverse wildlife.",
+  title: "Photo Gallery - Shebenik National Park's Natural Beauty | Albania Tourism",
+  description: "Explore stunning photography showcasing Shebenik National Park's glacial lakes, ancient forests, mountain peaks, and diverse wildlife. View authentic park images from Fushë Studë Lake, UNESCO beech forests, and Balkan lynx habitat.",
+  keywords: "Shebenik National Park photos, Albania nature photography, glacial lakes images, UNESCO beech forest, Balkan lynx habitat, mountain photography, Fushë Studë Lake, park gallery",
+  openGraph: {
+    title: "Photo Gallery - Shebenik National Park's Natural Beauty",
+    description: "Explore stunning authentic photography from Albania's second-largest national park. Glacial lakes, ancient forests, mountain peaks, and wildlife habitat.",
+    url: "https://shebenik-park.vercel.app/gallery",
+    type: "website",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Fushë Studë Lake in Shebenik National Park - glacial lake photography",
+        type: "image/jpeg"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Photo Gallery - Shebenik National Park",
+    description: "Stunning authentic photography from Albania's pristine wilderness. Glacial lakes, UNESCO forests, and wildlife habitat.",
+    images: ["https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"]
+  },
+  alternates: {
+    canonical: "https://shebenik-park.vercel.app/gallery"
+  }
 }
 
 export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Breadcrumb items={[{ label: "Photo Gallery" }]} />
       {/* Hero Section */}
       <section className="relative py-24 bg-gradient-to-r from-violet-600 to-purple-700">
         <div 
@@ -78,10 +106,15 @@ export default function GalleryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"
-                alt="Fushë Studë Lake in Shebenik National Park"
+                alt="Fushë Studë Lake in Shebenik National Park - pristine glacial waters surrounded by mountains, UNESCO World Heritage site"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -92,10 +125,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/0/08/Liqeni_i_mrekullu%C3%ABsh%C3%ABm_i_Fush%C3%AB-Stud%C3%ABs.jpg"
-                alt="The marvelous Fushë-Studë Lake in Shebenik National Park"
+                alt="The marvelous Fushë-Studë Lake in Shebenik National Park - crystal clear glacial waters reflecting mountain scenery, Albania hiking destination"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -106,10 +144,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
-                alt="Water stream flowing through Shebenik National Park"
+                alt="Crystal clear mountain stream flowing through Shebenik National Park - natural water source for wildlife, Albania nature photography"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
