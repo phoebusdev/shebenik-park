@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Bed, MapPin, Phone, Euro, Wifi, Car, Coffee, Mountain, Users, Star, Home, Tent, Building } from "lucide-react"
+import { MapPin, Phone, Euro, Wifi, Car, Coffee, Mountain, Users, Star, Home, Tent, Building } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Accommodation Near Shebenik National Park - Guesthouses, Hotels & Camping",

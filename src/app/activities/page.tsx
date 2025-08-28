@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Hiking, Mountain, Droplets, Camera, MapPin, Clock, Users, Star, Compass, Binoculars, Tent, Waves } from "lucide-react"
+import { TreePine, Mountain, Droplets, Camera, MapPin, Clock, Users, Star, Compass, Binoculars, Tent, Waves } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Activities in Shebenik National Park - Hiking, Wildlife Watching & More",
@@ -33,7 +33,7 @@ export default function ActivitiesPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Hiking className="h-8 w-8 text-green-600" />
+                <TreePine className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="font-semibold text-gray-900">Hiking Trails</h3>
               <p className="text-sm text-gray-600">4 Marked Routes</p>
