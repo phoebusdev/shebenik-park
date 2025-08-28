@@ -107,56 +107,56 @@ export default function GalleryPage() {
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&h=400&fit=crop&crop=center"
-                alt="Dawn light on glacial lake with mist"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
+                alt="Water stream flowing through Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Dawn Serenity</h3>
-                  <p className="text-white/80 text-sm">Early morning mist</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Stream</h3>
+                  <p className="text-white/80 text-sm">Natural water flow</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&h=400&fit=crop&crop=center"
-                alt="Alpine lake with rocky shoreline"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"
+                alt="Another view of Fushë Studë Lake in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Alpine Shores</h3>
-                  <p className="text-white/80 text-sm">Rocky glacial formations</p>
+                  <h3 className="text-white font-semibold text-lg">Glacial Lake Shore</h3>
+                  <p className="text-white/80 text-sm">Fushë Studë pristine waters</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1464822759844-d150baec0494?w=600&h=400&fit=crop&crop=center"
-                alt="Deep blue mountain lake with clouds reflection"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Liqeni_i_mrekullu%C3%ABsh%C3%ABm_i_Fush%C3%AB-Stud%C3%ABs.jpg"
+                alt="The marvelous Fushë-Studë Lake reflecting mountain scenery"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Cloud Mirror</h3>
-                  <p className="text-white/80 text-sm">Perfect reflections</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Reflections</h3>
+                  <p className="text-white/80 text-sm">Perfect glacial mirror</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center&sat=0.3"
-                alt="Secluded glacial lake surrounded by peaks"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
+                alt="Crystal clear water stream flowing through Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Hidden Gem</h3>
-                  <p className="text-white/80 text-sm">Remote mountain sanctuary</p>
+                  <h3 className="text-white font-semibold text-lg">Crystal Stream</h3>
+                  <p className="text-white/80 text-sm">Pure mountain water</p>
                 </div>
               </div>
             </div>
@@ -208,56 +208,56 @@ export default function GalleryPage() {
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&h=400&fit=crop&crop=center"
-                alt="Rocky mountain ridges at sunrise"
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg"
+                alt="Panoramic view of Shebenik-Jabllanicë National Park from Black Stone Peak"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Ridges</h3>
-                  <p className="text-white/80 text-sm">Golden hour lighting</p>
+                  <h3 className="text-white font-semibold text-lg">Black Stone Peak View</h3>
+                  <p className="text-white/80 text-sm">Panoramic park vista</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&crop=center"
-                alt="Alpine valley view from mountain peak"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Trees_and_mountain_view_in_Shebenik.jpg"
+                alt="Trees and mountain view in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
                   <h3 className="text-white font-semibold text-lg">Valley Vista</h3>
-                  <p className="text-white/80 text-sm">Panoramic alpine views</p>
+                  <p className="text-white/80 text-sm">Shebenik mountain views</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1464822759844-d150baec0494?w=600&h=400&fit=crop&crop=center&hue=30"
-                alt="Sunset over mountain peaks"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/View_of_trees_and_hills_in_Shebenik_National_Park.jpg"
+                alt="View of trees and hills in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Sunset Peaks</h3>
-                  <p className="text-white/80 text-sm">Evening alpenglow</p>
+                  <h3 className="text-white font-semibold text-lg">Hills & Trees</h3>
+                  <p className="text-white/80 text-sm">Park landscape</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&h=400&fit=crop&crop=center&hue=120"
-                alt="Snow-capped peaks in winter"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+                alt="Forest in Shebenik Mountains - UNESCO World Heritage beech forest"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Winter Majesty</h3>
-                  <p className="text-white/80 text-sm">Snow-capped summits</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Forest</h3>
+                  <p className="text-white/80 text-sm">UNESCO beech forest</p>
                 </div>
               </div>
             </div>
@@ -309,56 +309,56 @@ export default function GalleryPage() {
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&h=400&fit=crop&crop=center"
-                alt="Autumn colors in ancient beech forest"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
+                alt="Landscape view from Shebenik National Park showing forest and mountains"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Autumn Gold</h3>
-                  <p className="text-white/80 text-sm">Fall foliage spectacular</p>
+                  <h3 className="text-white font-semibold text-lg">Forest Landscape</h3>
+                  <p className="text-white/80 text-sm">Park mountain views</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center&sat=0.7"
-                alt="Mossy forest floor with ancient tree trunks"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
+                alt="Mountains from Shebenik National Park with forest in foreground"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Forest Floor</h3>
-                  <p className="text-white/80 text-sm">Mossy undergrowth</p>
+                  <h3 className="text-white font-semibold text-lg">Forest & Peaks</h3>
+                  <p className="text-white/80 text-sm">Mountain forest view</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center&hue=150"
-                alt="Dense canopy of ancient beech trees"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/View_of_trees_and_hills_in_Shebenik_National_Park.jpg"
+                alt="View of trees and hills in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Canopy Density</h3>
-                  <p className="text-white/80 text-sm">Primeval forest</p>
+                  <h3 className="text-white font-semibold text-lg">Trees and Hills</h3>
+                  <p className="text-white/80 text-sm">Forest landscape</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?w=600&h=400&fit=crop&crop=center&hue=200"
-                alt="Mist through ancient forest trees"
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg"
+                alt="Panoramic view of Shebenik-Jabllanicë National Park from Black Stone Peak"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Misty Morning</h3>
-                  <p className="text-white/80 text-sm">Forest atmosphere</p>
+                  <h3 className="text-white font-semibold text-lg">Panoramic Vista</h3>
+                  <p className="text-white/80 text-sm">Black Stone Peak view</p>
                 </div>
               </div>
             </div>
@@ -382,84 +382,84 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&h=400&fit=crop&crop=center"
-                alt="Lynx in natural habitat - artistic representation"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+                alt="Dense forest in Shebenik Mountains - natural lynx habitat"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Balkan Lynx Habitat</h3>
-                  <p className="text-white/80 text-sm">Critically endangered</p>
+                  <h3 className="text-white font-semibold text-lg">Lynx Habitat</h3>
+                  <p className="text-white/80 text-sm">Dense forest sanctuary</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop&crop=center"
-                alt="Bear tracks in muddy forest floor"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
+                alt="Mountain stream in Shebenik National Park - wildlife water source"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Wildlife Signs</h3>
-                  <p className="text-white/80 text-sm">Brown bear tracks</p>
+                  <h3 className="text-white font-semibold text-lg">Wildlife Water Source</h3>
+                  <p className="text-white/80 text-sm">Natural mountain stream</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1551916058-3d588ac871de?w=600&h=400&fit=crop&crop=center"
-                alt="Golden eagle soaring over mountain peaks"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
+                alt="Mountain peaks in Shebenik National Park - golden eagle habitat"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Golden Eagle</h3>
-                  <p className="text-white/80 text-sm">Apex predator</p>
+                  <h3 className="text-white font-semibold text-lg">Eagle Territory</h3>
+                  <p className="text-white/80 text-sm">High mountain peaks</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1574149237073-2546b8bd90f2?w=600&h=400&fit=crop&crop=center"
-                alt="Red deer in mountain meadow"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
+                alt="Open landscape in Shebenik National Park - natural grazing habitat"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Red Deer</h3>
-                  <p className="text-white/80 text-sm">Mountain meadows</p>
+                  <h3 className="text-white font-semibold text-lg">Grazing Meadows</h3>
+                  <p className="text-white/80 text-sm">Wildlife habitat</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1516642898291-8d504cd91a78?w=600&h=400&fit=crop&crop=center"
-                alt="Chamois on rocky mountain ledge"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Trees_and_mountain_view_in_Shebenik.jpg"
+                alt="Rocky mountain terrain in Shebenik - natural chamois habitat"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Chamois</h3>
-                  <p className="text-white/80 text-sm">Alpine specialist</p>
+                  <h3 className="text-white font-semibold text-lg">Rocky Habitat</h3>
+                  <p className="text-white/80 text-sm">Mountain terrain</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1582537831871-d0ac1606a75c?w=600&h=400&fit=crop&crop=center"
-                alt="Rare mountain flowers and plants"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/View_of_trees_and_hills_in_Shebenik_National_Park.jpg"
+                alt="Natural vegetation and hills in Shebenik National Park"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Alpine Flora</h3>
-                  <p className="text-white/80 text-sm">Rare mountain species</p>
+                  <h3 className="text-white font-semibold text-lg">Native Flora</h3>
+                  <p className="text-white/80 text-sm">Park vegetation</p>
                 </div>
               </div>
             </div>
