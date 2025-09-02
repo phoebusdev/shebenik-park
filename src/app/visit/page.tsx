@@ -3,8 +3,8 @@ import { MapPin, Clock, Car, Info, Phone, Calendar, Thermometer, Backpack, Alert
 
 export const metadata: Metadata = {
   title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide | Practical Information",
-  description: "Essential information for visiting Shebenik National Park: getting there, visitor center hours, best times to visit, what to bring, safety guidelines, and park entrance details. Located in Dibër County, Albania.",
-  keywords: "visit Shebenik National Park, Albania national park visits, Dibër County tourism, park visitor center, hiking preparation Albania, national park entrance fees, park opening hours",
+  description: "Essential information for visiting Shebenik National Park: getting there, visitor center hours, best times to visit, what to bring, safety guidelines, and park entrance details. Located in Elbasan County, Albania.",
+  keywords: "visit Shebenik National Park, Albania national park visits, Elbasan County tourism, park visitor center, hiking preparation Albania, national park entrance fees, park opening hours",
   openGraph: {
     title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide",
     description: "Complete visitor guide to Albania's second-largest national park. Practical information, directions, visitor center hours, and preparation tips.",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Alpine_Pasture_Shebenik_Jabllanice.JPG",
+        url: "https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg",
         width: 1200,
         height: 630,
         alt: "Alpine Pasture in Shebenik-Jabllanice National Park - visitor area",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Plan Your Visit to Shebenik National Park",
     description: "Complete visitor guide to Albania's pristine wilderness. Directions, hours, and preparation tips for your adventure.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/6/6b/Alpine_Pasture_Shebenik_Jabllanice.JPG"]
+    images: ["https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"]
   },
   alternates: {
     canonical: "https://shebenik-park.vercel.app/visit"
@@ -39,7 +39,7 @@ export default function VisitPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
-            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Alpine_Pasture_Shebenik_Jabllanice.JPG')"
+            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     alternateLocale: "sq_AL",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
         width: 1200,
         height: 630,
         alt: "Panoramic view of Shebenik National Park from Black Stone Peak",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     creator: "@AlbaniaTourism",
     title: "Shebenik National Park - Albania's Pristine Wilderness",
     description: "Discover Albania's second-largest national park. Glacial lakes, ancient forests, and the endangered Balkan lynx await.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg"]
+    images: ["https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"]
   },
   verification: {
     google: "your-google-site-verification-code",
@@ -97,7 +97,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Shebenik Park" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className={`${inter.variable} antialiased font-sans`}>
         <script
@@ -111,14 +110,14 @@ export default function RootLayout({
               "description": "Albania's second-largest national park featuring glacial lakes, UNESCO World Heritage beech forests, and endangered wildlife including the Balkan lynx.",
               "url": "https://shebenik-park.vercel.app",
               "image": [
-                "https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
+                "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg",
                 "https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
               ],
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "AL",
-                "addressRegion": "Dibër County",
+                "addressRegion": "Elbasan County",
                 "addressLocality": "Librazhd Municipality"
               },
               "geo": {

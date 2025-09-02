@@ -113,7 +113,7 @@ export default function FAQPage() {
             {faqData.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-gray-50 rounded-xl p-6 hover:bg-green-50 transition-colors duration-300"
+                className="group bg-white rounded-2xl shadow-lg p-8 hover:bg-green-50 hover:shadow-xl transition-all duration-300"
               >
                 <summary className="flex items-center justify-between cursor-pointer list-none">
                   <h3 className="text-lg font-semibold text-gray-900 pr-4">

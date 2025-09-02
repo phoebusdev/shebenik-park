@@ -17,7 +17,7 @@ export default function Footer() {
               Home to glacial lakes, ancient forests, and rare wildlife including the endangered Balkan lynx.
             </p>
             <p className="text-sm text-green-300">
-              UNESCO World Heritage Site • Established 2008 • 340 km²
+              UNESCO World Heritage Site • Established 2008 • 345 km²
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">info@shebenik-park.com</span>
+                <span className="text-sm">info@shebenik-park.al</span>
               </li>
             </ul>
           </div>

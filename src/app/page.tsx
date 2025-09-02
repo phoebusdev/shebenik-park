@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { MapPin, Clock, Users, Award, ChevronRight, Trees, Mountain, Droplets } from "lucide-react"
 
@@ -7,12 +8,17 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{
-            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg')"
-          }}
-        />
+        <div className="absolute inset-0">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
+            alt="Panoramic view of Shebenik National Park from mountain viewpoint"
+            fill
+            className="object-cover opacity-30"
+            priority
+            quality={85}
+            sizes="100vw"
+          />
+        </div>
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Shebenik
@@ -41,7 +47,7 @@ export default function Home() {
               <div className="bg-green-100 p-4 rounded-full mb-4">
                 <MapPin className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">340 km²</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">345 km²</h3>
               <p className="text-gray-600">Protected Wilderness</p>
             </div>
             <div className="flex flex-col items-center">
@@ -84,8 +90,8 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="bg-white p-6 rounded-2xl shadow-sm mb-6">
-                <Trees className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+                <Trees className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ancient Forests</h3>
                 <p className="text-gray-600">
                   Explore UNESCO-protected beech forests that have remained unchanged for millennia. 
@@ -95,8 +101,8 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-6 rounded-2xl shadow-sm mb-6">
-                <Droplets className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+                <Droplets className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Glacial Lakes</h3>
                 <p className="text-gray-600">
                   Discover 14 pristine glacial lakes carved by ancient ice, offering crystal-clear waters 
@@ -106,8 +112,8 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-6 rounded-2xl shadow-sm mb-6">
-                <Users className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+                <Users className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Rare Wildlife</h3>
                 <p className="text-gray-600">
                   Spot the endangered Balkan lynx, brown bears, and gray wolves in their natural habitat. 

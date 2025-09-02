@@ -50,7 +50,7 @@ export default function WildlifePage() {
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">Balkan Lynx</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   The Balkan lynx (Lynx lynx balcanicus) is one of Europe's most endangered wild cats, with fewer than 
-                  50 individuals remaining in the wild. Shebenik National Park provides crucial habitat for this 
+                  10 individuals remaining in Albania specifically. Shebenik National Park provides crucial habitat for this 
                   magnificent predator, offering the dense forests and rocky terrain it needs to hunt and raise its young.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">

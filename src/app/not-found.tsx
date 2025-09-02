@@ -59,14 +59,14 @@ export default function NotFound() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link 
               href="/about" 
-              className="group p-6 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300"
+              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                   <TreePine className="h-8 w-8 text-green-600 mx-auto" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">About the Park</h3>
-                <p className="text-sm text-gray-600 mb-3">Learn about our 340 km² of protected wilderness</p>
+                <p className="text-sm text-gray-600 mb-3">Learn about our 345 km² of protected wilderness</p>
                 <div className="flex items-center justify-center text-green-600 text-sm font-medium">
                   Learn More <ChevronRight className="ml-1 h-4 w-4" />
                 </div>
@@ -75,7 +75,7 @@ export default function NotFound() {
 
             <Link 
               href="/wildlife" 
-              className="group p-6 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300"
+              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
@@ -91,7 +91,7 @@ export default function NotFound() {
 
             <Link 
               href="/activities" 
-              className="group p-6 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300"
+              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
@@ -107,7 +107,7 @@ export default function NotFound() {
 
             <Link 
               href="/visit" 
-              className="group p-6 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300"
+              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">

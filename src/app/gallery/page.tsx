@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
         width: 1200,
         height: 630,
-        alt: "Fushë Studë Lake in Shebenik National Park - glacial lake photography",
+        alt: "Shebenik National Park panoramic view from Wikivoyage banner",
         type: "image/jpeg"
       }
     ]
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Photo Gallery - Shebenik National Park",
     description: "Stunning authentic photography from Albania's pristine wilderness. Glacial lakes, UNESCO forests, and wildlife habitat.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"]
+    images: ["https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"]
   },
   alternates: {
     canonical: "https://shebenik-park.vercel.app/gallery"
@@ -39,12 +39,17 @@ export default function GalleryPage() {
       <Breadcrumb items={[{ label: "Photo Gallery" }]} />
       {/* Hero Section */}
       <section className="relative py-24 bg-gradient-to-r from-violet-600 to-purple-700">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
-          style={{
-            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg')"
-          }}
-        />
+        <div className="absolute inset-0">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
+            alt="Shebenik Peak view across the national park"
+            fill
+            className="object-cover opacity-25"
+            priority
+            quality={85}
+            sizes="100vw"
+          />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Photo Gallery
@@ -107,8 +112,8 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"
-                alt="Fushë Studë Lake in Shebenik National Park - pristine glacial waters surrounded by mountains, UNESCO World Heritage site"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
+                alt="View from Shebenik Mountain looking towards Lake Ohrid - official Wikivoyage banner"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -118,16 +123,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Fushë Studë Lake</h3>
-                  <p className="text-white/80 text-sm">Main glacial lake near visitor center</p>
+                  <h3 className="text-white font-semibold text-lg">Park Overview Vista</h3>
+                  <p className="text-white/80 text-sm">View from Shebenik Mountain</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Liqeni_i_mrekullu%C3%ABsh%C3%ABm_i_Fush%C3%AB-Stud%C3%ABs.jpg"
-                alt="The marvelous Fushë-Studë Lake in Shebenik National Park - crystal clear glacial waters reflecting mountain scenery, Albania hiking destination"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
+                alt="Sweeping landscape view showcasing the park's diverse terrain and vegetation"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -137,16 +142,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Marvelous Fushë-Studë Lake</h3>
-                  <p className="text-white/80 text-sm">Pristine glacial waters</p>
+                  <h3 className="text-white font-semibold text-lg">Park Landscape Overview</h3>
+                  <p className="text-white/80 text-sm">Diverse terrain and vegetation</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
-                alt="Crystal clear mountain stream flowing through Shebenik National Park - natural water source for wildlife, Albania nature photography"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+                alt="Dense forest in the Shebenik Mountains - UNESCO World Heritage beech forest"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -156,50 +161,65 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Stream</h3>
-                  <p className="text-white/80 text-sm">Natural water flow</p>
+                  <h3 className="text-white font-semibold text-lg">UNESCO Beech Forest</h3>
+                  <p className="text-white/80 text-sm">Ancient primeval forest</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg"
-                alt="Another view of Fushë Studë Lake in Shebenik National Park"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
+                alt="Mountain views from within Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Glacial Lake Shore</h3>
-                  <p className="text-white/80 text-sm">Fushë Studë pristine waters</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Views</h3>
+                  <p className="text-white/80 text-sm">Shebenik mountain range</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Liqeni_i_mrekullu%C3%ABsh%C3%ABm_i_Fush%C3%AB-Stud%C3%ABs.jpg"
-                alt="The marvelous Fushë-Studë Lake reflecting mountain scenery"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
+                alt="Shebenik National Park natural landscape with mountain scenery"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Reflections</h3>
-                  <p className="text-white/80 text-sm">Perfect glacial mirror</p>
+                  <h3 className="text-white font-semibold text-lg">Park Landscape</h3>
+                  <p className="text-white/80 text-sm">Natural mountain scenery</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
-                alt="Crystal clear water stream flowing through Shebenik National Park"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
+                alt="Qafa e Kokolit pass in Shebenik National Park with mountain views"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Crystal Stream</h3>
-                  <p className="text-white/80 text-sm">Pure mountain water</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Pass</h3>
+                  <p className="text-white/80 text-sm">Qafa e Kokolit scenic view</p>
                 </div>
               </div>
             </div>
@@ -222,10 +242,15 @@ export default function GalleryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
                 alt="Mountain views from within Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -236,10 +261,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
                 alt="Landscape view from within Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -250,24 +280,34 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg"
-                alt="Panoramic view of Shebenik-Jabllanicë National Park from Black Stone Peak"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
+                alt="Panoramic view of Shebenik National Park - official Wikivoyage banner"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Black Stone Peak View</h3>
-                  <p className="text-white/80 text-sm">Panoramic park vista</p>
+                  <h3 className="text-white font-semibold text-lg">Forest Panorama</h3>
+                  <p className="text-white/80 text-sm">Landscape overview</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Trees_and_mountain_view_in_Shebenik.jpg"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
                 alt="Trees and mountain view in Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -278,10 +318,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/View_of_trees_and_hills_in_Shebenik_National_Park.jpg"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
                 alt="View of trees and hills in Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -292,10 +337,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
                 alt="Forest in Shebenik Mountains - UNESCO World Heritage beech forest"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -323,10 +373,15 @@ export default function GalleryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
                 alt="Forest in Shebenik Mountains - UNESCO World Heritage beech forest"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -337,10 +392,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Trees_and_mountain_view_in_Shebenik.jpg"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
                 alt="Trees and mountain view in Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -351,10 +411,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
                 alt="Landscape view from Shebenik National Park showing forest and mountains"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -365,10 +430,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
                 alt="Mountains from Shebenik National Park with forest in foreground"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -379,10 +449,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/View_of_trees_and_hills_in_Shebenik_National_Park.jpg"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
                 alt="View of trees and hills in Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -393,10 +468,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Shebenik-Jabllanic%C3%AB_National_Park_from_Black_Stone_Peak.jpg"
-                alt="Panoramic view of Shebenik-Jabllanicë National Park from Black Stone Peak"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
+                alt="Panoramic view of Shebenik National Park - official Wikivoyage banner"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -424,10 +504,15 @@ export default function GalleryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
                 alt="Dense forest in Shebenik Mountains - natural lynx habitat"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -438,24 +523,34 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Water_stream_in_Shebenik_National_Park.jpg"
-                alt="Mountain stream in Shebenik National Park - wildlife water source"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+                alt="Dense forest in Shebenik Mountains - natural wildlife habitat"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Wildlife Water Source</h3>
-                  <p className="text-white/80 text-sm">Natural mountain stream</p>
+                  <h3 className="text-white font-semibold text-lg">Wildlife Habitat</h3>
+                  <p className="text-white/80 text-sm">Dense mountain forest</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
                 alt="Mountain peaks in Shebenik National Park - golden eagle habitat"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -466,10 +561,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
                 alt="Open landscape in Shebenik National Park - natural grazing habitat"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -480,10 +580,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Trees_and_mountain_view_in_Shebenik.jpg"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
                 alt="Rocky mountain terrain in Shebenik - natural chamois habitat"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
@@ -494,10 +599,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/View_of_trees_and_hills_in_Shebenik_National_Park.jpg"
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
                 alt="Natural vegetation and hills in Shebenik National Park"
+                width={600}
+                height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">

@@ -77,7 +77,7 @@ export default function ActivitiesPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Mount Shebenik Summit Trail */}
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Mount Shebenik Summit</h3>
                 <div className="flex">
@@ -123,7 +123,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Mount Jabllanicë Trail */}
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Mount Jabllanicë Trail</h3>
                 <div className="flex">
@@ -170,7 +170,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Glacial Lakes Circuit */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Glacial Lakes Circuit</h3>
                 <div className="flex">
@@ -218,7 +218,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Rrajca Forests Trail */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Rrajca UNESCO Forests</h3>
                 <div className="flex">
@@ -282,7 +282,7 @@ export default function ActivitiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Wildlife Watching */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <Binoculars className="h-12 w-12 text-amber-600 mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wildlife Watching</h3>
               <p className="text-gray-700 mb-6">
@@ -300,7 +300,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Photography Tours */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <Camera className="h-12 w-12 text-purple-600 mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Photography Tours</h3>
               <p className="text-gray-700 mb-6">
@@ -319,7 +319,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Lake Swimming */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <Waves className="h-12 w-12 text-cyan-600 mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Glacial Lake Swimming</h3>
               <p className="text-gray-700 mb-6">
@@ -338,7 +338,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Camping */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <Tent className="h-12 w-12 text-green-600 mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wilderness Camping</h3>
               <p className="text-gray-700 mb-6">
@@ -357,7 +357,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Mountain Biking */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <Compass className="h-12 w-12 text-red-600 mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Mountain Biking</h3>
               <p className="text-gray-700 mb-6">
@@ -376,7 +376,7 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Guided Nature Walks */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <Users className="h-12 w-12 text-indigo-600 mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Guided Nature Walks</h3>
               <p className="text-gray-700 mb-6">
