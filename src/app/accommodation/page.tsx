@@ -433,9 +433,9 @@ export default function AccommodationPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-indigo-700 p-6 rounded-xl">
+            <div className="bg-green-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Booking Tips</h3>
-              <ul className="space-y-3 text-indigo-100">
+              <ul className="space-y-3 text-green-100">
                 <li>• Book village guesthouses 1-2 weeks in advance</li>
                 <li>• Summer season (July-August) requires early booking</li>
                 <li>• Many accommodations prefer phone contact</li>
@@ -444,10 +444,10 @@ export default function AccommodationPage() {
                 <li>• Check cancellation policies before booking</li>
               </ul>
             </div>
-            
-            <div className="bg-indigo-700 p-6 rounded-xl">
+
+            <div className="bg-green-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Payment Information</h3>
-              <ul className="space-y-3 text-indigo-100">
+              <ul className="space-y-3 text-green-100">
                 <li>• Most accommodations accept cash (Euros or Albanian Lek)</li>
                 <li>• Credit cards accepted at some hotels in Librazhd</li>
                 <li>• ATMs available in Librazhd town center</li>

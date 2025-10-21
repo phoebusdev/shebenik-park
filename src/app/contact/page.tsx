@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 gradient-secondary">
+      <section className="relative py-32 lg:py-40 gradient-primary">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -18,18 +18,19 @@ export default function ContactPage() {
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Park Information
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-8 tracking-tight">
+            Park <span className="font-light">Information</span>
           </h1>
-          <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl lg:text-3xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
             Essential facts and information about Shebenik National Park.
           </p>
         </div>
       </section>
 
       {/* Park Information Cards */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid-responsive-3">
             <div className="card-interactive group card-padding-sm text-center">
               <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
@@ -38,9 +39,9 @@ export default function ContactPage() {
               <p className="text-gray-600 text-sm">Eastern Albania</p>
             </div>
             <div className="card-interactive group card-padding-sm text-center">
-              <Info className="h-12 w-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <Info className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Park Size</h3>
-              <p className="text-blue-600 font-semibold text-lg">345 km²</p>
+              <p className="text-green-600 font-semibold text-lg">345 km²</p>
               <p className="text-gray-600 text-sm">Protected wilderness area</p>
             </div>
             <div className="card-interactive group card-padding-sm text-center">
@@ -54,13 +55,13 @@ export default function ContactPage() {
       </section>
 
       {/* Main Park Information */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Park Details */}
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                About the Park
+              <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-12 tracking-tight">
+                About the <span className="font-light text-green-600">Park</span>
               </h2>
 
               <div className="space-y-8">
@@ -172,8 +173,8 @@ export default function ContactPage() {
 
             {/* Natural Features */}
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                Natural Features
+              <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-12 tracking-tight">
+                Natural <span className="font-light text-green-600">Features</span>
               </h2>
 
               <div className="space-y-8">

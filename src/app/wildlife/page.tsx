@@ -134,7 +134,7 @@ export default function WildlifePage() {
           <div className="mb-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
+                <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
                   <Eye className="h-4 w-4 mr-2" />
                   Near Threatened
                 </div>
@@ -149,8 +149,8 @@ export default function WildlifePage() {
                   a healthy ecosystem, as they require large territories and abundant prey to survive.
                 </p>
                 <div className="card-base p-6">
-                  <h4 className="font-medium text-blue-800 mb-2 tracking-tight">Pack Behavior</h4>
-                  <p className="text-blue-700 text-sm font-light">
+                  <h4 className="font-medium text-green-800 mb-2 tracking-tight">Pack Behavior</h4>
+                  <p className="text-green-700 text-sm font-light">
                     Wolves live in territorial packs of 4-8 individuals. Listen for their distinctive howling,
                     especially during dawn and dusk hours.
                   </p>
@@ -158,8 +158,8 @@ export default function WildlifePage() {
               </div>
               <div className="card-feature p-8">
                 <div className="text-center">
-                  <div className="bg-blue-100 icon-circle icon-circle-lg mx-auto mb-6">
-                    <Binoculars className="h-10 w-10 text-blue-600" />
+                  <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-6">
+                    <Binoculars className="h-10 w-10 text-green-600" />
                   </div>
                   <h4 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Tracking Signs</h4>
                   <ul className="text-left text-gray-600 space-y-3 font-light">
@@ -293,37 +293,37 @@ export default function WildlifePage() {
 
             <div>
               <h3 className="text-3xl font-light text-gray-900 mb-8 flex items-center tracking-tight">
-                <Camera className="h-7 w-7 text-blue-600 mr-3" />
+                <Camera className="h-7 w-7 text-green-600 mr-3" />
                 Best Practices
               </h3>
               <ul className="space-y-4 text-gray-600 font-light text-lg">
                 <li className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
                   <span>Early morning and late afternoon offer the best viewing opportunities</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
                   <span>Use binoculars and telephoto lenses for close-up views</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
                   <span>Move slowly and quietly to avoid disturbing wildlife</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
                   <span>Look for tracks, scat, and other signs of animal presence</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-blue-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
                   <span>Consider hiring a local guide for the best experience</span>
                 </li>

@@ -78,42 +78,42 @@ export default function ActivitiesPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Mount Shebenik Summit Trail */}
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Mount Shebenik Summit</h3>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="h-5 w-5 text-red-500 fill-current" />
+                    <Star key={star} className="h-5 w-5 text-green-500 fill-current" />
                   ))}
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="text-center">
-                  <MapPin className="h-6 w-6 text-red-600 mx-auto mb-2" />
+                  <MapPin className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">2,253m</p>
                   <p className="text-xs text-gray-600">Elevation</p>
                 </div>
                 <div className="text-center">
-                  <Clock className="h-6 w-6 text-red-600 mx-auto mb-2" />
+                  <Clock className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">8-10 hours</p>
                   <p className="text-xs text-gray-600">Duration</p>
                 </div>
                 <div className="text-center">
-                  <Users className="h-6 w-6 text-red-600 mx-auto mb-2" />
+                  <Users className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">Expert</p>
                   <p className="text-xs text-gray-600">Difficulty</p>
                 </div>
               </div>
-              
+
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 The ultimate challenge for serious hikers. This demanding trail leads to the park's highest peak,
                 offering breathtaking panoramic views of the Albanian Alps and North Macedonia. Best attempted as
                 a 2-day trek with camping.
               </p>
-              
+
               <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-semibold text-red-800 mb-2">Trail Highlights</h4>
+                <h4 className="font-semibold text-green-800 mb-2">Trail Highlights</h4>
                 <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• Panoramic views from the highest peak</li>
                   <li>• Alpine meadows and rare mountain flora</li>
@@ -124,35 +124,35 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Mount Jabllanicë Trail */}
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Mount Jabllanicë Trail</h3>
                 <div className="flex">
                   {[1, 2, 3, 4].map((star) => (
-                    <Star key={star} className="h-5 w-5 text-orange-500 fill-current" />
+                    <Star key={star} className="h-5 w-5 text-green-500 fill-current" />
                   ))}
                   <Star className="h-5 w-5 text-gray-300" />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="text-center">
-                  <MapPin className="h-6 w-6 text-orange-600 mx-auto mb-2" />
+                  <MapPin className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">2,100m</p>
                   <p className="text-xs text-gray-600">Elevation</p>
                 </div>
                 <div className="text-center">
-                  <Clock className="h-6 w-6 text-orange-600 mx-auto mb-2" />
+                  <Clock className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">6-8 hours</p>
                   <p className="text-xs text-gray-600">Duration</p>
                 </div>
                 <div className="text-center">
-                  <Users className="h-6 w-6 text-orange-600 mx-auto mb-2" />
+                  <Users className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">Advanced</p>
                   <p className="text-xs text-gray-600">Difficulty</p>
                 </div>
               </div>
-              
+
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 A challenging but more accessible alternative to Mount Shebenik. This trail offers spectacular
                 views and passes through diverse ecosystems, from dense forests to alpine zones. Perfect for
@@ -160,7 +160,7 @@ export default function ActivitiesPage() {
               </p>
 
               <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-semibold text-orange-800 mb-2">Trail Highlights</h4>
+                <h4 className="font-semibold text-green-800 mb-2">Trail Highlights</h4>
                 <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• Diverse forest ecosystems</li>
                   <li>• Views of glacial valleys</li>
@@ -171,36 +171,36 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Glacial Lakes Circuit */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-gray-900">Glacial Lakes Circuit</h3>
                 <div className="flex">
                   {[1, 2, 3].map((star) => (
-                    <Star key={star} className="h-5 w-5 text-blue-500 fill-current" />
+                    <Star key={star} className="h-5 w-5 text-green-500 fill-current" />
                   ))}
                   <Star className="h-5 w-5 text-gray-300" />
                   <Star className="h-5 w-5 text-gray-300" />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="text-center">
-                  <MapPin className="h-6 w-6 text-blue-600 mx-auto mb-2" />
+                  <MapPin className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">1,600m</p>
                   <p className="text-xs text-gray-600">Max Elevation</p>
                 </div>
                 <div className="text-center">
-                  <Clock className="h-6 w-6 text-blue-600 mx-auto mb-2" />
+                  <Clock className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">4-6 hours</p>
                   <p className="text-xs text-gray-600">Duration</p>
                 </div>
                 <div className="text-center">
-                  <Users className="h-6 w-6 text-blue-600 mx-auto mb-2" />
+                  <Users className="h-6 w-6 text-green-600 mx-auto mb-2" />
                   <p className="text-sm font-medium text-gray-900">Moderate</p>
                   <p className="text-xs text-gray-600">Difficulty</p>
                 </div>
               </div>
-              
+
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 A scenic circular route connecting several of the park's most beautiful glacial lakes.
                 This moderately challenging trail offers stunning reflections, pristine swimming opportunities,
@@ -208,7 +208,7 @@ export default function ActivitiesPage() {
               </p>
 
               <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">Trail Highlights</h4>
+                <h4 className="font-semibold text-green-800 mb-2">Trail Highlights</h4>
                 <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• 6 pristine glacial lakes</li>
                   <li>• Crystal-clear swimming spots</li>
@@ -302,15 +302,15 @@ export default function ActivitiesPage() {
 
             {/* Photography Tours */}
             <div className="card-feature group card-padding-md">
-              <Camera className="h-12 w-12 text-purple-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
+              <Camera className="h-12 w-12 text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Photography Tours</h3>
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 Capture the park's stunning landscapes, from misty morning valleys to golden hour mountain
                 peaks. Professional guided tours available for all skill levels.
               </p>
-              <div className="bg-purple-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-purple-800 mb-2">Photo Opportunities</h4>
-                <ul className="text-sm text-purple-700 space-y-1">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">Photo Opportunities</h4>
+                <ul className="text-sm text-green-700 space-y-1">
                   <li>• Glacial lake reflections</li>
                   <li>• Ancient forest details</li>
                   <li>• Mountain sunrise/sunset</li>
@@ -321,15 +321,15 @@ export default function ActivitiesPage() {
 
             {/* Lake Swimming */}
             <div className="card-feature group card-padding-md">
-              <Waves className="h-12 w-12 text-cyan-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
+              <Waves className="h-12 w-12 text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Glacial Lake Swimming</h3>
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 Take a refreshing dip in crystal-clear glacial lakes surrounded by pristine mountain wilderness.
                 Perfect for cooling off during summer hikes.
               </p>
-              <div className="bg-cyan-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-cyan-800 mb-2">Swimming Tips</h4>
-                <ul className="text-sm text-cyan-700 space-y-1">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">Swimming Tips</h4>
+                <ul className="text-sm text-green-700 space-y-1">
                   <li>• Water is cold year-round</li>
                   <li>• Best months: June-September</li>
                   <li>• Always swim with a buddy</li>
@@ -359,15 +359,15 @@ export default function ActivitiesPage() {
 
             {/* Mountain Biking */}
             <div className="card-feature group card-padding-md">
-              <Compass className="h-12 w-12 text-red-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
+              <Compass className="h-12 w-12 text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Mountain Biking</h3>
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 Explore forest trails and mountain paths on designated biking routes. Challenging terrain
                 suitable for experienced mountain bikers seeking adventure.
               </p>
-              <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-red-800 mb-2">Trail Conditions</h4>
-                <ul className="text-sm text-red-700 space-y-1">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">Trail Conditions</h4>
+                <ul className="text-sm text-green-700 space-y-1">
                   <li>• Rocky and technical terrain</li>
                   <li>• Steep climbs and descents</li>
                   <li>• Best in dry weather</li>
@@ -378,15 +378,15 @@ export default function ActivitiesPage() {
 
             {/* Guided Nature Walks */}
             <div className="card-feature group card-padding-md">
-              <Users className="h-12 w-12 text-indigo-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
+              <Users className="h-12 w-12 text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Guided Nature Walks</h3>
               <p className="text-gray-600 mb-6 font-light leading-relaxed">
                 Join experienced local guides to learn about the park's ecology, conservation efforts,
                 and cultural history while exploring at a comfortable pace.
               </p>
-              <div className="bg-indigo-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-indigo-800 mb-2">What You'll Learn</h4>
-                <ul className="text-sm text-indigo-700 space-y-1">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">What You'll Learn</h4>
+                <ul className="text-sm text-green-700 space-y-1">
                   <li>• Plant and animal identification</li>
                   <li>• Conservation success stories</li>
                   <li>• Local cultural traditions</li>
