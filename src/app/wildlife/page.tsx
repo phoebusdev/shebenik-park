@@ -10,7 +10,7 @@ export default function WildlifePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-amber-600 to-orange-700">
+      <section className="relative py-24 gradient-accent">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -180,9 +180,9 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid-responsive-3">
             {/* Mammals */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Mammals</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Wild Boar (Sus scrofa)</li>
@@ -197,7 +197,7 @@ export default function WildlifePage() {
             </div>
 
             {/* Birds */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Birds of Prey</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Golden Eagle (Aquila chrysaetos)</li>
@@ -212,7 +212,7 @@ export default function WildlifePage() {
             </div>
 
             {/* Other Species */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Reptiles & Amphibians</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• European Viper (Vipera berus)</li>

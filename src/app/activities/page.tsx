@@ -10,7 +10,7 @@ export default function ActivitiesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-blue-600 to-purple-700">
+      <section className="relative py-24 gradient-primary">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -280,10 +280,10 @@ export default function ActivitiesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid-responsive-3">
             {/* Wildlife Watching */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-              <Binoculars className="h-12 w-12 text-amber-600 mb-6" />
+            <div className="card-feature group card-padding-md">
+              <Binoculars className="h-12 w-12 text-amber-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wildlife Watching</h3>
               <p className="text-gray-700 mb-6">
                 Experience the thrill of spotting Europe's most endangered species including the Balkan lynx, 
@@ -300,8 +300,8 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Photography Tours */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-              <Camera className="h-12 w-12 text-purple-600 mb-6" />
+            <div className="card-feature group card-padding-md">
+              <Camera className="h-12 w-12 text-purple-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Photography Tours</h3>
               <p className="text-gray-700 mb-6">
                 Capture the park's stunning landscapes, from misty morning valleys to golden hour mountain 
@@ -319,8 +319,8 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Lake Swimming */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-              <Waves className="h-12 w-12 text-cyan-600 mb-6" />
+            <div className="card-feature group card-padding-md">
+              <Waves className="h-12 w-12 text-cyan-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Glacial Lake Swimming</h3>
               <p className="text-gray-700 mb-6">
                 Take a refreshing dip in crystal-clear glacial lakes surrounded by pristine mountain wilderness. 
@@ -338,8 +338,8 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Camping */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-              <Tent className="h-12 w-12 text-green-600 mb-6" />
+            <div className="card-feature group card-padding-md">
+              <Tent className="h-12 w-12 text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wilderness Camping</h3>
               <p className="text-gray-700 mb-6">
                 Experience the park's pristine wilderness with designated camping areas. Perfect for multi-day 
@@ -357,8 +357,8 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Mountain Biking */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-              <Compass className="h-12 w-12 text-red-600 mb-6" />
+            <div className="card-feature group card-padding-md">
+              <Compass className="h-12 w-12 text-red-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Mountain Biking</h3>
               <p className="text-gray-700 mb-6">
                 Explore forest trails and mountain paths on designated biking routes. Challenging terrain 
@@ -376,8 +376,8 @@ export default function ActivitiesPage() {
             </div>
 
             {/* Guided Nature Walks */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-              <Users className="h-12 w-12 text-indigo-600 mb-6" />
+            <div className="card-feature group card-padding-md">
+              <Users className="h-12 w-12 text-indigo-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Guided Nature Walks</h3>
               <p className="text-gray-700 mb-6">
                 Join experienced local guides to learn about the park's ecology, conservation efforts, 

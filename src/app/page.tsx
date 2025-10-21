@@ -42,30 +42,30 @@ export default function Home() {
       {/* Quick Facts */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div className="grid-responsive-4 text-center">
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <MapPin className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">345 km²</h3>
               <p className="text-gray-600">Protected Wilderness</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <Clock className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">2008</h3>
               <p className="text-gray-600">Established</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <Mountain className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">2,253m</h3>
               <p className="text-gray-600">Highest Peak</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <Award className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">UNESCO</h3>
@@ -88,9 +88,9 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid-responsive-3">
             <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+              <div className="card-feature card-padding-md group cursor-pointer mb-6">
                 <Trees className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ancient Forests</h3>
                 <p className="text-gray-600">
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+              <div className="card-feature card-padding-md group cursor-pointer mb-6">
                 <Droplets className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Glacial Lakes</h3>
                 <p className="text-gray-600">
@@ -112,7 +112,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+              <div className="card-feature card-padding-md group cursor-pointer mb-6">
                 <Users className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Rare Wildlife</h3>
                 <p className="text-gray-600">

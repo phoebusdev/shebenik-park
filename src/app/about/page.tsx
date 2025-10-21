@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-green-600 to-green-800">
+      <section className="relative py-24 gradient-primary">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
@@ -234,10 +234,10 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid-responsive-3">
             <div className="text-center">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <Users className="h-10 w-10 text-green-600 mx-auto mb-4" />
+              <div className="card-interactive card-padding-sm group">
+                <Users className="h-10 w-10 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">IUCN Category II</h3>
                 <p className="text-gray-600">
                   Designated as a Category II protected area by the International Union for Conservation of Nature, 
@@ -247,8 +247,8 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <TreePine className="h-10 w-10 text-green-600 mx-auto mb-4" />
+              <div className="card-interactive card-padding-sm group">
+                <TreePine className="h-10 w-10 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Habitat Protection</h3>
                 <p className="text-gray-600">
                   Safeguarding critical habitats for endangered species including the Balkan lynx, brown bears, 
@@ -258,8 +258,8 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <Leaf className="h-10 w-10 text-green-600 mx-auto mb-4" />
+              <div className="card-interactive card-padding-sm group">
+                <Leaf className="h-10 w-10 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Research & Monitoring</h3>
                 <p className="text-gray-600">
                   Ongoing scientific research and monitoring programs track ecosystem health and inform 

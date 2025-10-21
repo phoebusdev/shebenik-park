@@ -35,7 +35,7 @@ export default function VisitPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-emerald-600 to-teal-700">
+      <section className="relative py-24 gradient-secondary">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -55,9 +55,9 @@ export default function VisitPage() {
       {/* Quick Info Cards */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <Clock className="h-12 w-12 text-green-600 mx-auto mb-4" />
+          <div className="grid-responsive-3">
+            <div className="card-interactive group card-padding-sm text-center">
+              <Clock className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Visitor Center Hours</h3>
               <p className="text-gray-700">
                 Summer: Mon-Thu 9AM-5PM<br/>
@@ -65,8 +65,8 @@ export default function VisitPage() {
                 Winter: Daily 9AM-4PM
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4" />
+            <div className="card-interactive group card-padding-sm text-center">
+              <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Park Entrance</h3>
               <p className="text-gray-700">
                 Fushë Studë Village<br/>
@@ -74,8 +74,8 @@ export default function VisitPage() {
                 64km from Tirana
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <Phone className="h-12 w-12 text-green-600 mx-auto mb-4" />
+            <div className="card-interactive group card-padding-sm text-center">
+              <Phone className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Contact Information</h3>
               <p className="text-gray-700">
                 Visitor Center: +355 69 6223130<br/>
@@ -209,9 +209,9 @@ export default function VisitPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid-responsive-4">
             {/* Spring */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <div className="text-center mb-4">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-green-600" />
@@ -248,7 +248,7 @@ export default function VisitPage() {
             </div>
 
             {/* Summer */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-2 border-green-200">
+            <div className="card-interactive group card-padding-sm border-2 border-green-200">
               <div className="text-center mb-4">
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-orange-600" />
@@ -288,7 +288,7 @@ export default function VisitPage() {
             </div>
 
             {/* Autumn */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-2 border-amber-200">
+            <div className="card-interactive group card-padding-sm border-2 border-amber-200">
               <div className="text-center mb-4">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-amber-600" />
@@ -328,7 +328,7 @@ export default function VisitPage() {
             </div>
 
             {/* Winter */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <div className="text-center mb-4">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-blue-600" />
@@ -381,9 +381,9 @@ export default function VisitPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid-responsive-3">
             {/* Essential Gear */}
-            <div className="bg-green-50 p-6 rounded-xl">
+            <div className="bg-green-50 card-padding-sm rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-green-600 mr-2" />
                 Essential Gear
@@ -401,7 +401,7 @@ export default function VisitPage() {
             </div>
 
             {/* Clothing */}
-            <div className="bg-blue-50 p-6 rounded-xl">
+            <div className="bg-blue-50 card-padding-sm rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-blue-600 mr-2" />
                 Clothing & Protection
@@ -419,7 +419,7 @@ export default function VisitPage() {
             </div>
 
             {/* Safety & Comfort */}
-            <div className="bg-amber-50 p-6 rounded-xl">
+            <div className="bg-amber-50 card-padding-sm rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-amber-600 mr-2" />
                 Safety & Comfort

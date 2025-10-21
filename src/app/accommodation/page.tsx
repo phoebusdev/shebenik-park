@@ -10,7 +10,7 @@ export default function AccommodationPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-indigo-600 to-purple-700">
+      <section className="relative py-24 gradient-primary">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -30,23 +30,23 @@ export default function AccommodationPage() {
       {/* Accommodation Types Overview */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid-responsive-3">
             <div className="text-center">
-              <div className="bg-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-white icon-circle icon-circle-lg mx-auto mb-4">
                 <Home className="h-10 w-10 text-green-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Local Guesthouses</h3>
               <p className="text-gray-600">Authentic Albanian hospitality in traditional village settings</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-white icon-circle icon-circle-lg mx-auto mb-4">
                 <Building className="h-10 w-10 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Hotels in Librazhd</h3>
               <p className="text-gray-600">Modern amenities and comfort 30-50km from park entrances</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-white icon-circle icon-circle-lg mx-auto mb-4">
                 <Tent className="h-10 w-10 text-orange-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Camping Sites</h3>
@@ -326,8 +326,8 @@ export default function AccommodationPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+          <div className="grid-responsive-2">
+            <div className="card-interactive group card-padding-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Choose Librazhd?</h3>
               <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start">
@@ -373,7 +373,7 @@ export default function AccommodationPage() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <div className="card-interactive group card-padding-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Available Hotels</h3>
               <p className="text-gray-700 mb-6">
                 Librazhd offers several hotel options ranging from budget-friendly to mid-range accommodations. 

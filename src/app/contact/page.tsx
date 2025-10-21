@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-teal-600 to-green-700">
+      <section className="relative py-24 gradient-secondary">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -30,21 +30,21 @@ export default function ContactPage() {
       {/* Quick Contact Cards */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <Phone className="h-12 w-12 text-green-600 mx-auto mb-4" />
+          <div className="grid-responsive-3">
+            <div className="card-interactive group card-padding-sm text-center">
+              <Phone className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Visitor Center</h3>
               <p className="text-green-600 font-semibold text-lg">+355 69 6223130</p>
               <p className="text-gray-600 text-sm">Information & Bookings</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <AlertTriangle className="h-12 w-12 text-red-600 mx-auto mb-4" />
+            <div className="card-interactive group card-padding-sm text-center">
+              <AlertTriangle className="h-12 w-12 text-red-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Emergency</h3>
               <p className="text-red-600 font-semibold text-lg">+355 67 207 9658</p>
               <p className="text-gray-600 text-sm">24/7 Emergency Support</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+            <div className="card-interactive group card-padding-sm text-center">
+              <Users className="h-12 w-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Park Administration</h3>
               <p className="text-blue-600 font-semibold text-lg">+355 51 423 738</p>
               <p className="text-gray-600 text-sm">Forest Directorate</p>
@@ -389,25 +389,25 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid-responsive-2">
             <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 card-padding-sm rounded-lg">
                 <h3 className="font-bold text-gray-900 mb-2">Is park entrance free?</h3>
                 <p className="text-gray-700 text-sm">
                   Yes, entrance to Shebenik National Park is free. However, camping fees (€3-5 per person) 
                   and some guided services may have costs.
                 </p>
               </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg">
+
+              <div className="bg-gray-50 card-padding-sm rounded-lg">
                 <h3 className="font-bold text-gray-900 mb-2">Do I need permits for hiking?</h3>
                 <p className="text-gray-700 text-sm">
                   No special permits are required for hiking on designated trails. Register at the visitor 
                   center for safety and trail information.
                 </p>
               </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg">
+
+              <div className="bg-gray-50 card-padding-sm rounded-lg">
                 <h3 className="font-bold text-gray-900 mb-2">Are guided tours available?</h3>
                 <p className="text-gray-700 text-sm">
                   Yes, local guides can be arranged through the visitor center. Recommended for wildlife 
@@ -417,7 +417,7 @@ export default function ContactPage() {
             </div>
             
             <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 card-padding-sm rounded-lg">
                 <h3 className="font-bold text-gray-900 mb-2">Is cell phone coverage available?</h3>
                 <p className="text-gray-700 text-sm">
                   Coverage is limited in remote areas. The visitor center area has basic coverage, 
@@ -425,7 +425,7 @@ export default function ContactPage() {
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 card-padding-sm rounded-lg">
                 <h3 className="font-bold text-gray-900 mb-2">Can I visit in winter?</h3>
                 <p className="text-gray-700 text-sm">
                   The park is open year-round, but many high-elevation trails become inaccessible due to snow. 
@@ -433,7 +433,7 @@ export default function ContactPage() {
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 card-padding-sm rounded-lg">
                 <h3 className="font-bold text-gray-900 mb-2">What currency is accepted?</h3>
                 <p className="text-gray-700 text-sm">
                   Both Albanian Lek (ALL) and Euros are accepted. Cash is preferred as card payment 
