@@ -10,61 +10,62 @@ export default function AccommodationPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 gradient-primary">
-        <div 
+      <section className="relative py-32 lg:py-40 gradient-primary">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
             backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
             Stay Near the Park
           </h1>
-          <p className="text-xl md:text-2xl text-indigo-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
             From cozy guesthouses to wilderness camping, find the perfect accommodation for your Shebenik adventure.
           </p>
         </div>
       </section>
 
       {/* Accommodation Types Overview */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid-responsive-3">
             <div className="text-center">
-              <div className="bg-white icon-circle icon-circle-lg mx-auto mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-4">
                 <Home className="h-10 w-10 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Local Guesthouses</h3>
-              <p className="text-gray-600">Authentic Albanian hospitality in traditional village settings</p>
+              <h3 className="text-xl font-light text-gray-900 mb-2">Local Guesthouses</h3>
+              <p className="text-gray-600 font-light">Authentic Albanian hospitality in traditional village settings</p>
             </div>
             <div className="text-center">
-              <div className="bg-white icon-circle icon-circle-lg mx-auto mb-4">
-                <Building className="h-10 w-10 text-blue-600" />
+              <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-4">
+                <Building className="h-10 w-10 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Hotels in Librazhd</h3>
-              <p className="text-gray-600">Modern amenities and comfort 30-50km from park entrances</p>
+              <h3 className="text-xl font-light text-gray-900 mb-2">Hotels in Librazhd</h3>
+              <p className="text-gray-600 font-light">Modern amenities and comfort 30-50km from park entrances</p>
             </div>
             <div className="text-center">
-              <div className="bg-white icon-circle icon-circle-lg mx-auto mb-4">
-                <Tent className="h-10 w-10 text-orange-600" />
+              <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-4">
+                <Tent className="h-10 w-10 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Camping Sites</h3>
-              <p className="text-gray-600">Wilderness camping in designated areas within the park</p>
+              <h3 className="text-xl font-light text-gray-900 mb-2">Camping Sites</h3>
+              <p className="text-gray-600 font-light">Wilderness camping in designated areas within the park</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Guesthouses */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Home className="h-12 w-12 text-green-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Local Guesthouses
+          <div className="text-center mb-20">
+            <Home className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Local <span className="font-light text-green-600">Guesthouses</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Experience authentic Albanian hospitality at family-run guesthouses near the park entrances.
             </p>
           </div>
@@ -101,9 +102,9 @@ export default function AccommodationPage() {
                 </div>
               </div>
 
-              <p className="text-gray-700 mb-6">
-                Located in the scenic Rrajca village near the UNESCO World Heritage beech forests. 
-                This family-run guesthouse offers traditional Albanian hospitality with home-cooked 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Located in the scenic Rrajca village near the UNESCO World Heritage beech forests.
+                This family-run guesthouse offers traditional Albanian hospitality with home-cooked
                 meals and local knowledge of hiking trails.
               </p>
 
@@ -173,9 +174,9 @@ export default function AccommodationPage() {
                 </div>
               </div>
 
-              <p className="text-gray-700 mb-6">
-                Simple accommodation at the park's main visitor center, run by Xhek Nezha. 
-                Perfect for early starts on hiking trails and closest to park information services. 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Simple accommodation at the park's main visitor center, run by Xhek Nezha.
+                Perfect for early starts on hiking trails and closest to park information services.
                 Basic but clean facilities with essential amenities.
               </p>
 
@@ -243,9 +244,9 @@ export default function AccommodationPage() {
                 </div>
               </div>
 
-              <p className="text-gray-700 mb-6">
-                Charming guesthouse in the picturesque Fushë Studën village with beautiful mountain views. 
-                Several hiking trails to nearby peaks start directly from the village, making it perfect 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Charming guesthouse in the picturesque Fushë Studën village with beautiful mountain views.
+                Several hiking trails to nearby peaks start directly from the village, making it perfect
                 for hiking enthusiasts.
               </p>
 
@@ -314,22 +315,22 @@ export default function AccommodationPage() {
       </section>
 
       {/* Hotels in Librazhd */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Building className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Hotels in Librazhd
+          <div className="text-center mb-20">
+            <Building className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Hotels in <span className="font-light text-green-600">Librazhd</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Modern accommodations with full amenities, 30-50km from park entrances via mountain roads.
             </p>
           </div>
 
           <div className="grid-responsive-2">
-            <div className="card-interactive group card-padding-md">
+            <div className="card-feature group card-padding-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Choose Librazhd?</h3>
-              <ul className="space-y-3 text-gray-700 mb-6">
+              <ul className="space-y-3 text-gray-600 mb-6 font-light">
                 <li className="flex items-start">
                   <div className="bg-blue-100 rounded-full p-1 mr-3 mt-1">
                     <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
@@ -373,10 +374,10 @@ export default function AccommodationPage() {
               </div>
             </div>
 
-            <div className="card-interactive group card-padding-md">
+            <div className="card-feature group card-padding-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Available Hotels</h3>
-              <p className="text-gray-700 mb-6">
-                Librazhd offers several hotel options ranging from budget-friendly to mid-range accommodations. 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Librazhd offers several hotel options ranging from budget-friendly to mid-range accommodations.
                 Most hotels provide standard amenities expected by international travelers.
               </p>
               
@@ -417,14 +418,14 @@ export default function AccommodationPage() {
       </section>
 
       {/* Camping */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Tent className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Wilderness Camping
+          <div className="text-center mb-20">
+            <Tent className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Wilderness <span className="font-light text-green-600">Camping</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Experience the park's pristine wilderness with designated camping areas and backcountry options.
             </p>
           </div>
@@ -432,9 +433,9 @@ export default function AccommodationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Designated Camping Areas</h3>
-              <p className="text-gray-700 mb-6">
-                Several designated camping sites are available within the park, offering basic facilities 
-                while maintaining the wilderness experience. These sites provide the perfect base for 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Several designated camping sites are available within the park, offering basic facilities
+                while maintaining the wilderness experience. These sites provide the perfect base for
                 multi-day hiking adventures.
               </p>
               
@@ -510,36 +511,36 @@ export default function AccommodationPage() {
             </div>
           </div>
           
-          <div className="mt-16 bg-amber-50 p-8 rounded-2xl">
+          <div className="mt-16 bg-green-50 p-8 rounded-2xl">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Planning Your Camping Trip</h3>
-              <p className="text-gray-700">Essential information for a safe and enjoyable wilderness camping experience.</p>
+              <p className="text-gray-600 font-light leading-relaxed">Essential information for a safe and enjoyable wilderness camping experience.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <Mountain className="h-8 w-8 text-amber-600 mx-auto mb-3" />
+                <Mountain className="h-8 w-8 text-green-600 mx-auto mb-3" />
                 <h4 className="font-semibold text-gray-900 mb-2">Best Locations</h4>
-                <p className="text-sm text-gray-700">
-                  Near glacial lakes and forest clearings. Ask at visitor center for current 
+                <p className="text-sm text-gray-600 font-light leading-relaxed">
+                  Near glacial lakes and forest clearings. Ask at visitor center for current
                   available sites and trail access.
                 </p>
               </div>
-              
+
               <div className="text-center">
-                <Users className="h-8 w-8 text-amber-600 mx-auto mb-3" />
+                <Users className="h-8 w-8 text-green-600 mx-auto mb-3" />
                 <h4 className="font-semibold text-gray-900 mb-2">Group Limits</h4>
-                <p className="text-sm text-gray-700">
-                  Maximum 8 people per campsite to minimize environmental impact. 
+                <p className="text-sm text-gray-600 font-light leading-relaxed">
+                  Maximum 8 people per campsite to minimize environmental impact.
                   Larger groups should use multiple sites.
                 </p>
               </div>
-              
+
               <div className="text-center">
-                <Phone className="h-8 w-8 text-amber-600 mx-auto mb-3" />
+                <Phone className="h-8 w-8 text-green-600 mx-auto mb-3" />
                 <h4 className="font-semibold text-gray-900 mb-2">Reservations</h4>
-                <p className="text-sm text-gray-700">
-                  Contact visitor center (+355 69 6223130) to check availability 
+                <p className="text-sm text-gray-600 font-light leading-relaxed">
+                  Contact visitor center (+355 69 6223130) to check availability
                   and make reservations, especially during peak season.
                 </p>
               </div>
@@ -549,13 +550,13 @@ export default function AccommodationPage() {
       </section>
 
       {/* Booking Information */}
-      <section className="py-20 bg-indigo-600">
+      <section className="py-32 lg:py-40 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Book?
+          <div className="text-center mb-16">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-6 tracking-tight">
+              Ready to <span className="font-light">Book?</span>
             </h2>
-            <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
+            <p className="text-lg text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
               Contact our recommended accommodations or the visitor center for assistance with bookings and travel planning.
             </p>
           </div>

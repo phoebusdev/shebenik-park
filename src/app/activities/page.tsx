@@ -10,67 +10,68 @@ export default function ActivitiesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 gradient-primary">
-        <div 
+      <section className="relative py-32 lg:py-40 gradient-primary">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
             backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
             Adventure Awaits
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
             From challenging mountain peaks to serene glacial lakes, discover endless outdoor adventures in Albania's pristine wilderness.
           </p>
         </div>
       </section>
 
       {/* Quick Activity Overview */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
                 <TreePine className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Hiking Trails</h3>
-              <p className="text-sm text-gray-600">4 Marked Routes</p>
+              <h3 className="font-light text-gray-900">Hiking Trails</h3>
+              <p className="text-sm text-gray-600 font-light">4 Marked Routes</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
                 <Mountain className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Peak Climbing</h3>
-              <p className="text-sm text-gray-600">2,253m Summit</p>
+              <h3 className="font-light text-gray-900">Peak Climbing</h3>
+              <p className="text-sm text-gray-600 font-light">2,253m Summit</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
                 <Droplets className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Lake Swimming</h3>
-              <p className="text-sm text-gray-600">14 Glacial Lakes</p>
+              <h3 className="font-light text-gray-900">Lake Swimming</h3>
+              <p className="text-sm text-gray-600 font-light">14 Glacial Lakes</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
                 <Camera className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Photography</h3>
-              <p className="text-sm text-gray-600">Wildlife & Landscape</p>
+              <h3 className="font-light text-gray-900">Photography</h3>
+              <p className="text-sm text-gray-600 font-light">Wildlife & Landscape</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Featured Hiking Trails */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Hiking Trails
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Hiking <span className="font-light text-green-600">Trails</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Explore 4 marked hiking trails ranging from gentle walks to challenging mountain ascents.
             </p>
           </div>
@@ -105,15 +106,15 @@ export default function ActivitiesPage() {
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-6">
-                The ultimate challenge for serious hikers. This demanding trail leads to the park's highest peak, 
-                offering breathtaking panoramic views of the Albanian Alps and North Macedonia. Best attempted as 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                The ultimate challenge for serious hikers. This demanding trail leads to the park's highest peak,
+                offering breathtaking panoramic views of the Albanian Alps and North Macedonia. Best attempted as
                 a 2-day trek with camping.
               </p>
               
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-semibold text-red-800 mb-2">Trail Highlights</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
+                <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• Panoramic views from the highest peak</li>
                   <li>• Alpine meadows and rare mountain flora</li>
                   <li>• Challenging rocky terrain and scrambling</li>
@@ -152,15 +153,15 @@ export default function ActivitiesPage() {
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-6">
-                A challenging but more accessible alternative to Mount Shebenik. This trail offers spectacular 
-                views and passes through diverse ecosystems, from dense forests to alpine zones. Perfect for 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                A challenging but more accessible alternative to Mount Shebenik. This trail offers spectacular
+                views and passes through diverse ecosystems, from dense forests to alpine zones. Perfect for
                 experienced hikers seeking adventure.
               </p>
-              
+
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-semibold text-orange-800 mb-2">Trail Highlights</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
+                <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• Diverse forest ecosystems</li>
                   <li>• Views of glacial valleys</li>
                   <li>• Mountain ridges and rocky outcrops</li>
@@ -200,15 +201,15 @@ export default function ActivitiesPage() {
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-6">
-                A scenic circular route connecting several of the park's most beautiful glacial lakes. 
-                This moderately challenging trail offers stunning reflections, pristine swimming opportunities, 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                A scenic circular route connecting several of the park's most beautiful glacial lakes.
+                This moderately challenging trail offers stunning reflections, pristine swimming opportunities,
                 and excellent picnic spots.
               </p>
-              
+
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-2">Trail Highlights</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
+                <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• 6 pristine glacial lakes</li>
                   <li>• Crystal-clear swimming spots</li>
                   <li>• Perfect for photography</li>
@@ -249,14 +250,14 @@ export default function ActivitiesPage() {
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-6">
-                Walk through ancient UNESCO World Heritage beech forests that have remained unchanged for millennia. 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Walk through ancient UNESCO World Heritage beech forests that have remained unchanged for millennia.
                 This gentle trail is perfect for families and nature lovers seeking a peaceful forest experience.
               </p>
-              
+
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-semibold text-green-800 mb-2">Trail Highlights</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
+                <ul className="text-sm text-gray-600 space-y-1 font-light">
                   <li>• Ancient UNESCO beech forests</li>
                   <li>• Rich biodiversity and rare plants</li>
                   <li>• Gentle, family-friendly path</li>
@@ -269,13 +270,13 @@ export default function ActivitiesPage() {
       </section>
 
       {/* Other Activities */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              More Adventures
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              More <span className="font-light text-green-600">Adventures</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Beyond hiking, discover diverse outdoor activities that showcase the park's natural beauty.
             </p>
           </div>
@@ -285,8 +286,8 @@ export default function ActivitiesPage() {
             <div className="card-feature group card-padding-md">
               <Binoculars className="h-12 w-12 text-amber-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wildlife Watching</h3>
-              <p className="text-gray-700 mb-6">
-                Experience the thrill of spotting Europe's most endangered species including the Balkan lynx, 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Experience the thrill of spotting Europe's most endangered species including the Balkan lynx,
                 brown bears, and gray wolves in their natural habitat.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
@@ -303,8 +304,8 @@ export default function ActivitiesPage() {
             <div className="card-feature group card-padding-md">
               <Camera className="h-12 w-12 text-purple-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Photography Tours</h3>
-              <p className="text-gray-700 mb-6">
-                Capture the park's stunning landscapes, from misty morning valleys to golden hour mountain 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Capture the park's stunning landscapes, from misty morning valleys to golden hour mountain
                 peaks. Professional guided tours available for all skill levels.
               </p>
               <div className="bg-purple-50 p-4 rounded-lg">
@@ -322,8 +323,8 @@ export default function ActivitiesPage() {
             <div className="card-feature group card-padding-md">
               <Waves className="h-12 w-12 text-cyan-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Glacial Lake Swimming</h3>
-              <p className="text-gray-700 mb-6">
-                Take a refreshing dip in crystal-clear glacial lakes surrounded by pristine mountain wilderness. 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Take a refreshing dip in crystal-clear glacial lakes surrounded by pristine mountain wilderness.
                 Perfect for cooling off during summer hikes.
               </p>
               <div className="bg-cyan-50 p-4 rounded-lg">
@@ -341,8 +342,8 @@ export default function ActivitiesPage() {
             <div className="card-feature group card-padding-md">
               <Tent className="h-12 w-12 text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wilderness Camping</h3>
-              <p className="text-gray-700 mb-6">
-                Experience the park's pristine wilderness with designated camping areas. Perfect for multi-day 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Experience the park's pristine wilderness with designated camping areas. Perfect for multi-day
                 adventures and stargazing under unpolluted night skies.
               </p>
               <div className="bg-green-50 p-4 rounded-lg">
@@ -360,8 +361,8 @@ export default function ActivitiesPage() {
             <div className="card-feature group card-padding-md">
               <Compass className="h-12 w-12 text-red-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Mountain Biking</h3>
-              <p className="text-gray-700 mb-6">
-                Explore forest trails and mountain paths on designated biking routes. Challenging terrain 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Explore forest trails and mountain paths on designated biking routes. Challenging terrain
                 suitable for experienced mountain bikers seeking adventure.
               </p>
               <div className="bg-red-50 p-4 rounded-lg">
@@ -379,8 +380,8 @@ export default function ActivitiesPage() {
             <div className="card-feature group card-padding-md">
               <Users className="h-12 w-12 text-indigo-600 mb-6 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Guided Nature Walks</h3>
-              <p className="text-gray-700 mb-6">
-                Join experienced local guides to learn about the park's ecology, conservation efforts, 
+              <p className="text-gray-600 mb-6 font-light leading-relaxed">
+                Join experienced local guides to learn about the park's ecology, conservation efforts,
                 and cultural history while exploring at a comfortable pace.
               </p>
               <div className="bg-indigo-50 p-4 rounded-lg">
@@ -398,13 +399,13 @@ export default function ActivitiesPage() {
       </section>
 
       {/* Planning Your Adventure */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-32 lg:py-40 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Plan Your Adventure
+          <div className="text-center mb-16">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-6 tracking-tight">
+              Plan Your <span className="font-light">Adventure</span>
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-lg text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
               Make the most of your visit with these essential tips for exploring Shebenik National Park.
             </p>
           </div>

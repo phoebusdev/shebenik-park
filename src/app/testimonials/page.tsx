@@ -109,18 +109,18 @@ export default function TestimonialsPage() {
       <Breadcrumb items={[{ label: "Visitor Testimonials" }]} />
       
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-green-600 to-emerald-700">
-        <div 
+      <section className="relative py-32 lg:py-40 gradient-primary">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
             backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
             Visitor Testimonials
           </h1>
-          <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
             Real experiences from travelers who discovered the magic of Shebenik National Park.
           </p>
           <div className="flex items-center justify-center space-x-4">
@@ -144,7 +144,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial) => (
@@ -172,7 +172,7 @@ export default function TestimonialsPage() {
                   {testimonial.title}
                 </h3>
                 
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-gray-600 leading-relaxed mb-6 font-light">
                   {testimonial.content}
                 </p>
                 
@@ -205,12 +205,12 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-green-600">
+      <section className="py-32 lg:py-40 gradient-primary">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Create Your Own Adventure?
+          <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-6 tracking-tight">
+            Ready to Create Your Own <span className="font-light">Adventure?</span>
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-lg text-white/90 mb-12 font-light leading-relaxed">
             Join the growing community of travelers discovering Albania's pristine wilderness.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -38,7 +38,7 @@ export default function GalleryPage() {
     <div className="min-h-screen bg-white">
       <Breadcrumb items={[{ label: "Photo Gallery" }]} />
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-violet-600 to-purple-700">
+      <section className="relative py-32 lg:py-40 gradient-primary">
         <div className="absolute inset-0">
           <Image
             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
@@ -51,60 +51,61 @@ export default function GalleryPage() {
           />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
             Photo Gallery
           </h1>
-          <p className="text-xl md:text-2xl text-violet-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
             Discover the breathtaking beauty of Shebenik National Park through stunning photography.
           </p>
         </div>
       </section>
 
       {/* Gallery Categories */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Droplets className="h-8 w-8 text-blue-600" />
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
+                <Droplets className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Glacial Lakes</h3>
-              <p className="text-sm text-gray-600">14 pristine lakes</p>
+              <h3 className="font-light text-gray-900">Glacial Lakes</h3>
+              <p className="text-sm text-gray-600 font-light">14 pristine lakes</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
                 <Mountain className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Mountain Peaks</h3>
-              <p className="text-sm text-gray-600">2,253m elevation</p>
+              <h3 className="font-light text-gray-900">Mountain Peaks</h3>
+              <p className="text-sm text-gray-600 font-light">2,253m elevation</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
                 <TreePine className="h-8 w-8 text-emerald-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Ancient Forests</h3>
-              <p className="text-sm text-gray-600">UNESCO beech forests</p>
+              <h3 className="font-light text-gray-900">Ancient Forests</h3>
+              <p className="text-sm text-gray-600 font-light">UNESCO beech forests</p>
             </div>
             <div className="text-center">
-              <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Eye className="h-8 w-8 text-amber-600" />
+              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
+                <Eye className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900">Wildlife</h3>
-              <p className="text-sm text-gray-600">Rare species</p>
+              <h3 className="font-light text-gray-900">Wildlife</h3>
+              <p className="text-sm text-gray-600 font-light">Rare species</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Glacial Lakes Gallery */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Droplets className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Glacial Lakes
+          <div className="text-center mb-20">
+            <Droplets className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Glacial <span className="font-light text-green-600">Lakes</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Crystal-clear waters reflecting pristine mountain landscapes, carved by ancient glaciers.
             </p>
           </div>
@@ -228,14 +229,14 @@ export default function GalleryPage() {
       </section>
 
       {/* Mountain Peaks Gallery */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Mountain className="h-12 w-12 text-green-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Mountain Peaks
+          <div className="text-center mb-20">
+            <Mountain className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Mountain <span className="font-light text-green-600">Peaks</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Dramatic peaks and ridges carved by time, offering spectacular views across the Balkans.
             </p>
           </div>
@@ -359,14 +360,14 @@ export default function GalleryPage() {
       </section>
 
       {/* Ancient Forests Gallery */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <TreePine className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ancient Forests
+          <div className="text-center mb-20">
+            <TreePine className="h-12 w-12 text-emerald-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Ancient <span className="font-light text-green-600">Forests</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               UNESCO World Heritage beech forests that have remained unchanged for millennia.
             </p>
           </div>
@@ -490,14 +491,14 @@ export default function GalleryPage() {
       </section>
 
       {/* Wildlife Gallery */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Eye className="h-12 w-12 text-amber-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Wildlife & Nature
+          <div className="text-center mb-20">
+            <Eye className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Wildlife & <span className="font-light text-green-600">Nature</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Rare and endangered species thriving in Europe's last wilderness sanctuary.
             </p>
           </div>
@@ -621,14 +622,14 @@ export default function GalleryPage() {
       </section>
 
       {/* Photography Information */}
-      <section className="py-20 bg-green-600">
+      <section className="py-32 lg:py-40 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <Camera className="h-12 w-12 text-white mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Photography Guidelines
+          <div className="text-center mb-16">
+            <Camera className="h-12 w-12 text-white mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-6 tracking-tight">
+              Photography <span className="font-light">Guidelines</span>
             </h2>
-            <p className="text-xl text-green-100 max-w-3xl mx-auto">
+            <p className="text-lg text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
               Capture the park's beauty while respecting wildlife and preserving the pristine environment.
             </p>
           </div>
