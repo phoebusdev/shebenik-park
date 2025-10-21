@@ -25,27 +25,30 @@ export default function Navigation() {
   const pathname = usePathname()
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-green-200 sticky top-0 z-50">
+    <nav className="bg-white/98 backdrop-blur-md border-b border-gray-100/50 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Mountain className="h-8 w-8 text-green-600" />
-            <span className="font-bold text-xl text-gray-900">Shebenik Park</span>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <Mountain className="h-9 w-9 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
+            <div className="flex flex-col">
+              <span className="font-extralight text-2xl text-gray-900 tracking-tight leading-tight">Shebenik</span>
+              <span className="text-xs text-green-600 uppercase tracking-wider -mt-1">National Park</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-1">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "px-3 py-2 rounded-md text-sm font-medium transition-colors",
+                    "px-4 py-2 rounded-lg text-sm transition-all duration-300 tracking-wide",
                     pathname === item.href
-                      ? "bg-green-100 text-green-800"
-                      : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                      ? "bg-green-50 text-green-700 font-normal"
+                      : "text-gray-600 hover:text-green-600 hover:bg-green-50/50"
                   )}
                 >
                   {item.name}
@@ -61,12 +64,13 @@ export default function Navigation() {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded="false"
+              className="hover:bg-green-50"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
+                <X className="block h-6 w-6 text-gray-600" aria-hidden="true" />
               ) : (
-                <Menu className="block h-6 w-6" aria-hidden="true" />
+                <Menu className="block h-6 w-6 text-gray-600" aria-hidden="true" />
               )}
             </Button>
           </div>
@@ -75,17 +79,17 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-b border-green-200">
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100/50">
+          <div className="px-4 pt-4 pb-6 space-y-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "block px-3 py-2 rounded-md text-base font-medium transition-colors",
+                  "block px-4 py-3 rounded-lg text-base transition-all duration-300",
                   pathname === item.href
-                    ? "bg-green-100 text-green-800"
-                    : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                    ? "bg-green-50 text-green-700 font-normal"
+                    : "text-gray-600 hover:text-green-600 hover:bg-green-50/50"
                 )}
                 onClick={() => setIsOpen(false)}
               >
