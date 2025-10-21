@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Eye, AlertTriangle, Camera, Binoculars, Shield, Heart } from "lucide-react"
+import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
   title: "Wildlife of Shebenik National Park - Rare Species & Conservation",
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 export default function WildlifePage() {
   return (
     <div className="min-h-screen bg-white">
+      <Breadcrumb items={[{ label: "Wildlife" }]} />
+
       {/* Hero Section */}
       <section className="relative py-32 lg:py-40 gradient-primary">
         <div

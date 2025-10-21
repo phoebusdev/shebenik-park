@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { MapPin, Clock, Car, Info, Calendar, Thermometer, Backpack, AlertTriangle, CheckCircle } from "lucide-react"
+import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
   title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide | Practical Information",
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
 export default function VisitPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Breadcrumb items={[{ label: "Visit" }]} />
       {/* Hero Section */}
       <section className="relative py-32 lg:py-40 gradient-primary">
         <div

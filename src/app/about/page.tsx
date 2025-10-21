@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { CalendarDays, MapPin, TreePine, Award, Globe, Shield, Users, Leaf } from "lucide-react"
+import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
   title: "About Shebenik National Park - History & Conservation",
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Breadcrumb items={[{ label: "About" }]} />
+
       {/* Hero Section */}
       <section className="relative py-32 lg:py-40 gradient-primary">
         <div
