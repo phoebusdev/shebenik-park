@@ -17,7 +17,7 @@ const navigation = [
   { name: "Gallery", href: "/gallery" },
   { name: "Reviews", href: "/testimonials" },
   { name: "FAQ", href: "/faq" },
-  { name: "Contact", href: "/contact" },
+  { name: "Park Info", href: "/contact" },
 ]
 
 export default function Navigation() {

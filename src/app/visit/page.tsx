@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { MapPin, Clock, Car, Info, Phone, Calendar, Thermometer, Backpack, AlertTriangle, CheckCircle } from "lucide-react"
+import { MapPin, Clock, Car, Info, Calendar, Thermometer, Backpack, AlertTriangle, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide | Practical Information",
@@ -58,29 +58,29 @@ export default function VisitPage() {
           <div className="grid-responsive-3">
             <div className="card-interactive group card-padding-sm text-center">
               <Clock className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Visitor Center Hours</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Park Hours</h3>
               <p className="text-gray-700">
-                Summer: Mon-Thu 9AM-5PM<br/>
-                Fri-Sun 9AM-7PM<br/>
-                Winter: Daily 9AM-4PM
+                Open year-round<br/>
+                Dawn to dusk<br/>
+                Check seasonal conditions
               </p>
             </div>
             <div className="card-interactive group card-padding-sm text-center">
               <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Park Entrance</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-700">
-                Fushë Studë Village<br/>
-                Elbasan County, Albania<br/>
-                64km from Tirana
+                Elbasan County<br/>
+                Eastern Albania<br/>
+                Near Albanian-North Macedonian border
               </p>
             </div>
             <div className="card-interactive group card-padding-sm text-center">
-              <Phone className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Contact Information</h3>
+              <Info className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Park Information</h3>
               <p className="text-gray-700">
-                Visitor Center: +355 69 6223130<br/>
-                Forest Directorate: +355 51 423 738<br/>
-                Emergency: +355 67 207 9658
+                345 km² protected area<br/>
+                Established 2008<br/>
+                IUCN Category II
               </p>
             </div>
           </div>

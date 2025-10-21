@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mountain, Mail, Phone, MapPin } from "lucide-react"
+import { Mountain, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -48,25 +48,26 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Park Info */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Visit Information</h3>
+            <h3 className="font-semibold text-lg mb-4">Park Information</h3>
             <ul className="space-y-3 text-green-200">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">
-                  Visitor Center<br />
-                  Fushë Studë Village<br />
-                  Elbasan County, Albania
+                  Elbasan County<br />
+                  Eastern Albania<br />
+                  Near North Macedonia border
                 </span>
               </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">+355 69 6223130</span>
+              <li className="text-sm">
+                <span className="font-semibold">Size:</span> 345 km²
               </li>
-              <li className="flex items-center space-x-2">
-                <Mail className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">info@shebenik-park.al</span>
+              <li className="text-sm">
+                <span className="font-semibold">Elevation:</span> 300-2,253m
+              </li>
+              <li className="text-sm">
+                <span className="font-semibold">Status:</span> IUCN Category II
               </li>
             </ul>
           </div>
