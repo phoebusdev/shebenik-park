@@ -469,6 +469,109 @@ export default function ActivitiesPage() {
           </div>
         </div>
       </section>
+
+      {/* Structured Data - HowTo Schema for Popular Trail */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Hike the Glacial Lakes Circuit in Shebenik National Park",
+            "description": "A complete guide to hiking the popular Glacial Lakes Circuit trail, a 4-6 hour moderate difficulty hike connecting six pristine glacial lakes in Shebenik National Park.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Liqeni_i_Fush%C3%AB_Studn%C3%ABs.jpg",
+            "totalTime": "PT5H",
+            "estimatedCost": {
+              "@type": "MonetaryAmount",
+              "currency": "ALL",
+              "value": "0"
+            },
+            "supply": [
+              {
+                "@type": "HowToSupply",
+                "name": "Sturdy hiking boots"
+              },
+              {
+                "@type": "HowToSupply",
+                "name": "2L water per person"
+              },
+              {
+                "@type": "HowToSupply",
+                "name": "Trail snacks and lunch"
+              },
+              {
+                "@type": "HowToSupply",
+                "name": "Map and compass or GPS"
+              },
+              {
+                "@type": "HowToSupply",
+                "name": "Weather-appropriate clothing"
+              },
+              {
+                "@type": "HowToSupply",
+                "name": "Camera for photography"
+              }
+            ],
+            "tool": [
+              {
+                "@type": "HowToTool",
+                "name": "Hiking poles (optional)"
+              },
+              {
+                "@type": "HowToTool",
+                "name": "Binoculars for wildlife viewing"
+              }
+            ],
+            "step": [
+              {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Start at Fushë Studë Trailhead",
+                "text": "Begin your hike at the Fushë Studë Lake trailhead near Rrajcë village. The trail is well-marked with green blazes.",
+                "url": "https://shebenik-park.vercel.app/activities"
+              },
+              {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Hike to First Glacial Lake",
+                "text": "Follow the trail through beech forest for approximately 1.5 hours, gaining 300m elevation to reach the first glacial lake.",
+                "itemListElement": [
+                  {
+                    "@type": "HowToDirection",
+                    "text": "Duration: 1.5 hours, Distance: 3km, Elevation gain: 300m"
+                  }
+                ]
+              },
+              {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Circuit Through Lakes 2-5",
+                "text": "Continue on the circuit trail passing five more glacial lakes. The path alternates between forest and open alpine meadows.",
+                "itemListElement": [
+                  {
+                    "@type": "HowToDirection",
+                    "text": "Duration: 2-3 hours, Distance: 6km, Terrain: Mixed forest and alpine"
+                  }
+                ]
+              },
+              {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Return Descent",
+                "text": "Complete the circuit loop descending back to Fushë Studë Lake. The descent offers panoramic views of the valley.",
+                "itemListElement": [
+                  {
+                    "@type": "HowToDirection",
+                    "text": "Duration: 1-1.5 hours, Distance: 4km, Descent: 300m"
+                  }
+                ]
+              }
+            ],
+            "performTime": "PT5H",
+            "prepTime": "PT30M"
+          })
+        }}
+      />
     </div>
   )
 }

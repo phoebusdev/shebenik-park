@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     images: ["https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"]
   },
   verification: {
-    google: "your-google-site-verification-code",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_CODE",
     other: {
-      "msvalidate.01": "your-bing-verification-code"
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION || "REPLACE_WITH_BING_WEBMASTER_CODE"
     }
   },
   other: {
@@ -104,58 +104,110 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "TouristAttraction",
-              "name": "Shebenik National Park",
-              "alternateName": "Shebenik-Jabllanicë National Park",
-              "description": "Albania's second-largest national park featuring glacial lakes, UNESCO World Heritage beech forests, and endangered wildlife including the Balkan lynx.",
-              "url": "https://shebenik-park.vercel.app",
-              "image": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
-                "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-              ],
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "AL",
-                "addressRegion": "Elbasan County",
-                "addressLocality": "Librazhd Municipality"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "41.2928",
-                "longitude": "20.5619"
-              },
-              "touristType": [
-                "Nature lovers",
-                "Hikers",
-                "Wildlife enthusiasts",
-                "Photographers"
-              ],
-              "availableLanguage": ["English", "Albanian"],
-              "openingHours": "Mo-Su 00:00-24:00",
-              "isAccessibleForFree": true,
-              "publicAccess": true,
-              "keywords": "national park, wildlife, hiking, glacial lakes, UNESCO World Heritage, Balkan lynx, ancient forests, Albania tourism",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "127",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "containsPlace": [
+              "@graph": [
                 {
-                  "@type": "Lake",
-                  "name": "Fushë Studë Lake",
-                  "description": "Main glacial lake in Shebenik National Park"
+                  "@type": "TouristAttraction",
+                  "@id": "https://shebenik-park.vercel.app/#attraction",
+                  "name": "Shebenik National Park",
+                  "alternateName": "Shebenik-Jabllanicë National Park",
+                  "description": "Albania's second-largest national park featuring glacial lakes, UNESCO World Heritage beech forests, and endangered wildlife including the Balkan lynx.",
+                  "url": "https://shebenik-park.vercel.app",
+                  "image": [
+                    "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
+                    "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg",
+                    "https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+                  ],
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "AL",
+                    "addressRegion": "Elbasan County",
+                    "addressLocality": "Librazhd Municipality"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "41.2928",
+                    "longitude": "20.5619"
+                  },
+                  "touristType": [
+                    "Nature lovers",
+                    "Hikers",
+                    "Wildlife enthusiasts",
+                    "Photographers"
+                  ],
+                  "availableLanguage": ["English", "Albanian"],
+                  "openingHours": "Mo-Su 00:00-24:00",
+                  "isAccessibleForFree": true,
+                  "publicAccess": true,
+                  "keywords": "national park, wildlife, hiking, glacial lakes, UNESCO World Heritage, Balkan lynx, ancient forests, Albania tourism",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "containsPlace": [
+                    {
+                      "@type": "Lake",
+                      "name": "Fushë Studë Lake",
+                      "description": "Main glacial lake in Shebenik National Park"
+                    },
+                    {
+                      "@type": "Forest",
+                      "name": "Shebenik Beech Forest",
+                      "description": "UNESCO World Heritage ancient beech forest"
+                    }
+                  ],
+                  "hasMap": "https://maps.google.com/maps?q=41.2928,20.5619",
+                  "areaServed": {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                      "@type": "GeoCoordinates",
+                      "latitude": "41.2928",
+                      "longitude": "20.5619"
+                    },
+                    "geoRadius": "17500"
+                  }
                 },
                 {
-                  "@type": "Forest",
-                  "name": "Shebenik Beech Forest",
-                  "description": "UNESCO World Heritage ancient beech forest"
+                  "@type": "Organization",
+                  "@id": "https://shebenik-park.vercel.app/#organization",
+                  "name": "Shebenik National Park Tourism",
+                  "url": "https://shebenik-park.vercel.app",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://shebenik-park.vercel.app/icon.svg",
+                    "width": "32",
+                    "height": "32"
+                  },
+                  "description": "Official tourism information and visitor services for Shebenik National Park, Albania",
+                  "email": "info@shebenik-park.al",
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "Albania"
+                  },
+                  "knowsAbout": ["National Parks", "Ecotourism", "Wildlife Conservation", "Hiking Trails", "Albanian Tourism"]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://shebenik-park.vercel.app/#website",
+                  "url": "https://shebenik-park.vercel.app",
+                  "name": "Shebenik National Park - Official Tourism Website",
+                  "description": "Discover Albania's pristine wilderness: glacial lakes, ancient forests, and endangered Balkan lynx at Shebenik National Park.",
+                  "publisher": {
+                    "@id": "https://shebenik-park.vercel.app/#organization"
+                  },
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://shebenik-park.vercel.app/search?q={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                  },
+                  "inLanguage": ["en", "sq"]
                 }
-              ],
-              "hasMap": "https://maps.google.com/maps?q=41.2928,20.5619"
+              ]
             })
           }}
         />
