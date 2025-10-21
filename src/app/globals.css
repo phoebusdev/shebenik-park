@@ -49,9 +49,25 @@ body {
     font-weight: 200;
   }
 
-  p {
+  /* Set default light font weight for all text */
+  body {
+    font-weight: 300;
+  }
+
+  p, li, span, a, div {
+    font-weight: 300;
     letter-spacing: 0.01em;
     line-height: 1.7;
+  }
+
+  /* Ensure strong/bold elements still work when needed */
+  strong, b {
+    font-weight: 600;
+  }
+
+  /* Form elements */
+  input, textarea, select, button {
+    font-weight: 300;
   }
 }
 
