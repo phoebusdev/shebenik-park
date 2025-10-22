@@ -4,81 +4,19 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import Analytics from "@/components/analytics";
+import { generateMetadata, getViewport } from "@/lib/site-config-helpers";
+import { siteConfig } from "@/config/site.config";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover" as const,
-  themeColor: "#059669",
-  colorScheme: "light" as const,
-}
+// Viewport configuration from site config
+export const viewport = getViewport();
 
-export const metadata: Metadata = {
-  title: "Shebenik National Park - Albania's Pristine Wilderness",
-  description: "Discover Shebenik National Park, Albania's second-largest national park. Explore glacial lakes, ancient forests, and spot rare wildlife including the endangered Balkan lynx.",
-  keywords: "Shebenik National Park, Albania tourism, hiking, wildlife, Balkan lynx, glacial lakes, UNESCO World Heritage, Jabllanice, Albanian Alps",
-  authors: [{ name: "Shebenik National Park Tourism" }],
-  creator: "Shebenik National Park Tourism",
-  publisher: "Albania National Tourism Agency",
-  robots: "index, follow",
-  category: "Tourism",
-  classification: "Travel & Tourism",
-  metadataBase: new URL("https://shebenik-park.vercel.app"),
-  alternates: {
-    canonical: "https://shebenik-park.vercel.app",
-    languages: {
-      'en': 'https://shebenik-park.vercel.app',
-      'sq': 'https://shebenik-park.vercel.app/sq'
-    }
-  },
-  openGraph: {
-    title: "Shebenik National Park - Albania's Pristine Wilderness",
-    description: "Discover Shebenik National Park, Albania's second-largest national park. Explore glacial lakes, ancient forests, and spot rare wildlife including the endangered Balkan lynx.",
-    url: "https://shebenik-park.vercel.app",
-    siteName: "Shebenik National Park",
-    type: "website",
-    locale: "en_US",
-    alternateLocale: "sq_AL",
-    images: [
-      {
-        url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
-        width: 1200,
-        height: 630,
-        alt: "Panoramic view of Shebenik National Park from Black Stone Peak",
-        type: "image/jpeg"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@ShebenikPark",
-    creator: "@AlbaniaTourism",
-    title: "Shebenik National Park - Albania's Pristine Wilderness",
-    description: "Discover Albania's second-largest national park. Glacial lakes, ancient forests, and the endangered Balkan lynx await.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"]
-  },
-  verification: {
-    google: "your-google-site-verification-code",
-    other: {
-      "msvalidate.01": "your-bing-verification-code"
-    }
-  },
-  other: {
-    "geo.region": "AL",
-    "geo.placename": "Shebenik National Park",
-    "geo.position": "41.2928;20.5619",
-    "ICBM": "41.2928, 20.5619",
-    "DC.title": "Shebenik National Park - Albania's Pristine Wilderness",
-    "DC.creator": "Albania National Tourism Agency",
-    "DC.subject": "National Park, Tourism, Wildlife, Hiking, Albania",
-    "DC.description": "Official tourism website for Shebenik National Park, Albania's second-largest national park featuring glacial lakes, UNESCO World Heritage beech forests, and endangered wildlife including the Balkan lynx."
-  }
-};
+// Metadata generated from site config
+export const metadata: Metadata = generateMetadata();
 
 export default function RootLayout({
   children,
@@ -96,7 +34,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Shebenik Park" />
+        <meta name="apple-mobile-web-app-title" content={siteConfig.shortName} />
       </head>
       <body className={`${inter.variable} antialiased font-sans`}>
         <script
@@ -105,57 +43,41 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "TouristAttraction",
-              "name": "Shebenik National Park",
-              "alternateName": "Shebenik-Jabllanicë National Park",
-              "description": "Albania's second-largest national park featuring glacial lakes, UNESCO World Heritage beech forests, and endangered wildlife including the Balkan lynx.",
-              "url": "https://shebenik-park.vercel.app",
-              "image": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
-                "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-              ],
+              "name": siteConfig.name,
+              ...(siteConfig.alternateName && { "alternateName": siteConfig.alternateName }),
+              "description": siteConfig.description.long,
+              "url": siteConfig.contact.website,
+              "image": siteConfig.branding.galleryImages,
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "AL",
-                "addressRegion": "Elbasan County",
-                "addressLocality": "Librazhd Municipality"
+                "addressCountry": siteConfig.location.countryCode,
+                "addressRegion": siteConfig.location.region,
+                "addressLocality": siteConfig.location.locality
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "41.2928",
-                "longitude": "20.5619"
+                "latitude": siteConfig.location.coordinates.latitude.toString(),
+                "longitude": siteConfig.location.coordinates.longitude.toString()
               },
-              "touristType": [
-                "Nature lovers",
-                "Hikers",
-                "Wildlife enthusiasts",
-                "Photographers"
-              ],
-              "availableLanguage": ["English", "Albanian"],
-              "openingHours": "Mo-Su 00:00-24:00",
-              "isAccessibleForFree": true,
-              "publicAccess": true,
-              "keywords": "national park, wildlife, hiking, glacial lakes, UNESCO World Heritage, Balkan lynx, ancient forests, Albania tourism",
+              "touristType": siteConfig.seo.touristTypes,
+              "availableLanguage": siteConfig.seo.languages,
+              "openingHours": siteConfig.seo.openingHours,
+              "isAccessibleForFree": siteConfig.seo.isAccessibleForFree,
+              "publicAccess": siteConfig.seo.publicAccess,
+              "keywords": siteConfig.seo.keywords,
               "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "127",
-                "bestRating": "5",
-                "worstRating": "1"
+                "ratingValue": siteConfig.seo.rating.value.toString(),
+                "reviewCount": siteConfig.seo.rating.reviewCount.toString(),
+                "bestRating": siteConfig.seo.rating.bestRating.toString(),
+                "worstRating": siteConfig.seo.rating.worstRating.toString()
               },
-              "containsPlace": [
-                {
-                  "@type": "Lake",
-                  "name": "Fushë Studë Lake",
-                  "description": "Main glacial lake in Shebenik National Park"
-                },
-                {
-                  "@type": "Forest",
-                  "name": "Shebenik Beech Forest",
-                  "description": "UNESCO World Heritage ancient beech forest"
-                }
-              ],
-              "hasMap": "https://maps.google.com/maps?q=41.2928,20.5619"
+              "containsPlace": siteConfig.pointsOfInterest.map(poi => ({
+                "@type": poi.type,
+                "name": poi.name,
+                "description": poi.description
+              })),
+              "hasMap": `https://maps.google.com/maps?q=${siteConfig.location.coordinates.latitude},${siteConfig.location.coordinates.longitude}`
             })
           }}
         />

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Mountain } from "lucide-react"
+import { siteConfig } from "@/config/site.config"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -30,8 +31,8 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Mountain className="h-8 w-8 text-green-600" />
-            <span className="font-bold text-xl text-gray-900">Shebenik Park</span>
+            <Mountain className="h-8 w-8" style={{ color: siteConfig.branding.primaryColor }} />
+            <span className="font-bold text-xl text-gray-900">{siteConfig.shortName}</span>
           </Link>
 
           {/* Desktop Navigation */}

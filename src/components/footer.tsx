@@ -1,7 +1,10 @@
 import Link from "next/link"
 import { Mountain, Mail, Phone, MapPin } from "lucide-react"
+import { siteConfig } from "@/config/site.config"
 
 export default function Footer() {
+  const { name, description, stats, meta, contact, location } = siteConfig;
+
   return (
     <footer className="bg-green-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -10,14 +13,13 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <Mountain className="h-8 w-8 text-green-400" />
-              <span className="font-bold text-xl">Shebenik National Park</span>
+              <span className="font-bold text-xl">{name}</span>
             </Link>
             <p className="text-green-200 mb-4">
-              Discover the pristine wilderness of Albania's second-largest national park. 
-              Home to glacial lakes, ancient forests, and rare wildlife including the endangered Balkan lynx.
+              {description.short}
             </p>
             <p className="text-sm text-green-300">
-              UNESCO World Heritage Site • Established 2008 • 345 km²
+              {stats.recognition.value} {stats.recognition.description} • Established {stats.established.value} • {stats.area.value} {stats.area.unit}
             </p>
           </div>
 
@@ -56,17 +58,17 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">
                   Visitor Center<br />
-                  Fushë Studë Village<br />
-                  Elbasan County, Albania
+                  {location.address.street}<br />
+                  {location.address.region}, {location.address.country}
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">+355 69 6223130</span>
+                <span className="text-sm">{contact.phone}</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">info@shebenik-park.al</span>
+                <span className="text-sm">{contact.email}</span>
               </li>
             </ul>
           </div>
@@ -74,10 +76,10 @@ export default function Footer() {
 
         <div className="border-t border-green-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-green-300 text-sm">
-            © 2024 Shebenik National Park Tourism. All rights reserved.
+            {meta.copyright}
           </p>
           <p className="text-green-400 text-sm mt-2 md:mt-0">
-            Protecting Albania's Natural Heritage
+            {meta.tagline}
           </p>
         </div>
       </div>

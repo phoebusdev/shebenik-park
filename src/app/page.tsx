@@ -1,17 +1,20 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MapPin, Clock, Users, Award, ChevronRight, Trees, Mountain, Droplets } from "lucide-react"
+import { MapPin, Clock, Mountain, Award, ChevronRight, Trees, Droplets, Users } from "lucide-react"
+import { siteConfig } from "@/config/site.config"
 
 export default function Home() {
+  const { name, tagline, description, branding, stats, features } = siteConfig;
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white">
         <div className="absolute inset-0">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
-            alt="Panoramic view of Shebenik National Park from mountain viewpoint"
+            src={branding.heroImage}
+            alt={`Panoramic view of ${name}`}
             fill
             className="object-cover opacity-30"
             priority
@@ -21,12 +24,13 @@ export default function Home() {
         </div>
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Shebenik
-            <span className="block text-green-600">National Park</span>
+            {name.split(' ').slice(0, -2).join(' ')}
+            <span className="block" style={{ color: branding.primaryColor }}>
+              {name.split(' ').slice(-2).join(' ')}
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Discover Albania's pristine wilderness. Ancient forests, glacial lakes, and rare wildlife 
-            await in this UNESCO World Heritage sanctuary.
+            {description.hero}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
@@ -45,31 +49,31 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="flex flex-col items-center">
               <div className="bg-green-100 p-4 rounded-full mb-4">
-                <MapPin className="h-8 w-8 text-green-600" />
+                <MapPin className="h-8 w-8" style={{ color: branding.primaryColor }} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">345 km²</h3>
-              <p className="text-gray-600">Protected Wilderness</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{stats.area.value} {stats.area.unit}</h3>
+              <p className="text-gray-600">{stats.area.description}</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-green-100 p-4 rounded-full mb-4">
-                <Clock className="h-8 w-8 text-green-600" />
+                <Clock className="h-8 w-8" style={{ color: branding.primaryColor }} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2008</h3>
-              <p className="text-gray-600">Established</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{stats.established.value}</h3>
+              <p className="text-gray-600">{stats.established.description}</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-green-100 p-4 rounded-full mb-4">
-                <Mountain className="h-8 w-8 text-green-600" />
+                <Mountain className="h-8 w-8" style={{ color: branding.primaryColor }} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2,253m</h3>
-              <p className="text-gray-600">Highest Peak</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{stats.elevation.value}{stats.elevation.unit}</h3>
+              <p className="text-gray-600">{stats.elevation.description}</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-green-100 p-4 rounded-full mb-4">
-                <Award className="h-8 w-8 text-green-600" />
+                <Award className="h-8 w-8" style={{ color: branding.primaryColor }} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">UNESCO</h3>
-              <p className="text-gray-600">World Heritage</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{stats.recognition.value}</h3>
+              <p className="text-gray-600">{stats.recognition.description}</p>
             </div>
           </div>
         </div>
@@ -80,60 +84,40 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Visit Shebenik?
+              Why Visit {name.split(' ').slice(0, -2).join(' ')}?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience one of Europe's last untouched wilderness areas, where ancient forests 
-              meet pristine glacial lakes and rare wildlife roams freely.
+              {description.short}
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
-                <Trees className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Ancient Forests</h3>
-                <p className="text-gray-600">
-                  Explore UNESCO-protected beech forests that have remained unchanged for millennia. 
-                  32% of Albania's flora species call this park home.
-                </p>
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
-                <Droplets className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Glacial Lakes</h3>
-                <p className="text-gray-600">
-                  Discover 14 pristine glacial lakes carved by ancient ice, offering crystal-clear waters 
-                  perfect for swimming and reflection.
-                </p>
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
-                <Users className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Rare Wildlife</h3>
-                <p className="text-gray-600">
-                  Spot the endangered Balkan lynx, brown bears, and gray wolves in their natural habitat. 
-                  A photographer's paradise.
-                </p>
-              </div>
-            </div>
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon === "Trees" ? Trees : feature.icon === "Droplets" ? Droplets : Users;
+              return (
+                <div key={index} className="text-center">
+                  <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+                    <IconComponent className="h-12 w-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" style={{ color: branding.primaryColor }} />
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                    <p className="text-gray-600">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20" style={{ backgroundColor: branding.primaryColor }}>
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Explore?
           </h2>
           <p className="text-xl text-green-100 mb-8">
-            Plan your adventure to one of Albania's most spectacular natural treasures. 
-            From hiking trails to wildlife watching, your wilderness experience awaits.
+            {description.long}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
