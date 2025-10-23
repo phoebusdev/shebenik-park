@@ -19,48 +19,48 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Shebenik National Park - Albania's Pristine Wilderness",
-  description: "Discover Shebenik National Park, Albania's second-largest national park. Explore glacial lakes, ancient forests, and spot rare wildlife including the endangered Balkan lynx.",
-  keywords: "Shebenik National Park, Albania tourism, hiking, wildlife, Balkan lynx, glacial lakes, UNESCO World Heritage, Jabllanice, Albanian Alps",
-  authors: [{ name: "Shebenik National Park Tourism" }],
-  creator: "Shebenik National Park Tourism",
+  title: "Voskopojë - A Byzantine Treasure in the Albanian Mountains",
+  description: "Discover Voskopojë, the 'Jerusalem of the Aromanians.' Explore stunning 18th-century Byzantine churches with masterpiece frescoes, hike pristine alpine trails, and experience living history in this legendary mountain village.",
+  keywords: "Voskopojë, Albania tourism, Byzantine churches, David Selenica, Zografi brothers, Aromanian culture, Moscopole, Korçë, hiking, UNESCO, Albanian history, mountain village",
+  authors: [{ name: "Voskopojë Tourism" }],
+  creator: "Voskopojë Tourism",
   publisher: "Albania National Tourism Agency",
   robots: "index, follow",
   category: "Tourism",
   classification: "Travel & Tourism",
-  metadataBase: new URL("https://shebenik-park.vercel.app"),
+  metadataBase: new URL("https://voskopoje-tourism.vercel.app"),
   alternates: {
-    canonical: "https://shebenik-park.vercel.app",
+    canonical: "https://voskopoje-tourism.vercel.app",
     languages: {
-      'en': 'https://shebenik-park.vercel.app',
-      'sq': 'https://shebenik-park.vercel.app/sq'
+      'en': 'https://voskopoje-tourism.vercel.app',
+      'sq': 'https://voskopoje-tourism.vercel.app/sq'
     }
   },
   openGraph: {
-    title: "Shebenik National Park - Albania's Pristine Wilderness",
-    description: "Discover Shebenik National Park, Albania's second-largest national park. Explore glacial lakes, ancient forests, and spot rare wildlife including the endangered Balkan lynx.",
-    url: "https://shebenik-park.vercel.app",
-    siteName: "Shebenik National Park",
+    title: "Voskopojë - A Byzantine Treasure in the Albanian Mountains",
+    description: "Discover Voskopojë's 18th-century golden age, magnificent Byzantine frescoes, and mountain beauty near Korçë, Albania.",
+    url: "https://voskopoje-tourism.vercel.app",
+    siteName: "Voskopojë Tourism",
     type: "website",
     locale: "en_US",
     alternateLocale: "sq_AL",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
+        url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Albania_location_map.svg",
         width: 1200,
         height: 630,
-        alt: "Panoramic view of Shebenik National Park from Black Stone Peak",
-        type: "image/jpeg"
+        alt: "Voskopojë mountain village in southeastern Albania",
+        type: "image/svg+xml"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ShebenikPark",
+    site: "@VisitVoskopoje",
     creator: "@AlbaniaTourism",
-    title: "Shebenik National Park - Albania's Pristine Wilderness",
-    description: "Discover Albania's second-largest national park. Glacial lakes, ancient forests, and the endangered Balkan lynx await.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"]
+    title: "Voskopojë - A Byzantine Treasure in the Albanian Mountains",
+    description: "Explore the legendary 18th-century city of Moscopole. Byzantine churches, masterpiece frescoes, and alpine beauty await.",
+    images: ["https://upload.wikimedia.org/wikipedia/commons/8/8f/Albania_location_map.svg"]
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_CODE",
@@ -70,13 +70,13 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "AL",
-    "geo.placename": "Shebenik National Park",
-    "geo.position": "41.2928;20.5619",
-    "ICBM": "41.2928, 20.5619",
-    "DC.title": "Shebenik National Park - Albania's Pristine Wilderness",
+    "geo.placename": "Voskopojë, Korçë",
+    "geo.position": "40.6964;20.7936",
+    "ICBM": "40.6964, 20.7936",
+    "DC.title": "Voskopojë - A Byzantine Treasure in the Albanian Mountains",
     "DC.creator": "Albania National Tourism Agency",
-    "DC.subject": "National Park, Tourism, Wildlife, Hiking, Albania",
-    "DC.description": "Official tourism website for Shebenik National Park, Albania's second-largest national park featuring glacial lakes, UNESCO World Heritage beech forests, and endangered wildlife including the Balkan lynx."
+    "DC.subject": "Byzantine Art, Mountain Village, Aromanian Culture, Tourism, Albania",
+    "DC.description": "Official tourism website for Voskopojë, featuring the legendary 18th-century city of Moscopole with its magnificent Byzantine churches, priceless frescoes by David Selenica and the Zografi brothers, and pristine alpine landscapes."
   }
 };
 
