@@ -387,6 +387,163 @@ export default function VisitPage() {
         </div>
       </section>
 
+      {/* Practical Essentials */}
+      <section className="py-32 lg:py-40 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Practical <span className="font-light text-green-600">Essentials</span>
+            </h2>
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+              Everything you need to know for a smooth, comfortable visit to Voskopojë
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Mobile & Internet */}
+            <div className="card-feature card-padding-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Mobile & Internet</h3>
+              <ul className="space-y-4 text-gray-600 font-light">
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">📱</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Mobile Coverage</p>
+                    <p className="text-sm">Vodafone and One networks available; signal varies in village proper and surrounding mountains</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">📡</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">WiFi Availability</p>
+                    <p className="text-sm">Available in most guesthouses and hotels; limited connectivity in village center; basic speeds (not suitable for streaming)</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">🗺️</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Navigation Tip</p>
+                    <p className="text-sm">Download offline maps (Google Maps, Maps.me) before arriving—cell coverage for GPS can be unreliable</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">🔌</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Power Banks</p>
+                    <p className="text-sm">Bring a portable battery—guesthouses charge devices, but availability varies in remote locations</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Language & Communication */}
+            <div className="card-feature card-padding-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Language & Communication</h3>
+              <ul className="space-y-4 text-gray-600 font-light">
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">🗣️</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Primary Languages</p>
+                    <p className="text-sm">Albanian is the primary language; some English spoken in guesthouses and by tourist guides</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">📚</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Useful Phrases</p>
+                    <p className="text-sm">Learn basic Albanian greetings and phrases—locals appreciate the effort and are generally friendly and helpful</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">📱</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Translation Apps</p>
+                    <p className="text-sm">Google Translate app helpful for real-time translation; download offline language packs</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">👥</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Hiring a Guide</p>
+                    <p className="text-sm">Local guides speak English and Aramonian, providing cultural context and church access unavailable otherwise</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Planning Duration */}
+            <div className="bg-green-50 p-6 rounded-xl">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">Recommended Duration</h4>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-semibold text-green-700 text-sm">Quick Day Trip</p>
+                  <p className="text-gray-600 font-light text-sm">4-6 hours: Main church, quick village walk</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-green-700 text-sm">Standard Visit</p>
+                  <p className="text-gray-600 font-light text-sm">1-2 nights: All major churches, one hike, village experience</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-green-700 text-sm">Full Immersion</p>
+                  <p className="text-gray-600 font-light text-sm">3+ days: Multiple hikes, photography, cultural engagement, day trips</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Pre-Visit Checklist */}
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">Before You Go</h4>
+              <ul className="space-y-2 text-gray-600 font-light text-sm">
+                <li className="flex items-start space-x-2">
+                  <span className="text-blue-600 font-bold">✓</span>
+                  <span>Book guesthouses in advance (peak season Jul-Aug)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-blue-600 font-bold">✓</span>
+                  <span>Arrange travel from Korçë (no direct public transport)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-blue-600 font-bold">✓</span>
+                  <span>Download offline maps and hiking trail info</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-blue-600 font-bold">✓</span>
+                  <span>Withdraw sufficient cash in Korçë (ATM available)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-blue-600 font-bold">✓</span>
+                  <span>Check weather/road conditions in winter</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Money Matters */}
+            <div className="bg-amber-50 p-6 rounded-xl">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">Financial Practical</h4>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-semibold text-amber-700 text-sm">Currency</p>
+                  <p className="text-gray-600 font-light text-sm">Albanian Lek (ALL); Euros less useful than cash</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-amber-700 text-sm">ATMs in Voskopojë</p>
+                  <p className="text-gray-600 font-light text-sm">ABI Bank ATM in village center</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-amber-700 text-sm">Cash Recommended</p>
+                  <p className="text-gray-600 font-light text-sm">Small denominations for church tips (200-500 lek)</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-amber-700 text-sm">Cards</p>
+                  <p className="text-gray-600 font-light text-sm">Visa/Mastercard at major hotels only</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Visitor Guidelines */}
       <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

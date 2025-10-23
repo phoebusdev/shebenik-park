@@ -177,6 +177,228 @@ export default function AttractionsPage() {
         </div>
       </section>
 
+      {/* Master Artists Section */}
+      <section className="py-32 lg:py-40 bg-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              The Master <span className="font-light text-green-600">Artists</span>
+            </h2>
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+              Behind every fresco is an artist. Meet the post-Byzantine masters who created Voskopojë's priceless treasures.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
+            {/* David Selenica */}
+            <div className="card-feature card-padding-md">
+              <h3 className="text-3xl font-light text-gray-900 mb-6 tracking-tight">
+                David <span className="font-bold">Selenica</span>
+              </h3>
+              <p className="text-gray-600 font-light mb-4 leading-relaxed">
+                <strong>Late 17th - Mid-18th Century</strong>
+              </p>
+              <p className="text-gray-600 font-light mb-4 leading-relaxed">
+                Born in Selenicë, Kolonjë, David Selenica stands as one of the three most prominent figures in medieval Albanian art. He pioneered a revolutionary approach to post-Byzantine painting that fused traditional Byzantine Paleologan style with vibrant Venetian artistic traditions.
+              </p>
+
+              <h4 className="font-semibold text-gray-900 mb-3 mt-6">Artistic Innovation</h4>
+              <ul className="space-y-2 text-gray-600 font-light text-sm mb-6">
+                <li className="flex items-start">
+                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span>Pioneered bright, vibrant colors in post-Byzantine painting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span>Created distinctive portraiture featuring villagers' faces on saint bodies</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span>Produced nearly 1,000 documented frescoes across the Balkans</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span>Founder of the distinctive Korçë School of painting</span>
+                </li>
+              </ul>
+
+              <h4 className="font-semibold text-gray-900 mb-3">Major Works at Voskopojë</h4>
+              <ul className="space-y-2 text-gray-600 font-light text-sm">
+                <li className="flex items-start">
+                  <span className="text-green-600 font-bold mr-2">✓</span>
+                  <span><strong>Church of St. Nicholas</strong> (1722-1726) with assistants Constantine and Christos</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 font-bold mr-2">✓</span>
+                  <span>Extensive work on Mount Athos, Thessaloniki, and Kastoria</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Zografi Brothers */}
+            <div className="card-feature card-padding-md">
+              <h3 className="text-3xl font-light text-gray-900 mb-6 tracking-tight">
+                The <span className="font-bold">Zografi</span> Brothers
+              </h3>
+              <p className="text-gray-600 font-light mb-4 leading-relaxed">
+                <strong>Kostandin & Athanas Zografi (Active 1736-1783)</strong>
+              </p>
+              <p className="text-gray-600 font-light mb-4 leading-relaxed">
+                From Dardhë in Korçë municipality, Kostandin and Athanas Zografi stand as the most prominent post-Byzantine painters of the 18th century. Their distinctive style combined Baroque sensibility with linear religious figures and bold primary colors.
+              </p>
+
+              <h4 className="font-semibold text-gray-900 mb-3 mt-6">Distinctive Style</h4>
+              <ul className="space-y-2 text-gray-600 font-light text-sm mb-6">
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">•</span>
+                  <span>Baroque sensibility with linear religious figures</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">•</span>
+                  <span>Bold primary colors: brilliant white, bright blue, deep red</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">•</span>
+                  <span>Ornamental richness and sophisticated light/shadow use</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">•</span>
+                  <span>Professional signature: "By the hands of Konstantinos and Athanasios from Korytsa"</span>
+                </li>
+              </ul>
+
+              <h4 className="font-semibold text-gray-900 mb-3">Major Works at Voskopojë</h4>
+              <ul className="space-y-2 text-gray-600 font-light text-sm">
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">✓</span>
+                  <span><strong>Church of St. Athanasius</strong> (1721-24) - complete interior decoration</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">✓</span>
+                  <span><strong>St. Nicholas Church</strong> - outer narthex arcades (~1750)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">✓</span>
+                  <span>Notable "Towers of Babylon" lunette in St. Athanasius</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-2xl border-l-4 border-green-600">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Artistic Legacy</h3>
+            <p className="text-gray-700 font-light mb-4 leading-relaxed">
+              Together, David Selenica and the Zografi Brothers revolutionized post-Byzantine art, establishing the distinctive "Korçë School" of painting
+              recognized throughout Orthodox Christian communities. Their influence extends across Mount Athos, the Balkans, and beyond, with works still
+              inspiring restoration efforts and scholarly study today. At Voskopojë, their masterpieces represent an irreplaceable heritage of technical mastery,
+              emotional depth, and cultural significance that makes the village an essential pilgrimage site for art historians and heritage enthusiasts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Church Directory & Reference Table */}
+      <section className="py-32 lg:py-40 bg-white relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Complete Church <span className="font-light text-green-600">Directory</span>
+            </h2>
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+              Reference guide to all surviving and historic churches of Voskopojë
+            </p>
+          </div>
+
+          <div className="overflow-x-auto rounded-2xl shadow-lg">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-green-600 text-white">
+                  <th className="px-6 py-4 text-left font-semibold">Church Name</th>
+                  <th className="px-6 py-4 text-left font-semibold">Built</th>
+                  <th className="px-6 py-4 text-left font-semibold">Notable Features</th>
+                  <th className="px-6 py-4 text-left font-semibold">Status</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="bg-white hover:bg-gray-50">
+                  <td className="px-6 py-4 font-medium text-gray-900">St. Nicholas Church</td>
+                  <td className="px-6 py-4 text-gray-600">1721</td>
+                  <td className="px-6 py-4 text-gray-600">Three-aisled basilica; David Selenica frescoes; open arcade narthex</td>
+                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="px-6 py-4 font-medium text-gray-900">Virgin Mary Cathedral</td>
+                  <td className="px-6 py-4 text-gray-600">~1699</td>
+                  <td className="px-6 py-4 text-gray-600">Largest surviving church; 1,000+ capacity; panoramic hilltop location</td>
+                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                </tr>
+                <tr className="bg-white hover:bg-gray-50">
+                  <td className="px-6 py-4 font-medium text-gray-900">Church of St. Michael</td>
+                  <td className="px-6 py-4 text-gray-600">1722</td>
+                  <td className="px-6 py-4 text-gray-600">33m length; pastoral meadow setting; Archangel Michael depictions</td>
+                  <td className="px-6 py-4"><span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold">Restoration 2024</span></td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="px-6 py-4 font-medium text-gray-900">St. Athanasius Church</td>
+                  <td className="px-6 py-4 text-gray-600">1721-24</td>
+                  <td className="px-6 py-4 text-gray-600">Zografi Brothers frescoes; Baroque style; "Towers of Babylon" lunette</td>
+                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                </tr>
+                <tr className="bg-white hover:bg-gray-50">
+                  <td className="px-6 py-4 font-medium text-gray-900">St. John Baptist Monastery</td>
+                  <td className="px-6 py-4 text-gray-600">1632</td>
+                  <td className="px-6 py-4 text-gray-600">Oldest church; forested hilltop; cross-shaped Byzantine design; 17th-century frescoes</td>
+                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="px-6 py-4 font-medium text-gray-900">Church of St. Elijah</td>
+                  <td className="px-6 py-4 text-gray-600">Unknown (18th c.)</td>
+                  <td className="px-6 py-4 text-gray-600">West hilltop location; panoramic views; cemetery church</td>
+                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                </tr>
+                <tr className="bg-white hover:bg-gray-50">
+                  <td className="px-6 py-4 font-medium text-gray-900">St. Archangels Michael & Gabriel</td>
+                  <td className="px-6 py-4 text-gray-600">Unknown (18th c.)</td>
+                  <td className="px-6 py-4 text-gray-600">Twin dedication; village edge location</td>
+                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="px-6 py-4 font-medium text-gray-900">St. George (Shipcka)</td>
+                  <td className="px-6 py-4 text-gray-600">Unknown (18th c.)</td>
+                  <td className="px-6 py-4 text-gray-600">Europa Nostra Award recipient (2011); notable restoration</td>
+                  <td className="px-6 py-4"><span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Restored</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-green-50 p-6 rounded-xl">
+              <h4 className="text-lg font-bold text-green-900 mb-3">Golden Age Peak</h4>
+              <p className="text-gray-700 font-light text-sm mb-2">
+                <strong>24 churches</strong> in the 18th century (1700-1769)
+              </p>
+              <p className="text-gray-600 text-xs">A testament to the city's prosperity and religious devotion during Voskopojë's peak population of 35,000-70,000</p>
+            </div>
+            <div className="bg-amber-50 p-6 rounded-xl">
+              <h4 className="text-lg font-bold text-amber-900 mb-3">Survivors Today</h4>
+              <p className="text-gray-700 font-light text-sm mb-2">
+                <strong>7+ churches</strong> still stand in modern Voskopojë
+              </p>
+              <p className="text-gray-600 text-xs">These survivors represent extraordinary preservation of post-Byzantine ecclesiastical art and architecture</p>
+            </div>
+            <div className="bg-red-50 p-6 rounded-xl">
+              <h4 className="text-lg font-bold text-red-900 mb-3">Lost to History</h4>
+              <p className="text-gray-700 font-light text-sm mb-2">
+                <strong>17 churches</strong> destroyed or disappeared
+              </p>
+              <p className="text-gray-600 text-xs">Casualties of attacks (1769-1788), time, weathering, and neglect over centuries</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Village Center & Nature */}
       <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
