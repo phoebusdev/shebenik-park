@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Lora, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
@@ -7,15 +7,18 @@ import Analytics from "@/components/analytics";
 import { siteConfig } from "@/config/site";
 import { createOGMetadata, createTwitterMetadata, createGeoMetadata } from "@/lib/metadata";
 
-const montserrat = Montserrat({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-montserrat",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
-const inter = Inter({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-lora",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const viewport = {
@@ -143,7 +146,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${montserrat.variable} ${inter.variable} scroll-smooth`}>
+    <html lang="en" className={`${playfair.variable} ${lora.variable} scroll-smooth`}>
       <head>
         <link rel="preconnect" href="https://upload.wikimedia.org" />
         <link rel="dns-prefetch" href="https://upload.wikimedia.org" />
@@ -155,7 +158,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content={siteConfig.pwa.shortName} />
       </head>
-      <body className={`${inter.variable} antialiased font-sans`}>
+      <body className={`${lora.variable} antialiased font-sans`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

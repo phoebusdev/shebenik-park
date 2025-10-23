@@ -33,7 +33,7 @@ export const siteConfig: SiteConfig = {
     themeColor: "#a45a3c",         // Browser theme color (should match primaryColor)
     // Icon name from lucide-react (https://lucide.dev)
     // Examples: Mountain, Landmark, Church, Castle, TreePine, Waves
-    logoIcon: "Mountain",
+    logoIcon: "Church",
   },
 
   // ============================================================================

@@ -65,19 +65,19 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-montserrat);
+  --font-sans: var(--font-lora);
+  --font-display: var(--font-playfair);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-lora), serif;
 }
 
-/* Montserrat for all headings */
+/* Playfair Display for all headings - classical serif for Byzantine heritage */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-playfair), serif;
 }
 
 /* Premium visual enhancements */
