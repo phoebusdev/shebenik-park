@@ -10,14 +10,14 @@ import { Menu, X, Mountain } from "lucide-react"
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Wildlife", href: "/wildlife" },
+  { name: "Attractions", href: "/attractions" },
   { name: "Activities", href: "/activities" },
   { name: "Visit", href: "/visit" },
   { name: "Stay", href: "/accommodation" },
   { name: "Gallery", href: "/gallery" },
   { name: "Reviews", href: "/testimonials" },
   { name: "FAQ", href: "/faq" },
-  { name: "Park Info", href: "/contact" },
+  { name: "Contact", href: "/contact" },
 ]
 
 export default function Navigation() {
@@ -32,8 +32,8 @@ export default function Navigation() {
           <Link href="/" className="flex items-center space-x-3 group">
             <Mountain className="h-9 w-9 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
             <div className="flex flex-col">
-              <span className="font-extralight text-2xl text-gray-900 tracking-tight leading-tight">Shebenik</span>
-              <span className="text-xs text-green-600 uppercase tracking-wider -mt-1">National Park</span>
+              <span className="font-extralight text-2xl text-gray-900 tracking-tight leading-tight">Voskopojë</span>
+              <span className="text-xs text-green-600 uppercase tracking-wider -mt-1">Byzantine Heritage</span>
             </div>
           </Link>
 

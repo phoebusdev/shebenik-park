@@ -11,16 +11,16 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-3 mb-6 group">
               <Mountain className="h-9 w-9 text-white group-hover:text-green-100 transition-colors duration-300" />
               <div className="flex flex-col">
-                <span className="font-extralight text-2xl text-white tracking-tight leading-tight">Shebenik</span>
-                <span className="text-xs text-green-100 uppercase tracking-wider -mt-1">National Park</span>
+                <span className="font-extralight text-2xl text-white tracking-tight leading-tight">Voskopojë</span>
+                <span className="text-xs text-green-100 uppercase tracking-wider -mt-1">Byzantine Heritage</span>
               </div>
             </Link>
             <p className="text-green-50 mb-6 leading-relaxed">
-              Discover the pristine wilderness of Albania's second-largest national park.
-              Home to glacial lakes, ancient forests, and rare wildlife including the endangered Balkan lynx.
+              Discover the legendary 18th-century city of Moscopole, now a stunning mountain village.
+              Home to priceless Byzantine frescoes and pristine alpine nature.
             </p>
             <p className="text-sm text-green-100/80">
-              UNESCO World Heritage Site • Established 2008 • 345 km²
+              World Monuments Fund Listed • 1,160m Altitude • UNESCO Candidate
             </p>
           </div>
 
@@ -34,8 +34,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/wildlife" className="text-green-50 hover:text-white transition-colors duration-300">
-                  Wildlife
+                <Link href="/attractions" className="text-green-50 hover:text-white transition-colors duration-300">
+                  Attractions
                 </Link>
               </li>
               <li>

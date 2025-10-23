@@ -4,8 +4,8 @@ import { Home, MapPin, Camera, TreePine, ChevronRight } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Page Not Found - Shebenik National Park",
-  description: "The page you're looking for doesn't exist. Explore Shebenik National Park through our main navigation or search for park information.",
+  title: "Page Not Found - Voskopojë Tourism",
+  description: "The page you're looking for doesn't exist. Explore Voskopojë through our main navigation or search for tourism information.",
   robots: "noindex, follow",
 }
 
@@ -22,10 +22,10 @@ export default function NotFound() {
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Lost in the Wilderness?
+            Lost in the Mountains?
           </h1>
           <p className="text-xl md:text-2xl text-green-100 max-w-2xl mx-auto mb-8">
-            The page you're looking for doesn't exist, but the beauty of Shebenik National Park is just a click away.
+            The page you're looking for doesn't exist, but the treasures of Voskopojë are just a click away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-white text-green-700 hover:bg-green-50">
@@ -49,10 +49,10 @@ export default function NotFound() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Explore Shebenik National Park
+              Explore Voskopojë
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don't let this detour stop your adventure. Discover what makes our park special.
+              Don't let this detour stop your journey. Discover the Byzantine treasures and mountain beauty that make Voskopojë special.
             </p>
           </div>
 
@@ -73,18 +73,18 @@ export default function NotFound() {
               </div>
             </Link>
 
-            <Link 
-              href="/wildlife" 
+            <Link
+              href="/attractions"
               className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
-                  <span className="text-2xl">🐾</span>
+                  <span className="text-2xl">⛪</span>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Wildlife</h3>
-                <p className="text-sm text-gray-600 mb-3">Discover the endangered Balkan lynx and more</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Attractions</h3>
+                <p className="text-sm text-gray-600 mb-3">Explore Byzantine churches and historic monasteries</p>
                 <div className="flex items-center justify-center text-green-600 text-sm font-medium">
-                  Explore Wildlife <ChevronRight className="ml-1 h-4 w-4" />
+                  View Attractions <ChevronRight className="ml-1 h-4 w-4" />
                 </div>
               </div>
             </Link>
