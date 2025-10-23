@@ -6,19 +6,9 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Mountain } from "lucide-react"
+import { siteConfig } from "@/config/site"
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Attractions", href: "/attractions" },
-  { name: "Activities", href: "/activities" },
-  { name: "Visit", href: "/visit" },
-  { name: "Stay", href: "/accommodation" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Reviews", href: "/testimonials" },
-  { name: "FAQ", href: "/faq" },
-  { name: "Contact", href: "/contact" },
-]
+const navigation = siteConfig.navigation
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -32,8 +22,8 @@ export default function Navigation() {
           <Link href="/" className="flex items-center space-x-3 group">
             <Mountain className="h-9 w-9 text-primary group-hover:text-primary-dark transition-colors duration-300" />
             <div className="flex flex-col">
-              <span className="font-extralight text-2xl text-foreground tracking-tight leading-tight">Voskopojë</span>
-              <span className="text-xs text-primary uppercase tracking-wider -mt-1">Byzantine Heritage</span>
+              <span className="font-extralight text-2xl text-foreground tracking-tight leading-tight">{siteConfig.name}</span>
+              <span className="text-xs text-primary uppercase tracking-wider -mt-1">{siteConfig.tagline}</span>
             </div>
           </Link>
 

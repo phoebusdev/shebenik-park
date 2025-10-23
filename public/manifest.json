@@ -1,16 +1,16 @@
 {
-  "name": "Shebenik National Park - Albania Tourism",
-  "short_name": "Shebenik Park",
-  "description": "Discover Albania's pristine wilderness: glacial lakes, ancient forests, and the endangered Balkan lynx at Shebenik National Park.",
+  "name": "Voskopojë - Byzantine Heritage Site",
+  "short_name": "Voskopojë",
+  "description": "Discover Voskopojë, the 'Jerusalem of the Aromanians.' Explore stunning 18th-century Byzantine churches with masterpiece frescoes.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#059669",
+  "theme_color": "#a45a3c",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en-US",
   "dir": "ltr",
-  "categories": ["travel", "tourism", "nature", "outdoor"],
+  "categories": ["travel", "tourism", "culture", "heritage"],
   "shortcuts": [
     {
       "name": "Plan Your Visit",
@@ -28,7 +28,7 @@
     {
       "name": "Photo Gallery",
       "short_name": "Gallery",
-      "description": "Stunning photography of park landscapes and wildlife",
+      "description": "Stunning photography of Byzantine churches and mountain landscapes",
       "url": "/gallery",
       "icons": [
         {
@@ -39,10 +39,10 @@
       ]
     },
     {
-      "name": "Wildlife Guide",
-      "short_name": "Wildlife",
-      "description": "Discover park wildlife including the endangered Balkan lynx",
-      "url": "/wildlife",
+      "name": "Attractions",
+      "short_name": "Churches",
+      "description": "Explore magnificent Byzantine churches and frescoes",
+      "url": "/attractions",
       "icons": [
         {
           "src": "/android-chrome-192x192.png",
@@ -87,14 +87,14 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Shebenik National Park homepage featuring panoramic mountain views"
+      "label": "Voskopojë tourism website featuring Byzantine heritage and mountain views"
     },
     {
       "src": "/screenshot-mobile.png",
       "sizes": "375x812",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Mobile view of park gallery with glacial lakes and forest photos"
+      "label": "Mobile view of Voskopojë with church galleries and historical information"
     }
   ]
 }

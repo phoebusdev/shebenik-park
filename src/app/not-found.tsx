@@ -14,10 +14,10 @@ export default function NotFound() {
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Hero Section */}
       <section className="relative py-24 bg-gradient-to-r from-green-600 to-emerald-700">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg')"
+            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -65,8 +65,8 @@ export default function NotFound() {
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                   <TreePine className="h-8 w-8 text-green-600 mx-auto" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">About the Park</h3>
-                <p className="text-sm text-gray-600 mb-3">Learn about our 345 km² of protected wilderness</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">About Voskopojë</h3>
+                <p className="text-sm text-gray-600 mb-3">Learn about the legendary 18th-century city of Moscopole</p>
                 <div className="flex items-center justify-center text-green-600 text-sm font-medium">
                   Learn More <ChevronRight className="ml-1 h-4 w-4" />
                 </div>

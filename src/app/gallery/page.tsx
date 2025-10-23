@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg",
         width: 1200,
         height: 630,
         alt: "Voskopojë mountain village landscape",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Photo Gallery - Voskopojë Byzantine Churches",
     description: "Authentic photography of Voskopojë's Byzantine heritage, churches, and cultural landscape.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"]
+    images: ["https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"]
   },
   alternates: {
     canonical: "https://voskopoje-tourism.vercel.app/gallery"

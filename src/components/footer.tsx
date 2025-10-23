@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Mountain, MapPin } from "lucide-react"
+import { siteConfig } from "@/config/site"
 
 export default function Footer() {
   return (
@@ -11,16 +12,15 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-3 mb-6 group">
               <Mountain className="h-9 w-9 text-white group-hover:text-accent-gold transition-colors duration-300" />
               <div className="flex flex-col">
-                <span className="font-extralight text-2xl text-white tracking-tight leading-tight">Voskopojë</span>
-                <span className="text-xs text-accent-gold uppercase tracking-wider -mt-1">Byzantine Heritage</span>
+                <span className="font-extralight text-2xl text-white tracking-tight leading-tight">{siteConfig.name}</span>
+                <span className="text-xs text-accent-gold uppercase tracking-wider -mt-1">{siteConfig.tagline}</span>
               </div>
             </Link>
             <p className="text-background-alt mb-6 leading-relaxed">
-              Discover the legendary 18th-century city of Moscopole, now a stunning mountain village.
-              Home to priceless Byzantine frescoes and pristine alpine nature.
+              {siteConfig.longDescription}
             </p>
             <p className="text-sm text-background-alt/80">
-              World Monuments Fund Listed • 1,160m Altitude • UNESCO Candidate
+              {siteConfig.stats.highlights.join(' • ')}
             </p>
           </div>
 
@@ -51,26 +51,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Park Info */}
+          {/* Site Info */}
           <div>
-            <h3 className="font-light text-lg mb-6 text-white tracking-tight">Park Information</h3>
+            <h3 className="font-light text-lg mb-6 text-white tracking-tight">Information</h3>
             <ul className="space-y-4 text-background-alt">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-accent-gold" />
                 <span className="text-sm leading-relaxed">
-                  Elbasan County<br />
-                  Eastern Albania<br />
-                  Near North Macedonia border
+                  {siteConfig.location.detailedLocation}
                 </span>
               </li>
               <li className="text-sm">
-                <span className="font-medium text-white">Size:</span> 345 km²
+                <span className="font-medium text-white">Size:</span> {siteConfig.stats.size}
               </li>
               <li className="text-sm">
-                <span className="font-medium text-white">Elevation:</span> 300-2,253m
+                <span className="font-medium text-white">Elevation:</span> {siteConfig.stats.elevation}
               </li>
               <li className="text-sm">
-                <span className="font-medium text-white">Status:</span> IUCN Category II
+                <span className="font-medium text-white">Established:</span> {siteConfig.stats.established}
               </li>
             </ul>
           </div>
@@ -78,10 +76,10 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-green-50/80 text-sm">
-            © 2024 Shebenik National Park Tourism. All rights reserved.
+            © {siteConfig.copyright.year} {siteConfig.copyright.holder}. {siteConfig.copyright.statement}
           </p>
           <p className="text-green-100 text-sm mt-2 md:mt-0 font-light">
-            Protecting Albania's Natural Heritage
+            {siteConfig.copyright.tagline}
           </p>
         </div>
       </div>
