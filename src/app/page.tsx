@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white py-32 lg:py-40">
         <div className="absolute inset-0">
           <Image
             src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Albania_location_map.svg"
@@ -20,11 +20,11 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight text-gray-900 mb-8 tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-extralight text-gray-900 mb-8 tracking-tight">
             Voskopojë
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 font-light">A Byzantine Treasure</span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
             Discover the "Jerusalem of the Aromanians"—a legendary 18th-century city now a stunning mountain village,
             home to priceless Byzantine frescoes and pristine alpine nature.
           </p>
