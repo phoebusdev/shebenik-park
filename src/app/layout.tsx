@@ -71,8 +71,8 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "AL",
     "geo.placename": "Voskopojë, Korçë",
-    "geo.position": "40.6964;20.7936",
-    "ICBM": "40.6964, 20.7936",
+    "geo.position": "40.633;20.589",
+    "ICBM": "40.633, 20.589",
     "DC.title": "Voskopojë - A Byzantine Treasure in the Albanian Mountains",
     "DC.creator": "Albania National Tourism Agency",
     "DC.subject": "Byzantine Art, Mountain Village, Aromanian Culture, Tourism, Albania",

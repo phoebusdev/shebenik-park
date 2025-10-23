@@ -310,20 +310,20 @@ export default function VisitPage() {
 
           <div className="grid-responsive-3 mb-12">
             {/* Cash & Money */}
-            <div className="bg-red-50 card-padding-sm rounded-xl border-2 border-red-200">
+            <div className="bg-blue-50 card-padding-sm rounded-xl border-2 border-blue-200">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <Euro className="h-6 w-6 text-red-600 mr-2" />
-                Cash (CRITICAL!)
+                <Euro className="h-6 w-6 text-blue-600 mr-2" />
+                Banking & Currency
               </h3>
-              <div className="bg-red-100 p-4 rounded-lg mb-4">
-                <p className="text-red-800 font-semibold text-sm mb-2">⚠️ NO ATMs in Voskopojë</p>
-                <p className="text-red-700 text-sm">Withdraw cash in Korçë before arriving!</p>
+              <div className="bg-blue-100 p-4 rounded-lg mb-4">
+                <p className="text-blue-800 font-semibold text-sm mb-2">✓ ATM Available</p>
+                <p className="text-blue-700 text-sm">ABI Bank ATM in village center. Carry cash as backup for smaller expenses.</p>
               </div>
               <ul className="space-y-2 text-gray-700 text-sm">
-                <li>• Albanian Lek or Euros accepted</li>
-                <li>• Small denominations helpful</li>
-                <li>• For accommodation, meals, church tips</li>
-                <li>• Card payment not widely available</li>
+                <li>• Currency: Albanian Lek (ALL)</li>
+                <li>• ABI Bank ATM in village center</li>
+                <li>• Visa & Mastercard at major hotels</li>
+                <li>• Small denominations helpful for tips</li>
               </ul>
             </div>
 

@@ -70,8 +70,9 @@ export default function AboutPage() {
                   </p>
                   <p className="text-lg text-gray-600 leading-relaxed font-light">
                     The city was home to the "New Academy" (Hellenic Academy), a renowned center of learning that attracted scholars from across the Orthodox
-                    world. In 1720, it established the first printing press in the Balkans outside of Istanbul, producing religious texts, grammar books,
-                    and scholarly works.
+                    world. In 1720, monk Georgios Konstantinidis established the first printing press in the Ottoman Balkans outside Constantinople—and only
+                    the second printing press in all of Ottoman Europe. Between 1731 and 1769, the press produced approximately 21 works including religious texts,
+                    grammar books, and scholarly works in Greek before being destroyed during the 1769 attack on the city.
                   </p>
                   <p className="text-lg text-gray-600 leading-relaxed font-light">
                     This "Jerusalem of the Aromanians" was also a major religious center. In its golden age, the city was said to have over 20 churches,
@@ -111,7 +112,7 @@ export default function AboutPage() {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-600 leading-relaxed mb-6 font-light">
-                    Today, Voskopojë is a small, welcoming village with a few hundred permanent residents. Tourism has become its lifeblood, as visitors—both
+                    Today, Voskopojë is a small, welcoming village with approximately 1,000 permanent residents, based on 2011 census data showing 1,058 inhabitants. Tourism has become its lifeblood, as visitors—both
                     local and international—come to explore its historic legacy. The primary economy is based on guesthouses, local restaurants serving
                     traditional cuisine, and guiding services.
                   </p>
@@ -222,11 +223,13 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-light text-white mb-6 tracking-tight">UNESCO Candidate</h3>
+              <h3 className="text-3xl font-light text-white mb-6 tracking-tight">International Recognition</h3>
               <p className="text-lg text-green-50 leading-relaxed font-light">
-                The village is also a candidate for UNESCO World Heritage status, a testament to its outstanding universal value.
-                It remains a powerful symbol of Aromanian culture and Orthodox heritage in the Balkans. The community continues efforts
-                to protect the fragile frescoes and structures, ensuring that the story of Voskopojë can be told to future generations.
+                Although not currently a UNESCO World Heritage Site, Voskopojë's churches hold significant international heritage designations.
+                In 2002, the churches were added to the World Monuments Fund's Watch List of 100 Most Endangered Sites globally. In 2018,
+                they were recognized as two of Europe's seven most endangered heritage sites by Europa Nostra. It remains a powerful symbol of
+                Aromanian culture and Orthodox heritage in the Balkans. The community continues efforts to protect the fragile frescoes and
+                structures, ensuring that the story of Voskopojë can be told to future generations.
               </p>
             </div>
           </div>
