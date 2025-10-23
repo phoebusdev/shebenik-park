@@ -30,10 +30,10 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <Mountain className="h-9 w-9 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
+            <Mountain className="h-9 w-9 text-primary group-hover:text-primary-dark transition-colors duration-300" />
             <div className="flex flex-col">
-              <span className="font-extralight text-2xl text-gray-900 tracking-tight leading-tight">Voskopojë</span>
-              <span className="text-xs text-green-600 uppercase tracking-wider -mt-1">Byzantine Heritage</span>
+              <span className="font-extralight text-2xl text-foreground tracking-tight leading-tight">Voskopojë</span>
+              <span className="text-xs text-primary uppercase tracking-wider -mt-1">Byzantine Heritage</span>
             </div>
           </Link>
 
@@ -47,8 +47,8 @@ export default function Navigation() {
                   className={cn(
                     "px-4 py-2 rounded-lg text-sm transition-all duration-300 tracking-wide",
                     pathname === item.href
-                      ? "bg-green-50 text-green-700 font-normal"
-                      : "text-gray-600 hover:text-green-600 hover:bg-green-50/50"
+                      ? "bg-accent text-primary font-normal"
+                      : "text-foreground-muted hover:text-primary hover:bg-accent/50"
                   )}
                 >
                   {item.name}
@@ -64,7 +64,7 @@ export default function Navigation() {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded="false"
-              className="hover:bg-green-50"
+              className="hover:bg-accent"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
@@ -88,8 +88,8 @@ export default function Navigation() {
                 className={cn(
                   "block px-4 py-3 rounded-lg text-base transition-all duration-300",
                   pathname === item.href
-                    ? "bg-green-50 text-green-700 font-normal"
-                    : "text-gray-600 hover:text-green-600 hover:bg-green-50/50"
+                    ? "bg-accent text-primary font-normal"
+                    : "text-foreground-muted hover:text-primary hover:bg-accent/50"
                 )}
                 onClick={() => setIsOpen(false)}
               >

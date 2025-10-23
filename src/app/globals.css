@@ -1,34 +1,72 @@
 @import "tailwindcss";
 
 :root {
+  /* Light backgrounds */
   --background: #ffffff;
-  --foreground: #0f172a;
-  --primary: #16a34a;
+  --background-alt: #f5ede4;
+  --background-subtle: #fffaf5;
+
+  /* Text colors - Warm charcoal */
+  --foreground: #3e3631;
+  --foreground-muted: #5c5550;
+  --foreground-light: #8b8680;
+
+  /* Primary color - Warm Terracotta */
+  --primary: #a45a3c;
+  --primary-light: #b87345;
+  --primary-dark: #8b4524;
   --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  --secondary-foreground: #0f172a;
-  --accent: #dcfce7;
-  --accent-foreground: #15803d;
-  --destructive: #ef4444;
+
+  /* Secondary - Sage Green (heritage accent) */
+  --secondary: #7a8d6e;
+  --secondary-light: #8b9d7e;
+  --secondary-foreground: #ffffff;
+
+  /* Accent colors */
+  --accent: #f0dfd8;
+  --accent-foreground: #a45a3c;
+  --accent-gold: #c4a574;
+  --accent-brown: #8b7355;
+
+  /* Functional colors */
+  --destructive: #c85a3b;
   --destructive-foreground: #ffffff;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #16a34a;
+  --border: #ddd3c6;
+  --border-light: #ebe3d8;
+  --input: #f5ede4;
+  --ring: #a45a3c;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-background-subtle: var(--background-subtle);
+
   --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-light: var(--foreground-light);
+
   --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
   --color-primary-foreground: var(--primary-foreground);
+
   --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
   --color-secondary-foreground: var(--secondary-foreground);
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-brown: var(--accent-brown);
+
   --color-border: var(--border);
+  --color-border-light: var(--border-light);
   --color-input: var(--input);
   --color-ring: var(--ring);
+
   --font-sans: var(--font-inter);
+  --font-display: var(--font-montserrat);
 }
 
 body {
@@ -37,16 +75,21 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
+/* Montserrat for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
 /* Premium visual enhancements */
 @layer base {
   /* Refined typography for premium feel */
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.02em;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   h1 {
-    font-weight: 200;
+    font-weight: 400;
   }
 
   /* Set default light font weight for all text */
@@ -90,30 +133,30 @@ body {
       0 16px 32px rgba(0, 0, 0, 0.10);
   }
 
-  /* Card patterns with premium updates */
+  /* Card patterns with warm tones */
   .card-base {
-    @apply bg-white/95 backdrop-blur-sm rounded-2xl border border-gray-100/50;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.04);
+    @apply bg-background-subtle backdrop-blur-sm rounded-2xl border border-border-light;
+    box-shadow: 0 1px 3px rgba(62, 54, 49, 0.08), 0 4px 12px rgba(62, 54, 49, 0.04);
   }
 
   .card-interactive {
-    @apply bg-white/95 backdrop-blur-sm rounded-2xl border border-gray-100/50 hover:-translate-y-0.5 transition-all duration-500 ease-out;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.04);
+    @apply bg-background-subtle backdrop-blur-sm rounded-2xl border border-border-light hover:-translate-y-0.5 transition-all duration-500 ease-out;
+    box-shadow: 0 1px 3px rgba(62, 54, 49, 0.08), 0 4px 12px rgba(62, 54, 49, 0.04);
   }
 
   .card-interactive:hover {
-    @apply border-gray-200/50;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 12px 24px rgba(0, 0, 0, 0.08);
+    @apply border-border;
+    box-shadow: 0 4px 8px rgba(62, 54, 49, 0.08), 0 12px 24px rgba(62, 54, 49, 0.10);
   }
 
   .card-feature {
-    @apply bg-white/98 backdrop-blur-md rounded-3xl border border-gray-100/30 hover:-translate-y-1 transition-all duration-500 ease-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 8px 24px rgba(0, 0, 0, 0.06);
+    @apply bg-background-alt backdrop-blur-md rounded-3xl border border-border-light hover:-translate-y-1 transition-all duration-500 ease-out;
+    box-shadow: 0 2px 4px rgba(62, 54, 49, 0.08), 0 8px 24px rgba(62, 54, 49, 0.08);
   }
 
   .card-feature:hover {
-    @apply border-gray-200/40;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06), 0 20px 40px rgba(0, 0, 0, 0.10);
+    @apply border-border;
+    box-shadow: 0 8px 16px rgba(62, 54, 49, 0.10), 0 20px 40px rgba(62, 54, 49, 0.12);
   }
 
   /* Glassmorphism effects */
@@ -153,9 +196,9 @@ body {
     @apply w-20 h-20 p-4;
   }
 
-  /* Premium gradients with noise texture */
+  /* Premium gradients with earth tones and noise texture */
   .gradient-primary {
-    @apply bg-gradient-to-br from-green-600 to-green-700 relative;
+    @apply bg-gradient-to-br from-primary to-primary-dark relative;
     position: relative;
   }
 
@@ -170,7 +213,7 @@ body {
   }
 
   .gradient-secondary {
-    @apply bg-gradient-to-br from-emerald-600 to-teal-700 relative;
+    @apply bg-gradient-to-br from-primary-light to-primary relative;
     position: relative;
   }
 
@@ -185,7 +228,7 @@ body {
   }
 
   .gradient-accent {
-    @apply bg-gradient-to-br from-green-600 to-emerald-700 relative;
+    @apply bg-gradient-to-br from-accent-gold to-accent-brown relative;
     position: relative;
   }
 
@@ -199,14 +242,14 @@ body {
     pointer-events: none;
   }
 
-  /* Subtle mesh gradient overlay */
+  /* Subtle mesh gradient overlay with earth tones */
   .mesh-gradient {
     background-image:
-      radial-gradient(at 40% 20%, rgba(34, 197, 94, 0.1) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, rgba(16, 185, 129, 0.08) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, rgba(34, 197, 94, 0.06) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(5, 150, 105, 0.08) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 50%);
+      radial-gradient(at 40% 20%, rgba(164, 90, 60, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(184, 115, 69, 0.06) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(164, 90, 60, 0.05) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(122, 141, 110, 0.06) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(184, 115, 69, 0.07) 0px, transparent 50%);
   }
 
   /* Responsive grid patterns */

@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import Analytics from "@/components/analytics";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "700"],
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,7 +20,7 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover" as const,
-  themeColor: "#059669",
+  themeColor: "#a45a3c",
   colorScheme: "light" as const,
 }
 
@@ -86,7 +92,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`${montserrat.variable} ${inter.variable} scroll-smooth`}>
       <head>
         <link rel="preconnect" href="https://upload.wikimedia.org" />
         <link rel="dns-prefetch" href="https://upload.wikimedia.org" />

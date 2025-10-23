@@ -9,17 +9,17 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-6 group">
-              <Mountain className="h-9 w-9 text-white group-hover:text-green-100 transition-colors duration-300" />
+              <Mountain className="h-9 w-9 text-white group-hover:text-accent-gold transition-colors duration-300" />
               <div className="flex flex-col">
                 <span className="font-extralight text-2xl text-white tracking-tight leading-tight">Voskopojë</span>
-                <span className="text-xs text-green-100 uppercase tracking-wider -mt-1">Byzantine Heritage</span>
+                <span className="text-xs text-accent-gold uppercase tracking-wider -mt-1">Byzantine Heritage</span>
               </div>
             </Link>
-            <p className="text-green-50 mb-6 leading-relaxed">
+            <p className="text-background-alt mb-6 leading-relaxed">
               Discover the legendary 18th-century city of Moscopole, now a stunning mountain village.
               Home to priceless Byzantine frescoes and pristine alpine nature.
             </p>
-            <p className="text-sm text-green-100/80">
+            <p className="text-sm text-background-alt/80">
               World Monuments Fund Listed • 1,160m Altitude • UNESCO Candidate
             </p>
           </div>
@@ -29,22 +29,22 @@ export default function Footer() {
             <h3 className="font-light text-lg mb-6 text-white tracking-tight">Explore</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-green-50 hover:text-white transition-colors duration-300">
+                <Link href="/about" className="text-background-alt hover:text-accent-gold transition-colors duration-300">
                   About the Park
                 </Link>
               </li>
               <li>
-                <Link href="/attractions" className="text-green-50 hover:text-white transition-colors duration-300">
+                <Link href="/attractions" className="text-background-alt hover:text-accent-gold transition-colors duration-300">
                   Attractions
                 </Link>
               </li>
               <li>
-                <Link href="/activities" className="text-green-50 hover:text-white transition-colors duration-300">
+                <Link href="/activities" className="text-background-alt hover:text-accent-gold transition-colors duration-300">
                   Activities
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="text-green-50 hover:text-white transition-colors duration-300">
+                <Link href="/gallery" className="text-background-alt hover:text-accent-gold transition-colors duration-300">
                   Photo Gallery
                 </Link>
               </li>
@@ -54,9 +54,9 @@ export default function Footer() {
           {/* Park Info */}
           <div>
             <h3 className="font-light text-lg mb-6 text-white tracking-tight">Park Information</h3>
-            <ul className="space-y-4 text-green-50">
+            <ul className="space-y-4 text-background-alt">
               <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-green-100" />
+                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-accent-gold" />
                 <span className="text-sm leading-relaxed">
                   Elbasan County<br />
                   Eastern Albania<br />
