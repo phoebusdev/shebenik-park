@@ -17,7 +17,7 @@ export default function AttractionsPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Albania_location_map.svg')"
+            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">

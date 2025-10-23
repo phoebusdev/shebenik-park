@@ -41,8 +41,8 @@ export default function GalleryPage() {
       <section className="relative py-32 lg:py-40 gradient-primary">
         <div className="absolute inset-0">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-            alt="Voskopojë village mountain landscape"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"
+            alt="Grammos Mountains panorama surrounding Voskopojë village"
             fill
             className="object-cover opacity-25"
             priority
@@ -127,8 +127,8 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
-                alt="St. Nicholas Church and surrounding village architecture in Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg"
+                alt="St. Nicholas Church exterior - main Byzantine church in Voskopojë built 1721"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -138,16 +138,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Church Architecture</h3>
-                  <p className="text-white/80 text-sm">Historic Byzantine structures</p>
+                  <h3 className="text-white font-semibold text-lg">St. Nicholas Church</h3>
+                  <p className="text-white/80 text-sm">Principal Byzantine church 1721</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
-                alt="Voskopojë village nestled in mountain landscape with surrounding heritage sites"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/17/Moscopole%2C_St._Michael%27s_Church.JPG"
+                alt="St. Michael's Church in Voskopojë - Byzantine heritage site"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -157,16 +157,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Village Panorama</h3>
-                  <p className="text-white/80 text-sm">Mountain village setting</p>
+                  <h3 className="text-white font-semibold text-lg">St. Michael's Church</h3>
+                  <p className="text-white/80 text-sm">Historic Byzantine structure</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-                alt="Alpine forests surrounding Voskopojë mountain village"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Voskopoje_St_Mary2.JPG"
+                alt="St. Mary's Church in Voskopojë with Byzantine architecture"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -176,16 +176,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Alpine Setting</h3>
-                  <p className="text-white/80 text-sm">Mountain forest backdrop</p>
+                  <h3 className="text-white font-semibold text-lg">St. Mary's Church</h3>
+                  <p className="text-white/80 text-sm">Religious heritage site</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
-                alt="Mountain peaks surrounding Voskopojë heritage village"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/88/Voskopoje_St_Athanasius.JPG"
+                alt="St. Athanasius Church with Byzantine frescoes and interior art"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -195,16 +195,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Views</h3>
-                  <p className="text-white/80 text-sm">Surrounding peaks and ridges</p>
+                  <h3 className="text-white font-semibold text-lg">St. Athanasius Church</h3>
+                  <p className="text-white/80 text-sm">Church with frescoes</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
-                alt="Village landscape and architectural heritage of Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mount_Grammos_Oros.jpg"
+                alt="Mount Grammos mountain peak overlooking Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -214,16 +214,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Heritage Landscape</h3>
-                  <p className="text-white/80 text-sm">Cultural village setting</p>
+                  <h3 className="text-white font-semibold text-lg">Mount Grammos</h3>
+                  <p className="text-white/80 text-sm">Mountain peak view</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
-                alt="Mountain terrain surrounding Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gramos_dragonlake.jpg"
+                alt="Alpine lake surrounded by Grammos Mountains near Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -233,8 +233,8 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Alpine Terrain</h3>
-                  <p className="text-white/80 text-sm">Mountain landscape vista</p>
+                  <h3 className="text-white font-semibold text-lg">Alpine Lake</h3>
+                  <p className="text-white/80 text-sm">Mountain scenery</p>
                 </div>
               </div>
             </div>
@@ -258,8 +258,8 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
-                alt="Byzantine church interiors with religious iconography and frescoes"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Voskopoja_fresco.jpg"
+                alt="Voskopojë church fresco detail showing religious iconography"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -269,16 +269,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Religious Icons</h3>
-                  <p className="text-white/80 text-sm">Medieval iconography detail</p>
+                  <h3 className="text-white font-semibold text-lg">Church Fresco</h3>
+                  <p className="text-white/80 text-sm">Medieval religious artwork</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
-                alt="Church fresco details by master painter David Selenica"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/88/Voskopoje_St_Athanasius.JPG"
+                alt="St. Athanasius Church interior with Byzantine frescoes"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -288,7 +288,45 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Master Artist Work</h3>
+                  <h3 className="text-white font-semibold text-lg">Church Interior</h3>
+                  <p className="text-white/80 text-sm">Post-Byzantine artwork</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Voskopoje_St_Mary2.JPG"
+                alt="St. Mary's Church with preserved medieval religious frescoes"
+                width={600}
+                height={320}
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4">
+                  <h3 className="text-white font-semibold text-lg">St. Mary Frescoes</h3>
+                  <p className="text-white/80 text-sm">Sacred religious art</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/0/03/Voskopoje_St_Nicholas.JPG"
+                alt="St. Nicholas Church with detailed fresco paintings and iconography"
+                width={600}
+                height={320}
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4">
+                  <h3 className="text-white font-semibold text-lg">Nicholas Church</h3>
                   <p className="text-white/80 text-sm">Selenica school frescoes</p>
                 </div>
               </div>
@@ -296,8 +334,8 @@ export default function GalleryPage() {
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
-                alt="Post-Byzantine fresco paintings in Voskopojë churches"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Grammos_and_the_melting_snow.jpg"
+                alt="Snow-capped Grammos Mountains surrounding Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -307,65 +345,8 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Religious Artwork</h3>
-                  <p className="text-white/80 text-sm">Byzantine painting tradition</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
-                alt="Church dome and religious art details in Voskopojë"
-                width={600}
-                height={320}
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Zografi Style</h3>
-                  <p className="text-white/80 text-sm">Baroque church paintings</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
-                alt="Religious iconography and sacred art in church interiors"
-                width={600}
-                height={320}
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Sacred Imagery</h3>
-                  <p className="text-white/80 text-sm">Church religious art</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-                alt="Interior religious frescoes and artistic heritage of Voskopojë churches"
-                width={600}
-                height={320}
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Artistic Heritage</h3>
-                  <p className="text-white/80 text-sm">Byzantine tradition</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Backdrop</h3>
+                  <p className="text-white/80 text-sm">Seasonal landscapes</p>
                 </div>
               </div>
             </div>
@@ -389,8 +370,8 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-                alt="Village homes and traditional Aramonian architecture in Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Voskopojë_-_Haus.jpg"
+                alt="Traditional Aramonian house in Voskopojë showing vernacular architecture"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -400,16 +381,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Village Architecture</h3>
-                  <p className="text-white/80 text-sm">Traditional Aramonian homes</p>
+                  <h3 className="text-white font-semibold text-lg">Village House</h3>
+                  <p className="text-white/80 text-sm">Traditional architecture</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
-                alt="Community spaces and traditional village life in Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Voskopojë_-_Gasse.jpg"
+                alt="Street scene in Voskopojë showing village lanes and traditional structures"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -419,16 +400,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Community Life</h3>
-                  <p className="text-white/80 text-sm">Living Aramonian culture</p>
+                  <h3 className="text-white font-semibold text-lg">Village Lane</h3>
+                  <p className="text-white/80 text-sm">Historic walkways</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
-                alt="Village lanes and traditional architecture of Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/03/Voskopoje_St_Nicholas.JPG"
+                alt="St. Nicholas Church in village center of Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -438,16 +419,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Village Streets</h3>
-                  <p className="text-white/80 text-sm">Historic pathways</p>
+                  <h3 className="text-white font-semibold text-lg">Village Center</h3>
+                  <p className="text-white/80 text-sm">St. Nicholas Church</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
-                alt="Guesthouses and accommodation in Voskopojë village"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ura_e_Voskopojes.JPG"
+                alt="Ottoman-era bridge (Ura e Voskopojes) - cultural monument"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -457,16 +438,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Local Hospitality</h3>
-                  <p className="text-white/80 text-sm">Tourism accommodations</p>
+                  <h3 className="text-white font-semibold text-lg">Historic Bridge</h3>
+                  <p className="text-white/80 text-sm">Ottoman monument</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
-                alt="Local cultural traditions and community heritage in Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg"
+                alt="St. Nicholas Church panoramic view in Voskopojë community"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -476,16 +457,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Cultural Heritage</h3>
-                  <p className="text-white/80 text-sm">Living traditions</p>
+                  <h3 className="text-white font-semibold text-lg">Community Hub</h3>
+                  <p className="text-white/80 text-sm">Aramonian village</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG"
-                alt="Panoramic view of Voskopojë village in mountain setting"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"
+                alt="Grammos Mountains panorama surrounding Voskopojë village"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -495,8 +476,8 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Village Overview</h3>
-                  <p className="text-white/80 text-sm">Aramonian community</p>
+                  <h3 className="text-white font-semibold text-lg">Mountain Setting</h3>
+                  <p className="text-white/80 text-sm">Alpine surroundings</p>
                 </div>
               </div>
             </div>
@@ -520,8 +501,8 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-                alt="Spring season in Voskopojë with mountain greenery and wildflowers"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gramos_dragonlake.jpg"
+                alt="Alpine lake in Grammos Mountains near Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -531,16 +512,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Spring Season</h3>
-                  <p className="text-white/80 text-sm">Alpine wildflowers bloom</p>
+                  <h3 className="text-white font-semibold text-lg">Alpine Lake</h3>
+                  <p className="text-white/80 text-sm">Mountain water features</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
-                alt="Summer landscape around Voskopojë with lush green forests"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mount_Grammos_Oros.jpg"
+                alt="Mount Grammos peak during different seasons near Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -550,16 +531,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Summer Green</h3>
-                  <p className="text-white/80 text-sm">Lush vegetation</p>
+                  <h3 className="text-white font-semibold text-lg">Mount Grammos</h3>
+                  <p className="text-white/80 text-sm">Summit views</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Mountains_from_Shebenik_National_Park.jpg"
-                alt="Autumn colors in mountain landscape surrounding Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Grammos_and_the_melting_snow.jpg"
+                alt="Grammos Mountains with seasonal snow coverage near Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -569,16 +550,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Autumn Colors</h3>
-                  <p className="text-white/80 text-sm">Mountain foliage</p>
+                  <h3 className="text-white font-semibold text-lg">Winter Peaks</h3>
+                  <p className="text-white/80 text-sm">Snow-covered mountains</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg"
-                alt="Winter season in Voskopojë with snow-covered mountains"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"
+                alt="Panoramic mountain landscape surrounding Voskopojë in all seasons"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -588,16 +569,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Winter Snow</h3>
-                  <p className="text-white/80 text-sm">Alpine peaks</p>
+                  <h3 className="text-white font-semibold text-lg">Seasonal Beauty</h3>
+                  <p className="text-white/80 text-sm">Year-round panoramas</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Parku_Kombëtar_Shebenik-Jabllanicë_02.jpg"
-                alt="Mountain terrain and natural landscape of Voskopojë region"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ura_e_Voskopojes.JPG"
+                alt="Historic Ottoman bridge with mountain backdrop near Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -607,16 +588,16 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Alpine Terrain</h3>
-                  <p className="text-white/80 text-sm">Mountain backdrop</p>
+                  <h3 className="text-white font-semibold text-lg">Heritage Bridge</h3>
+                  <p className="text-white/80 text-sm">Landscape landmark</p>
                 </div>
               </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qafa_e_Kokolit%2C_Parku_Kombëtar_Shebenik-Jabllanicë.jpg"
-                alt="Scenic mountain vistas and natural beauty surrounding Voskopojë"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg"
+                alt="St. Nicholas Church with mountain landscape backdrop in Voskopojë"
                 width={600}
                 height={320}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -626,8 +607,8 @@ export default function GalleryPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-white font-semibold text-lg">Mountain Vistas</h3>
-                  <p className="text-white/80 text-sm">Scenic panorama</p>
+                  <h3 className="text-white font-semibold text-lg">Sacred Site</h3>
+                  <p className="text-white/80 text-sm">Church & mountains</p>
                 </div>
               </div>
             </div>

@@ -10,8 +10,8 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white py-32 lg:py-40">
         <div className="absolute inset-0">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Albania_location_map.svg"
-            alt="Panoramic view of Voskopojë village in the Morava Mountains"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"
+            alt="Panoramic view of Grammos Mountains surrounding Voskopojë village"
             fill
             className="object-cover opacity-20"
             priority
