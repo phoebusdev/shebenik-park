@@ -19,7 +19,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
           <li>
             <Link
               href="/"
-              className="flex items-center text-gray-500 hover:text-green-600 transition-colors"
+              className="flex items-center text-gray-500 hover:text-primary-600 transition-colors"
               title={`${siteConfig.name} Home`}
             >
               <Home className="h-4 w-4" />
@@ -33,7 +33,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
               {item.href && index < items.length - 1 ? (
                 <Link
                   href={item.href}
-                  className="text-gray-500 hover:text-green-600 transition-colors"
+                  className="text-gray-500 hover:text-primary-600 transition-colors"
                   title={`${item.label} - ${siteConfig.name}`}
                 >
                   {item.label}

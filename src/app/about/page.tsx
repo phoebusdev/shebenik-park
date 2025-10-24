@@ -24,7 +24,7 @@ export default function AboutPage() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-8 tracking-tight">
             About <span className="font-light">Voskopojë</span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-primary-50 max-w-3xl mx-auto font-light leading-relaxed">
             A village where history is not just remembered—it is lived, and the spirit of Moscopole endures.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
               {/* Introduction */}
               <div>
                 <h2 className="text-4xl lg:text-5xl font-extralight text-gray-900 mb-8 tracking-tight">
-                  The Legend of <span className="font-light text-green-600">Moscopole</span>
+                  The Legend of <span className="font-light text-primary-600">Moscopole</span>
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-600 leading-relaxed mb-6 font-light">
@@ -60,7 +60,7 @@ export default function AboutPage() {
               {/* Golden Age */}
               <div>
                 <h2 className="text-4xl lg:text-5xl font-extralight text-gray-900 mb-8 tracking-tight">
-                  The Golden Age: An <span className="font-light text-green-600">18th-Century Metropolis</span>
+                  The Golden Age: An <span className="font-light text-primary-600">18th-Century Metropolis</span>
                 </h2>
                 <div className="space-y-8">
                   <p className="text-lg text-gray-600 leading-relaxed font-light">
@@ -84,10 +84,10 @@ export default function AboutPage() {
               {/* History's Ebb and Flow */}
               <div>
                 <h2 className="text-4xl lg:text-5xl font-extralight text-gray-900 mb-8 tracking-tight">
-                  History's Ebb and <span className="font-light text-green-600">Flow</span>
+                  History's Ebb and <span className="font-light text-primary-600">Flow</span>
                 </h2>
                 <div className="space-y-8">
-                  <div className="border-l-4 border-green-500 pl-8">
+                  <div className="border-l-4 border-primary-500 pl-8">
                     <p className="text-lg text-gray-600 leading-relaxed font-light">
                       The city's meteoric rise was met with a tragic fall. A series of attacks, beginning in 1769 and culminating in 1788 by the troops
                       of Ali Pasha, led to the city's plunder and destruction. Its economic and cultural institutions were shattered, and its residents
@@ -95,7 +95,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-green-500 pl-8">
+                  <div className="border-l-4 border-primary-500 pl-8">
                     <p className="text-lg text-gray-600 leading-relaxed font-light">
                       Voskopojë never regained its former glory and shrank from a metropolis to a small mountain village. It endured further hardship
                       during the 20th century, including damage in both World Wars. Yet, through this turmoil, a core of its cultural and religious
@@ -108,7 +108,7 @@ export default function AboutPage() {
               {/* Modern Voskopojë */}
               <div>
                 <h2 className="text-4xl lg:text-5xl font-extralight text-gray-900 mb-8 tracking-tight">
-                  Modern Voskopojë: A <span className="font-light text-green-600">Resilient Spirit</span>
+                  Modern Voskopojë: A <span className="font-light text-primary-600">Resilient Spirit</span>
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-600 leading-relaxed mb-6 font-light">
@@ -131,8 +131,8 @@ export default function AboutPage() {
                 <h3 className="text-3xl font-extralight text-gray-900 mb-8 tracking-tight">Quick <span className="font-light">Facts</span></h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 icon-circle icon-circle-sm flex-shrink-0">
-                      <MapPin className="h-5 w-5 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-sm flex-shrink-0">
+                      <MapPin className="h-5 w-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900 mb-1 tracking-tight">Altitude</h4>
@@ -141,8 +141,8 @@ export default function AboutPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 icon-circle icon-circle-sm flex-shrink-0">
-                      <CalendarDays className="h-5 w-5 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-sm flex-shrink-0">
+                      <CalendarDays className="h-5 w-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900 mb-1 tracking-tight">Golden Age</h4>
@@ -151,8 +151,8 @@ export default function AboutPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 icon-circle icon-circle-sm flex-shrink-0">
-                      <Church className="h-5 w-5 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-sm flex-shrink-0">
+                      <Church className="h-5 w-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900 mb-1 tracking-tight">Historic Churches</h4>
@@ -161,8 +161,8 @@ export default function AboutPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 icon-circle icon-circle-sm flex-shrink-0">
-                      <Award className="h-5 w-5 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-sm flex-shrink-0">
+                      <Award className="h-5 w-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900 mb-1 tracking-tight">Recognition</h4>
@@ -171,8 +171,8 @@ export default function AboutPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 icon-circle icon-circle-sm flex-shrink-0">
-                      <Globe className="h-5 w-5 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-sm flex-shrink-0">
+                      <Globe className="h-5 w-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900 mb-1 tracking-tight">Location</h4>
@@ -181,8 +181,8 @@ export default function AboutPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 icon-circle icon-circle-sm flex-shrink-0">
-                      <Landmark className="h-5 w-5 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-sm flex-shrink-0">
+                      <Landmark className="h-5 w-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900 mb-1 tracking-tight">Heritage</h4>
@@ -206,7 +206,7 @@ export default function AboutPage() {
             <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-8 tracking-tight">
               Cultural Significance & <span className="font-light">Preservation</span>
             </h2>
-            <p className="text-xl lg:text-2xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-xl lg:text-2xl text-primary-50 max-w-3xl mx-auto font-light leading-relaxed">
               Protecting an intact example of 18th-century post-Byzantine ecclesiastical art
             </p>
           </div>
@@ -214,7 +214,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <h3 className="text-3xl font-light text-white mb-6 tracking-tight">Artistic Treasures</h3>
-              <p className="text-lg text-green-50 leading-relaxed mb-6 font-light">
+              <p className="text-lg text-primary-50 leading-relaxed mb-6 font-light">
                 Voskopojë's collection of churches represents a unique, intact example of 18th-century post-Byzantine ecclesiastical art.
                 The quality and sheer volume of the frescoes are unparalleled in the region. In recognition of this, the Voskopojë churches
                 have been listed by the World Monuments Fund as one of the 100 most endangered cultural sites in the world, bringing
@@ -224,7 +224,7 @@ export default function AboutPage() {
 
             <div>
               <h3 className="text-3xl font-light text-white mb-6 tracking-tight">International Recognition</h3>
-              <p className="text-lg text-green-50 leading-relaxed font-light">
+              <p className="text-lg text-primary-50 leading-relaxed font-light">
                 Although not currently a UNESCO World Heritage Site, Voskopojë's churches hold significant international heritage designations.
                 In 2002, the churches were added to the World Monuments Fund's Watch List of 100 Most Endangered Sites globally. In 2018,
                 they were recognized as two of Europe's seven most endangered heritage sites by Europa Nostra. It remains a powerful symbol of
@@ -285,7 +285,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 p-8 rounded-2xl border-l-4 border-amber-600">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 p-8 rounded-card border-l-4 border-amber-600">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Conservation Challenges & Current Efforts</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -313,19 +313,19 @@ export default function AboutPage() {
                 <h4 className="font-semibold text-amber-900 mb-4">Active Restoration</h4>
                 <ul className="space-y-3 text-gray-700 text-sm">
                   <li className="flex items-start space-x-3">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     <span><strong>Church of St. Michael (2024):</strong> Structural stabilization and roof repairs underway</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     <span><strong>EU Funding Proposals:</strong> Comprehensive restoration plans under review for European grants</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     <span><strong>International Partnerships:</strong> WMF and Europa Nostra provide technical guidance</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     <span><strong>Community Involvement:</strong> Local residents advocate for heritage preservation</span>
                   </li>
                 </ul>
@@ -352,47 +352,47 @@ export default function AboutPage() {
 
           <div className="space-y-12">
             {/* Golden Age */}
-            <div className="border-l-4 border-green-500 pl-8">
-              <div className="bg-green-50 p-8 rounded-lg">
-                <h3 className="text-3xl font-bold text-green-900 mb-6">The Golden Age (1700-1769)</h3>
+            <div className="border-l-4 border-primary-500 pl-8">
+              <div className="bg-primary-50 p-8 rounded-lg">
+                <h3 className="text-3xl font-bold text-primary-900 mb-6">The Golden Age (1700-1769)</h3>
                 <div className="space-y-4 text-gray-700">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-200 text-green-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">~1700</div>
+                    <div className="bg-primary-200 text-primary-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">~1700</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Greek College Established</h4>
                       <p className="text-gray-600 font-light">Formal education begins in Voskopojë, laying groundwork for intellectual hub</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-200 text-green-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1720</div>
+                    <div className="bg-primary-200 text-primary-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1720</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">First Printing Press Established</h4>
                       <p className="text-gray-600 font-light">Monk Georgios Konstantinidis founds the first printing press in the Ottoman Balkans outside Constantinople</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-200 text-green-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1721</div>
+                    <div className="bg-primary-200 text-primary-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1721</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Church of St. Nicholas Construction Begins</h4>
                       <p className="text-gray-600 font-light">Major architectural and artistic project initiated during peak prosperity period</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-200 text-green-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1743</div>
+                    <div className="bg-primary-200 text-primary-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1743</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">New Academy Founded</h4>
                       <p className="text-gray-600 font-light">The only Christian university in the Ottoman Empire established in Voskopojë, attracting scholars from across Orthodox world</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-200 text-green-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1750</div>
+                    <div className="bg-primary-200 text-primary-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">1750</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">New Academy Building Completed</h4>
                       <p className="text-gray-600 font-light">St. Nicholas northern portico added; city at peak prosperity with 35,000-70,000 residents and 24 active churches</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-200 text-green-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">Mid-1700s</div>
+                    <div className="bg-primary-200 text-primary-900 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-sm">Mid-1700s</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Printing Press Peak Activity</h4>
                       <p className="text-gray-600 font-light">Between 1731-1769, the press produces approximately 21 works including religious texts and educational materials</p>
@@ -487,14 +487,14 @@ export default function AboutPage() {
       </section>
 
       {/* Geography Section */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-8">
-              <MapPin className="h-8 w-8 text-green-600" />
+            <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-8">
+              <MapPin className="h-8 w-8 text-primary-600" />
             </div>
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Geography & <span className="font-light text-green-600">Climate</span>
+              Geography & <span className="font-light text-primary-600">Climate</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               A mountain sanctuary with four distinct seasons
@@ -504,8 +504,8 @@ export default function AboutPage() {
           <div className="grid-responsive-3">
             <div className="text-center">
               <div className="card-feature card-padding-md group cursor-pointer">
-                <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-6">
-                  <Building2 className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-6">
+                  <Building2 className="h-8 w-8 text-primary-600 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Alpine Setting</h3>
                 <p className="text-gray-600 font-light">
@@ -516,8 +516,8 @@ export default function AboutPage() {
 
             <div className="text-center">
               <div className="card-feature card-padding-md group cursor-pointer">
-                <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-6">
-                  <Users className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-6">
+                  <Users className="h-8 w-8 text-primary-600 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Four Seasons</h3>
                 <p className="text-gray-600 font-light">
@@ -528,8 +528,8 @@ export default function AboutPage() {
 
             <div className="text-center">
               <div className="card-feature card-padding-md group cursor-pointer">
-                <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-6">
-                  <Globe className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-6">
+                  <Globe className="h-8 w-8 text-primary-600 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Pure Mountain Air</h3>
                 <p className="text-gray-600 font-light">
@@ -620,7 +620,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl border-l-4 border-purple-600 mb-12">
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-card border-l-4 border-purple-600 mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Living Linguistic Tradition</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -640,7 +640,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-2xl border-l-4 border-blue-600">
+          <div className="bg-blue-50 p-8 rounded-card border-l-4 border-blue-600">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Visit & Experience Aramonian Culture</h3>
             <p className="text-gray-700 font-light mb-6">
               When visiting Voskopojë, you're entering a living cultural space where Aramonian heritage persists despite historical challenges.

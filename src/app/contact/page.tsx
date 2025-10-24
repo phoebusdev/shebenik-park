@@ -39,20 +39,20 @@ export default function ContactPage() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-8 tracking-tight">
             Get in <span className="font-light">Touch</span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-primary-50 max-w-3xl mx-auto font-light leading-relaxed">
             We're here to help you plan your perfect visit to Voskopojë.
           </p>
         </div>
       </section>
 
       {/* Contact Information Cards */}
-      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="absolute inset-0 mesh-gradient opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Info className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Info className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-4xl lg:text-5xl font-extralight text-gray-900 mb-4 tracking-tight">
-              How We Can <span className="font-light text-green-600">Help</span>
+              How We Can <span className="font-light text-primary-600">Help</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Whether you need booking assistance, travel advice, or have questions about Voskopojë, we're here to help make your visit unforgettable.
@@ -61,8 +61,8 @@ export default function ContactPage() {
 
           <div className="grid-responsive-2 mb-12">
             <div className="card-interactive group card-padding-md text-center">
-              <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="h-10 w-10 text-green-600" />
+              <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="h-10 w-10 text-primary-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">General Inquiries</h3>
               <p className="text-gray-600 font-light mb-4">
@@ -109,15 +109,15 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Response Time */}
             <div>
-              <Clock className="h-12 w-12 text-green-600 mb-6" />
+              <Clock className="h-12 w-12 text-primary-600 mb-6" />
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Response Time</h2>
               <div className="space-y-6">
-                <div className="bg-green-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-green-800 mb-3">Expected Response</h3>
-                  <p className="text-green-700 mb-2">
+                <div className="bg-primary-50 p-6 rounded-lg">
+                  <h3 className="font-semibold text-primary-800 mb-3">Expected Response</h3>
+                  <p className="text-primary-700 mb-2">
                     We typically respond to inquiries within <strong>2-3 business days</strong>.
                   </p>
-                  <p className="text-green-600 text-sm">
+                  <p className="text-primary-600 text-sm">
                     Please note: Voskopojë is a small village with limited internet connectivity.
                     Response times may vary, especially during peak season or winter months.
                   </p>
@@ -147,12 +147,12 @@ export default function ContactPage() {
 
             {/* Alternative Resources */}
             <div>
-              <Info className="h-12 w-12 text-green-600 mb-6" />
+              <Info className="h-12 w-12 text-primary-600 mb-6" />
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Additional Resources</h2>
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <MapPin className="h-5 w-5 text-green-600 mr-2" />
+                    <MapPin className="h-5 w-5 text-primary-600 mr-2" />
                     Korçë Tourism Office
                   </h3>
                   <p className="text-gray-700 text-sm mb-3">
@@ -199,11 +199,11 @@ export default function ContactPage() {
       </section>
 
       {/* Social Media & Online Presence */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Connect with <span className="font-light text-green-600">Us</span>
+              Connect with <span className="font-light text-primary-600">Us</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Follow our updates, share your experiences, and connect with the Voskopojë community
@@ -211,7 +211,7 @@ export default function ContactPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
+            <div className="text-center bg-white p-8 rounded-card shadow-lg">
               <div className="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Instagram className="h-10 w-10 text-pink-600" />
               </div>
@@ -219,10 +219,10 @@ export default function ContactPage() {
               <p className="text-gray-600 font-light text-sm mb-4">
                 Share your Voskopojë photos and tag us
               </p>
-              <p className="text-green-600 font-semibold">@VisitVoskopoje</p>
+              <p className="text-primary-600 font-semibold">@VisitVoskopoje</p>
             </div>
 
-            <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
+            <div className="text-center bg-white p-8 rounded-card shadow-lg">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Facebook className="h-10 w-10 text-blue-600" />
               </div>
@@ -230,22 +230,22 @@ export default function ContactPage() {
               <p className="text-gray-600 font-light text-sm mb-4">
                 Latest news, events, and community updates
               </p>
-              <p className="text-green-600 font-semibold">Visit Voskopojë</p>
+              <p className="text-primary-600 font-semibold">Visit Voskopojë</p>
             </div>
 
-            <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
-              <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="h-10 w-10 text-green-600" />
+            <div className="text-center bg-white p-8 rounded-card shadow-lg">
+              <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="h-10 w-10 text-primary-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Trip Advisor</h3>
               <p className="text-gray-600 font-light text-sm mb-4">
                 Read reviews and share your experience
               </p>
-              <p className="text-green-600 font-semibold">Voskopojë Reviews</p>
+              <p className="text-primary-600 font-semibold">Voskopojë Reviews</p>
             </div>
           </div>
 
-          <div className="mt-12 bg-amber-50 p-8 rounded-2xl">
+          <div className="mt-12 bg-amber-50 p-8 rounded-card">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Share Your Story</h3>
             <p className="text-gray-700 text-center max-w-2xl mx-auto leading-relaxed">
               Visited Voskopojë? We'd love to hear about your experience! Share your photos, stories, and tips
@@ -269,13 +269,13 @@ export default function ContactPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Check the FAQ First</h3>
-              <p className="text-green-100 mb-4">
+              <p className="text-primary-100 mb-4">
                 Many common questions are answered in our comprehensive FAQ section.
                 This includes information about:
               </p>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Best times to visit</li>
                 <li>• How to get there</li>
                 <li>• Church visiting hours</li>
@@ -284,19 +284,19 @@ export default function ContactPage() {
               </ul>
               <a
                 href="/faq"
-                className="inline-block mt-4 px-4 py-2 bg-white text-green-700 font-semibold rounded-lg hover:bg-green-50 transition-colors"
+                className="inline-block mt-4 px-4 py-2 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
               >
                 Visit FAQ
               </a>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Plan Ahead</h3>
-              <p className="text-green-100 mb-4">
+              <p className="text-primary-100 mb-4">
                 Voskopojë is a small mountain village with limited services.
                 For best experience:
               </p>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Contact us at least 2 weeks before visit</li>
                 <li>• Book accommodation in peak season</li>
                 <li>• Withdraw cash in Korçë (NO ATMs here!)</li>
@@ -305,12 +305,12 @@ export default function ContactPage() {
               </ul>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Communication Note</h3>
-              <p className="text-green-100 mb-4">
+              <p className="text-primary-100 mb-4">
                 Please understand:
               </p>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• English may be limited</li>
                 <li>• Internet connectivity varies</li>
                 <li>• Response time: 2-3 business days</li>
@@ -323,19 +323,19 @@ export default function ContactPage() {
 
           <div className="mt-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Visit?</h3>
-            <p className="text-green-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
               Start planning your journey to Albania's hidden Byzantine heritage village
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/visit"
-                className="inline-flex items-center px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-green-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
               >
                 Plan Your Visit
               </a>
               <a
                 href="/accommodation"
-                className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-800 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-800 transition-colors"
               >
                 View Accommodation
               </a>

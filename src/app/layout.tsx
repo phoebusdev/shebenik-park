@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import Analytics from "@/components/analytics";
+import { ThemeProvider } from "@/lib/theme-provider";
 import { siteConfig } from "@/config/site";
 import { createOGMetadata, createTwitterMetadata, createGeoMetadata } from "@/lib/metadata";
 
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.organization.name }],
   creator: siteConfig.organization.name,
-  publisher: siteConfig.organization.legalName,
+  publisher: siteConfig.organization.legalName || siteConfig.organization.name,
   robots: "index, follow",
   category: "Tourism",
   classification: "Travel & Tourism",
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
   other: {
     ...createGeoMetadata(),
     "DC.title": `${siteConfig.name} - ${siteConfig.tagline}`,
-    "DC.creator": siteConfig.organization.legalName,
+    "DC.creator": siteConfig.organization.legalName || siteConfig.organization.name,
     "DC.subject": siteConfig.keywords.slice(0, 5).join(', '),
     "DC.description": siteConfig.description
   }
@@ -163,12 +164,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <Analytics />
-        <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <ThemeProvider>
+          <Analytics />
+          <Navigation />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

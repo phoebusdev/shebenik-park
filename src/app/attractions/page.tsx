@@ -24,7 +24,7 @@ export default function AttractionsPage() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-8 tracking-tight">
             The Surviving <span className="font-light">Treasures</span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-primary-50 max-w-3xl mx-auto font-light leading-relaxed">
             Voskopojë's greatest legacy is its art. Priceless frescoes and masterpieces of post-Byzantine architecture await.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function AttractionsPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              The Byzantine <span className="font-light text-green-600">Churches</span>
+              The Byzantine <span className="font-light text-primary-600">Churches</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Living museums where thousands of square meters of breathtaking post-Byzantine frescoes cover the walls.
@@ -47,7 +47,7 @@ export default function AttractionsPage() {
           <div className="mb-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
+                <div className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
                   <Landmark className="h-4 w-4 mr-2" />
                   Crown Jewel
                 </div>
@@ -59,16 +59,16 @@ export default function AttractionsPage() {
                   His work is celebrated for its realism, emotional depth, and intricate detail, particularly the vivid depictions of saints and the compelling portrait of the church's donor. The exterior is just as impressive, featuring an open arcade (narthex) with columns, where the famous Zografi brothers painted vivid frescoes depicting scenes from the Last Judgment with dramatic flair.
                 </p>
                 <div className="card-base p-6">
-                  <h4 className="font-medium text-green-800 mb-2 tracking-tight">Essential Visit</h4>
-                  <p className="text-green-700 text-sm font-light">
+                  <h4 className="font-medium text-primary-800 mb-2 tracking-tight">Essential Visit</h4>
+                  <p className="text-primary-700 text-sm font-light">
                     A visit to St. Nicholas is an essential Voskopojë experience. Don't miss the intricate details of David Selenica's masterwork.
                   </p>
                 </div>
               </div>
               <div className="card-feature p-8">
                 <div className="text-center">
-                  <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-6">
-                    <Church className="h-10 w-10 text-green-600" />
+                  <div className="bg-primary-100 icon-circle icon-circle-lg mx-auto mb-6">
+                    <Church className="h-10 w-10 text-primary-600" />
                   </div>
                   <h4 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Key Features</h4>
                   <ul className="text-left text-gray-600 space-y-3 font-light">
@@ -89,8 +89,8 @@ export default function AttractionsPage() {
               <div className="order-2 lg:order-1">
                 <div className="card-feature p-8">
                   <div className="text-center">
-                    <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-6">
-                      <MapPin className="h-10 w-10 text-green-600" />
+                    <div className="bg-primary-100 icon-circle icon-circle-lg mx-auto mb-6">
+                      <MapPin className="h-10 w-10 text-primary-600" />
                     </div>
                     <h4 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Visiting Info</h4>
                     <ul className="text-left text-gray-600 space-y-3 font-light">
@@ -104,7 +104,7 @@ export default function AttractionsPage() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
+                <div className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
                   <Landmark className="h-4 w-4 mr-2" />
                   Monumental
                 </div>
@@ -123,7 +123,7 @@ export default function AttractionsPage() {
           <div className="mb-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
+                <div className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-medium mb-6 tracking-wide uppercase">
                   <Mountain className="h-4 w-4 mr-2" />
                   Forest Sanctuary
                 </div>
@@ -137,8 +137,8 @@ export default function AttractionsPage() {
               </div>
               <div className="card-feature p-8">
                 <div className="text-center">
-                  <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-6">
-                    <Mountain className="h-10 w-10 text-green-600" />
+                  <div className="bg-primary-100 icon-circle icon-circle-lg mx-auto mb-6">
+                    <Mountain className="h-10 w-10 text-primary-600" />
                   </div>
                   <h4 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Access & Hiking</h4>
                   <ul className="text-left text-gray-600 space-y-3 font-light">
@@ -155,14 +155,14 @@ export default function AttractionsPage() {
 
           {/* Other Churches */}
           <div>
-            <h3 className="text-3xl lg:text-4xl font-light text-gray-900 mb-12 tracking-tight">Other Notable <span className="font-light text-green-600">Churches</span></h3>
+            <h3 className="text-3xl lg:text-4xl font-light text-gray-900 mb-12 tracking-tight">Other Notable <span className="font-light text-primary-600">Churches</span></h3>
             <div className="grid-responsive-2">
               <div className="card-feature card-padding-md">
                 <h4 className="text-2xl font-bold text-gray-900 mb-4">St. Athanasius Church</h4>
                 <p className="text-gray-600 font-light mb-4">
                   Set on a prominent hill to the north of the village, St. Athanasius Church (built 1724) stands as a lonely, beautiful sentinel. Serves as the village's cemetery church and is surrounded by old stone graves. The walk up the hill is rewarded with one of the best panoramic views of Voskopojë and the plains below, making it a favorite for photographers.
                 </p>
-                <p className="text-sm text-green-600 font-medium">Built: 1724 • Artists: Zografi brothers</p>
+                <p className="text-sm text-primary-600 font-medium">Built: 1724 • Artists: Zografi brothers</p>
               </div>
 
               <div className="card-feature card-padding-md">
@@ -170,7 +170,7 @@ export default function AttractionsPage() {
                 <p className="text-gray-600 font-light mb-4">
                   Built in 1722, St. Michael's Church stands in a pastoral meadow, often surrounded by grazing sheep. This beautiful setting, slightly removed from the village center, gives it unique charm. Another large basilica testament to the wealth of the neighborhood that once surrounded it, containing a wealth of frescoes including a notable depiction of the Archangel Michael.
                 </p>
-                <p className="text-sm text-green-600 font-medium">Built: 1722 • Setting: Alpine meadow</p>
+                <p className="text-sm text-primary-600 font-medium">Built: 1722 • Setting: Alpine meadow</p>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function AttractionsPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              The Master <span className="font-light text-green-600">Artists</span>
+              The Master <span className="font-light text-primary-600">Artists</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Behind every fresco is an artist. Meet the post-Byzantine masters who created Voskopojë's priceless treasures.
@@ -206,19 +206,19 @@ export default function AttractionsPage() {
               <h4 className="font-semibold text-gray-900 mb-3 mt-6">Artistic Innovation</h4>
               <ul className="space-y-2 text-gray-600 font-light text-sm mb-6">
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span className="text-primary-600 font-bold mr-2">•</span>
                   <span>Pioneered bright, vibrant colors in post-Byzantine painting</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span className="text-primary-600 font-bold mr-2">•</span>
                   <span>Created distinctive portraiture featuring villagers' faces on saint bodies</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span className="text-primary-600 font-bold mr-2">•</span>
                   <span>Produced nearly 1,000 documented frescoes across the Balkans</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">•</span>
+                  <span className="text-primary-600 font-bold mr-2">•</span>
                   <span>Founder of the distinctive Korçë School of painting</span>
                 </li>
               </ul>
@@ -226,11 +226,11 @@ export default function AttractionsPage() {
               <h4 className="font-semibold text-gray-900 mb-3">Major Works at Voskopojë</h4>
               <ul className="space-y-2 text-gray-600 font-light text-sm">
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">✓</span>
+                  <span className="text-primary-600 font-bold mr-2">✓</span>
                   <span><strong>Church of St. Nicholas</strong> (1722-1726) with assistants Constantine and Christos</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">✓</span>
+                  <span className="text-primary-600 font-bold mr-2">✓</span>
                   <span>Extensive work on Mount Athos, Thessaloniki, and Kastoria</span>
                 </li>
               </ul>
@@ -286,7 +286,7 @@ export default function AttractionsPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-2xl border-l-4 border-green-600">
+          <div className="bg-gradient-to-r from-primary-50 to-blue-50 p-8 rounded-card border-l-4 border-primary-600">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Artistic Legacy</h3>
             <p className="text-gray-700 font-light mb-4 leading-relaxed">
               Together, David Selenica and the Zografi Brothers revolutionized post-Byzantine art, establishing the distinctive "Korçë School" of painting
@@ -303,17 +303,17 @@ export default function AttractionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Complete Church <span className="font-light text-green-600">Directory</span>
+              Complete Church <span className="font-light text-primary-600">Directory</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Reference guide to all surviving and historic churches of Voskopojë
             </p>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl shadow-lg">
+          <div className="overflow-x-auto rounded-card shadow-lg">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-green-600 text-white">
+                <tr className="bg-primary-600 text-white">
                   <th className="px-6 py-4 text-left font-semibold">Church Name</th>
                   <th className="px-6 py-4 text-left font-semibold">Built</th>
                   <th className="px-6 py-4 text-left font-semibold">Notable Features</th>
@@ -325,13 +325,13 @@ export default function AttractionsPage() {
                   <td className="px-6 py-4 font-medium text-gray-900">St. Nicholas Church</td>
                   <td className="px-6 py-4 text-gray-600">1721</td>
                   <td className="px-6 py-4 text-gray-600">Three-aisled basilica; David Selenica frescoes; open arcade narthex</td>
-                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                  <td className="px-6 py-4"><span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
                 </tr>
                 <tr className="bg-gray-50 hover:bg-gray-100">
                   <td className="px-6 py-4 font-medium text-gray-900">Virgin Mary Cathedral</td>
                   <td className="px-6 py-4 text-gray-600">~1699</td>
                   <td className="px-6 py-4 text-gray-600">Largest surviving church; 1,000+ capacity; panoramic hilltop location</td>
-                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                  <td className="px-6 py-4"><span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
                 </tr>
                 <tr className="bg-white hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Church of St. Michael</td>
@@ -343,25 +343,25 @@ export default function AttractionsPage() {
                   <td className="px-6 py-4 font-medium text-gray-900">St. Athanasius Church</td>
                   <td className="px-6 py-4 text-gray-600">1721-24</td>
                   <td className="px-6 py-4 text-gray-600">Zografi Brothers frescoes; Baroque style; "Towers of Babylon" lunette</td>
-                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                  <td className="px-6 py-4"><span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
                 </tr>
                 <tr className="bg-white hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">St. John Baptist Monastery</td>
                   <td className="px-6 py-4 text-gray-600">1632</td>
                   <td className="px-6 py-4 text-gray-600">Oldest church; forested hilltop; cross-shaped Byzantine design; 17th-century frescoes</td>
-                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                  <td className="px-6 py-4"><span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
                 </tr>
                 <tr className="bg-gray-50 hover:bg-gray-100">
                   <td className="px-6 py-4 font-medium text-gray-900">Church of St. Elijah</td>
                   <td className="px-6 py-4 text-gray-600">Unknown (18th c.)</td>
                   <td className="px-6 py-4 text-gray-600">West hilltop location; panoramic views; cemetery church</td>
-                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                  <td className="px-6 py-4"><span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
                 </tr>
                 <tr className="bg-white hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">St. Archangels Michael & Gabriel</td>
                   <td className="px-6 py-4 text-gray-600">Unknown (18th c.)</td>
                   <td className="px-6 py-4 text-gray-600">Twin dedication; village edge location</td>
-                  <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
+                  <td className="px-6 py-4"><span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Standing</span></td>
                 </tr>
                 <tr className="bg-gray-50 hover:bg-gray-100">
                   <td className="px-6 py-4 font-medium text-gray-900">St. George (Shipcka)</td>
@@ -374,8 +374,8 @@ export default function AttractionsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-green-50 p-6 rounded-xl">
-              <h4 className="text-lg font-bold text-green-900 mb-3">Golden Age Peak</h4>
+            <div className="bg-primary-50 p-6 rounded-xl">
+              <h4 className="text-lg font-bold text-primary-900 mb-3">Golden Age Peak</h4>
               <p className="text-gray-700 font-light text-sm mb-2">
                 <strong>24 churches</strong> in the 18th century (1700-1769)
               </p>
@@ -400,11 +400,11 @@ export default function AttractionsPage() {
       </section>
 
       {/* Village Center & Nature */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Beyond the <span className="font-light text-green-600">Churches</span>
+              Beyond the <span className="font-light text-primary-600">Churches</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Explore the village center, historic sites, and surrounding natural landscapes
@@ -413,8 +413,8 @@ export default function AttractionsPage() {
 
           <div className="grid-responsive-3">
             <div className="card-feature card-padding-md group cursor-pointer">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-6">
-                <Landmark className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-6">
+                <Landmark className="h-8 w-8 text-primary-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Historic Village Center</h3>
               <p className="text-gray-600 font-light">
@@ -423,8 +423,8 @@ export default function AttractionsPage() {
             </div>
 
             <div className="card-feature card-padding-md group cursor-pointer">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-6">
-                <Mountain className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-6">
+                <Mountain className="h-8 w-8 text-primary-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Natural Surroundings</h3>
               <p className="text-gray-600 font-light">
@@ -433,8 +433,8 @@ export default function AttractionsPage() {
             </div>
 
             <div className="card-feature card-padding-md group cursor-pointer">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-6">
-                <Camera className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-6">
+                <Camera className="h-8 w-8 text-primary-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Photography Paradise</h3>
               <p className="text-gray-600 font-light">
@@ -449,11 +449,11 @@ export default function AttractionsPage() {
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-8">
-              <Shield className="h-8 w-8 text-green-600" />
+            <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-8">
+              <Shield className="h-8 w-8 text-primary-600" />
             </div>
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Visitor <span className="font-light text-green-600">Guidelines</span>
+              Visitor <span className="font-light text-primary-600">Guidelines</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Respectful visiting ensures preservation of these sacred and priceless sites
@@ -463,37 +463,37 @@ export default function AttractionsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <h3 className="text-3xl font-light text-gray-900 mb-8 flex items-center tracking-tight">
-                <Church className="h-7 w-7 text-green-600 mr-3" />
+                <Church className="h-7 w-7 text-primary-600 mr-3" />
                 Church Etiquette
               </h3>
               <ul className="space-y-4 text-gray-600 font-light text-lg">
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Dress modestly—cover shoulders and knees</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Speak softly and respectfully</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Do not touch the frescoes—oils from skin cause damage</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Photography often prohibited inside churches</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Always ask permission before photographing</span>
                 </li>
@@ -502,37 +502,37 @@ export default function AttractionsPage() {
 
             <div>
               <h3 className="text-3xl font-light text-gray-900 mb-8 flex items-center tracking-tight">
-                <Users className="h-7 w-7 text-green-600 mr-3" />
+                <Users className="h-7 w-7 text-primary-600 mr-3" />
                 Recommended Practices
               </h3>
               <ul className="space-y-4 text-gray-600 font-light text-lg">
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Hire a local guide for deeper understanding</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Guides have access to locked churches</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Pay a small fee or tip to key-holders</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Bring cash—no ATMs in village</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1.5 flex-shrink-0">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Allow at least 1-2 days to explore fully</span>
                 </li>

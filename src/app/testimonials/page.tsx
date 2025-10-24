@@ -140,13 +140,13 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-card shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center">
@@ -161,7 +161,7 @@ export default function TestimonialsPage() {
                       />
                     ))}
                   </div>
-                  <Quote className="h-6 w-6 text-green-600" />
+                  <Quote className="h-6 w-6 text-primary-600" />
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -197,7 +197,7 @@ export default function TestimonialsPage() {
                       })}
                     </div>
                   </div>
-                  <div className="mt-2 text-sm text-green-600 font-medium">
+                  <div className="mt-2 text-sm text-primary-600 font-medium">
                     {testimonial.experience}
                   </div>
                 </div>
@@ -211,13 +211,13 @@ export default function TestimonialsPage() {
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-16 tracking-tight text-center">
-            Why Visitors <span className="font-light text-green-600">Love Voskopojë</span>
+            Why Visitors <span className="font-light text-primary-600">Love Voskopojë</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Quote className="h-10 w-10 text-green-600" />
+              <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Quote className="h-10 w-10 text-primary-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Authentic Experience</h3>
               <p className="text-gray-600 font-light leading-relaxed">
@@ -260,13 +260,13 @@ export default function TestimonialsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/visit"
-              className="inline-flex items-center px-8 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-green-50 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
             >
               Plan Your Visit
             </a>
             <a
               href="/accommodation"
-              className="inline-flex items-center px-8 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-primary-700 text-white font-semibold rounded-lg hover:bg-primary-800 transition-colors"
             >
               View Accommodation
             </a>

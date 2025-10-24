@@ -75,10 +75,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-green-50/80 text-sm">
+          <p className="text-primary-50/80 text-sm">
             © {siteConfig.copyright.year} {siteConfig.copyright.holder}. {siteConfig.copyright.statement}
           </p>
-          <p className="text-green-100 text-sm mt-2 md:mt-0 font-light">
+          <p className="text-primary-100 text-sm mt-2 md:mt-0 font-light">
             {siteConfig.copyright.tagline}
           </p>
         </div>

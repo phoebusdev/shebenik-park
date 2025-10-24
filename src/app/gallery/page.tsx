@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import { Camera, Mountain, Droplets, TreePine, Eye, MapPin, Landmark } from "lucide-react"
+import { Camera, Mountain, Droplets, Eye, MapPin, Landmark } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
@@ -61,48 +61,48 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Categories */}
-      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="absolute inset-0 mesh-gradient opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
-                <Landmark className="h-8 w-8 text-green-600" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-4">
+                <Landmark className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="font-light text-gray-900">Churches</h3>
               <p className="text-sm text-gray-600 font-light">Byzantine architecture</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
-                <Eye className="h-8 w-8 text-green-600" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-4">
+                <Eye className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="font-light text-gray-900">Frescoes & Art</h3>
               <p className="text-sm text-gray-600 font-light">Medieval iconography</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
-                <Camera className="h-8 w-8 text-green-600" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-4">
+                <Camera className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="font-light text-gray-900">Village Life</h3>
               <p className="text-sm text-gray-600 font-light">Aramonian heritage</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
-                <Mountain className="h-8 w-8 text-green-600" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-4">
+                <Mountain className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="font-light text-gray-900">Landscapes</h3>
               <p className="text-sm text-gray-600 font-light">Mountain views</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-4">
                 <Droplets className="h-8 w-8 text-emerald-600" />
               </div>
               <h3 className="font-light text-gray-900">Seasons</h3>
               <p className="text-sm text-gray-600 font-light">Year-round beauty</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-md mx-auto mb-4">
-                <MapPin className="h-8 w-8 text-green-600" />
+              <div className="bg-primary-100 icon-circle icon-circle-md mx-auto mb-4">
+                <MapPin className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="font-light text-gray-900">Heritage Sites</h3>
               <p className="text-sm text-gray-600 font-light">Cultural landmarks</p>
@@ -115,9 +115,9 @@ export default function GalleryPage() {
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Landmark className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Landmark className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Churches & <span className="font-light text-green-600">Architecture</span>
+              Churches & <span className="font-light text-primary-600">Architecture</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Discover the priceless Byzantine churches of Voskopojë, featuring remarkable post-Byzantine architecture and sacred art.
@@ -125,7 +125,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg"
                 alt="St. Nicholas Church exterior - main Byzantine church in Voskopojë built 1721"
@@ -144,7 +144,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/1/17/Moscopole%2C_St._Michael%27s_Church.JPG"
                 alt="St. Michael's Church in Voskopojë - Byzantine heritage site"
@@ -163,7 +163,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Voskopoje_St_Mary2.JPG"
                 alt="St. Mary's Church in Voskopojë with Byzantine architecture"
@@ -182,7 +182,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/8/88/Voskopoje_St_Athanasius.JPG"
                 alt="St. Athanasius Church with Byzantine frescoes and interior art"
@@ -201,7 +201,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mount_Grammos_Oros.jpg"
                 alt="Mount Grammos mountain peak overlooking Voskopojë"
@@ -220,7 +220,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gramos_dragonlake.jpg"
                 alt="Alpine lake surrounded by Grammos Mountains near Voskopojë"
@@ -243,12 +243,12 @@ export default function GalleryPage() {
       </section>
 
       {/* Frescoes & Religious Art Gallery */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Eye className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Eye className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Frescoes & Religious <span className="font-light text-green-600">Art</span>
+              Frescoes & Religious <span className="font-light text-primary-600">Art</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Medieval iconography and post-Byzantine frescoes created by master painters David Selenica and the Zografi Brothers.
@@ -256,7 +256,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Voskopoja_fresco.jpg"
                 alt="Voskopojë church fresco detail showing religious iconography"
@@ -275,7 +275,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/8/88/Voskopoje_St_Athanasius.JPG"
                 alt="St. Athanasius Church interior with Byzantine frescoes"
@@ -294,7 +294,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Voskopoje_St_Mary2.JPG"
                 alt="St. Mary's Church with preserved medieval religious frescoes"
@@ -313,7 +313,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/0/03/Voskopoje_St_Nicholas.JPG"
                 alt="St. Nicholas Church with detailed fresco paintings and iconography"
@@ -332,7 +332,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Grammos_and_the_melting_snow.jpg"
                 alt="Snow-capped Grammos Mountains surrounding Voskopojë"
@@ -358,9 +358,9 @@ export default function GalleryPage() {
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Camera className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Camera className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Village & Cultural <span className="font-light text-green-600">Heritage</span>
+              Village & Cultural <span className="font-light text-primary-600">Heritage</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Explore Aramonian village life, traditional architecture, and the living cultural heritage of Voskopojë's historic community.
@@ -368,7 +368,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Voskopojë_-_Haus.jpg"
                 alt="Traditional Aramonian house in Voskopojë showing vernacular architecture"
@@ -387,7 +387,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Voskopojë_-_Gasse.jpg"
                 alt="Street scene in Voskopojë showing village lanes and traditional structures"
@@ -406,7 +406,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/0/03/Voskopoje_St_Nicholas.JPG"
                 alt="St. Nicholas Church in village center of Voskopojë"
@@ -425,7 +425,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ura_e_Voskopojes.JPG"
                 alt="Ottoman-era bridge (Ura e Voskopojes) - cultural monument"
@@ -444,7 +444,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg"
                 alt="St. Nicholas Church panoramic view in Voskopojë community"
@@ -463,7 +463,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"
                 alt="Grammos Mountains panorama surrounding Voskopojë village"
@@ -486,12 +486,12 @@ export default function GalleryPage() {
       </section>
 
       {/* Mountain Landscapes & Seasons Gallery */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Mountain className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Mountain className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Mountain Landscapes & <span className="font-light text-green-600">Seasons</span>
+              Mountain Landscapes & <span className="font-light text-primary-600">Seasons</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Voskopojë's stunning natural beauty throughout the year, from spring wildflowers to winter snow-covered peaks.
@@ -499,7 +499,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gramos_dragonlake.jpg"
                 alt="Alpine lake in Grammos Mountains near Voskopojë"
@@ -518,7 +518,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mount_Grammos_Oros.jpg"
                 alt="Mount Grammos peak during different seasons near Voskopojë"
@@ -537,7 +537,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Grammos_and_the_melting_snow.jpg"
                 alt="Grammos Mountains with seasonal snow coverage near Voskopojë"
@@ -556,7 +556,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Grammos_Panorama.jpg"
                 alt="Panoramic mountain landscape surrounding Voskopojë in all seasons"
@@ -575,7 +575,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ura_e_Voskopojes.JPG"
                 alt="Historic Ottoman bridge with mountain backdrop near Voskopojë"
@@ -594,7 +594,7 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative overflow-hidden rounded-card shadow-lg">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Nicolas_%2853104204322%29.jpg"
                 alt="St. Nicholas Church with mountain landscape backdrop in Voskopojë"
@@ -630,10 +630,10 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-green-700 p-6 rounded-xl">
-              <MapPin className="h-8 w-8 text-green-200 mb-4" />
+            <div className="bg-primary-700 p-6 rounded-xl">
+              <MapPin className="h-8 w-8 text-primary-200 mb-4" />
               <h3 className="text-xl font-bold text-white mb-3">Best Locations</h3>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Historic churches and monastery exteriors</li>
                 <li>• Village lanes and architecture</li>
                 <li>• Sunrise/sunset mountain backdrop views</li>
@@ -642,10 +642,10 @@ export default function GalleryPage() {
               </ul>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
-              <Camera className="h-8 w-8 text-green-200 mb-4" />
+            <div className="bg-primary-700 p-6 rounded-xl">
+              <Camera className="h-8 w-8 text-primary-200 mb-4" />
               <h3 className="text-xl font-bold text-white mb-3">Photography Tips</h3>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Golden hour captures church architecture beautifully</li>
                 <li>• Macro lens for fresco detail photography</li>
                 <li>• Wide-angle for architectural composition</li>
@@ -654,10 +654,10 @@ export default function GalleryPage() {
               </ul>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
-              <Eye className="h-8 w-8 text-green-200 mb-4" />
+            <div className="bg-primary-700 p-6 rounded-xl">
+              <Eye className="h-8 w-8 text-primary-200 mb-4" />
               <h3 className="text-xl font-bold text-white mb-3">Respectful Practices</h3>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Ask permission before photographing interiors</li>
                 <li>• Respect active worship times and ceremonies</li>
                 <li>• No flash photography inside churches</li>

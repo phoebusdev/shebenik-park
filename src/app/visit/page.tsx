@@ -49,19 +49,19 @@ export default function VisitPage() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-8 tracking-tight">
             Plan Your <span className="font-light">Visit</span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-primary-50 max-w-3xl mx-auto font-light leading-relaxed">
             Everything you need to know for an unforgettable journey to Albania's historic mountain village.
           </p>
         </div>
       </section>
 
       {/* Quick Info Cards */}
-      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="absolute inset-0 mesh-gradient opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid-responsive-3">
             <div className="card-interactive group card-padding-sm text-center">
-              <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <MapPin className="h-12 w-12 text-primary-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-600">
                 Korçë County<br/>
@@ -70,7 +70,7 @@ export default function VisitPage() {
               </p>
             </div>
             <div className="card-interactive group card-padding-sm text-center">
-              <Euro className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <Euro className="h-12 w-12 text-primary-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Entry & Fees</h3>
               <p className="text-gray-600">
                 Free village access<br/>
@@ -79,7 +79,7 @@ export default function VisitPage() {
               </p>
             </div>
             <div className="card-interactive group card-padding-sm text-center">
-              <Users className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <Users className="h-12 w-12 text-primary-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Recommended Stay</h3>
               <p className="text-gray-600">
                 1-2 nights ideal<br/>
@@ -95,9 +95,9 @@ export default function VisitPage() {
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Car className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Car className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Getting <span className="font-light text-green-600">There</span>
+              Getting <span className="font-light text-primary-600">There</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Voskopojë is accessible by car from Korçë and Tirana. The scenic mountain roads offer beautiful views.
@@ -110,9 +110,9 @@ export default function VisitPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">From Korçë (Recommended)</h3>
 
               <div className="space-y-6">
-                <div className="bg-green-50 p-6 rounded-lg">
-                  <h4 className="font-semibold text-green-800 mb-3">Distance & Time</h4>
-                  <div className="space-y-2 text-green-700">
+                <div className="bg-primary-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-primary-800 mb-3">Distance & Time</h4>
+                  <div className="space-y-2 text-primary-700">
                     <div className="flex items-center justify-between">
                       <span>Distance:</span>
                       <span className="font-bold">21 km</span>
@@ -127,7 +127,7 @@ export default function VisitPage() {
                     </div>
                   </div>
                   <div className="mt-4 bg-white p-3 rounded">
-                    <p className="text-sm text-green-700">
+                    <p className="text-sm text-primary-700">
                       <strong>Route:</strong> From Korçë city center, follow signs to Voskopojë.
                       The well-maintained mountain road winds through scenic landscapes.
                     </p>
@@ -204,13 +204,13 @@ export default function VisitPage() {
       </section>
 
       {/* Best Time to Visit */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="absolute inset-0 mesh-gradient opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Calendar className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Calendar className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Best Time to <span className="font-light text-green-600">Visit</span>
+              Best Time to <span className="font-light text-primary-600">Visit</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Voskopojë offers unique experiences throughout the year, from winter skiing to summer hiking.
@@ -256,14 +256,14 @@ export default function VisitPage() {
             </div>
 
             {/* Spring/Summer/Fall Season */}
-            <div className="card-interactive group card-padding-sm border-2 border-green-200">
+            <div className="card-interactive group card-padding-sm border-2 border-primary-200">
               <div className="text-center mb-4">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Clock className="h-8 w-8 text-green-600" />
+                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Clock className="h-8 w-8 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Spring - Fall Season</h3>
                 <p className="text-sm text-gray-600">May - September</p>
-                <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mt-2 inline-block">
+                <div className="bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mt-2 inline-block">
                   HIKING & SIGHTSEEING
                 </div>
               </div>
@@ -299,9 +299,9 @@ export default function VisitPage() {
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Backpack className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Backpack className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              What to <span className="font-light text-green-600">Bring</span>
+              What to <span className="font-light text-primary-600">Bring</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Essential items for your Voskopojë visit. Pack smart for mountain village travel.
@@ -359,7 +359,7 @@ export default function VisitPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-green-50 p-6 rounded-xl">
+            <div className="bg-primary-50 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Additional Essentials</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Camera (Byzantine frescoes are stunning!)</li>
@@ -392,7 +392,7 @@ export default function VisitPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Practical <span className="font-light text-green-600">Essentials</span>
+              Practical <span className="font-light text-primary-600">Essentials</span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Everything you need to know for a smooth, comfortable visit to Voskopojë
@@ -405,28 +405,28 @@ export default function VisitPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Mobile & Internet</h3>
               <ul className="space-y-4 text-gray-600 font-light">
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">📱</span>
+                  <span className="text-primary-600 font-bold mt-1">📱</span>
                   <div>
                     <p className="font-semibold text-gray-900">Mobile Coverage</p>
                     <p className="text-sm">Vodafone and One networks available; signal varies in village proper and surrounding mountains</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">📡</span>
+                  <span className="text-primary-600 font-bold mt-1">📡</span>
                   <div>
                     <p className="font-semibold text-gray-900">WiFi Availability</p>
                     <p className="text-sm">Available in most guesthouses and hotels; limited connectivity in village center; basic speeds (not suitable for streaming)</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">🗺️</span>
+                  <span className="text-primary-600 font-bold mt-1">🗺️</span>
                   <div>
                     <p className="font-semibold text-gray-900">Navigation Tip</p>
                     <p className="text-sm">Download offline maps (Google Maps, Maps.me) before arriving—cell coverage for GPS can be unreliable</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">🔌</span>
+                  <span className="text-primary-600 font-bold mt-1">🔌</span>
                   <div>
                     <p className="font-semibold text-gray-900">Power Banks</p>
                     <p className="text-sm">Bring a portable battery—guesthouses charge devices, but availability varies in remote locations</p>
@@ -440,28 +440,28 @@ export default function VisitPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Language & Communication</h3>
               <ul className="space-y-4 text-gray-600 font-light">
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">🗣️</span>
+                  <span className="text-primary-600 font-bold mt-1">🗣️</span>
                   <div>
                     <p className="font-semibold text-gray-900">Primary Languages</p>
                     <p className="text-sm">Albanian is the primary language; some English spoken in guesthouses and by tourist guides</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">📚</span>
+                  <span className="text-primary-600 font-bold mt-1">📚</span>
                   <div>
                     <p className="font-semibold text-gray-900">Useful Phrases</p>
                     <p className="text-sm">Learn basic Albanian greetings and phrases—locals appreciate the effort and are generally friendly and helpful</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">📱</span>
+                  <span className="text-primary-600 font-bold mt-1">📱</span>
                   <div>
                     <p className="font-semibold text-gray-900">Translation Apps</p>
                     <p className="text-sm">Google Translate app helpful for real-time translation; download offline language packs</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-green-600 font-bold mt-1">👥</span>
+                  <span className="text-primary-600 font-bold mt-1">👥</span>
                   <div>
                     <p className="font-semibold text-gray-900">Hiring a Guide</p>
                     <p className="text-sm">Local guides speak English and Aramonian, providing cultural context and church access unavailable otherwise</p>
@@ -473,19 +473,19 @@ export default function VisitPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Planning Duration */}
-            <div className="bg-green-50 p-6 rounded-xl">
+            <div className="bg-primary-50 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-gray-900 mb-4">Recommended Duration</h4>
               <div className="space-y-3">
                 <div>
-                  <p className="font-semibold text-green-700 text-sm">Quick Day Trip</p>
+                  <p className="font-semibold text-primary-700 text-sm">Quick Day Trip</p>
                   <p className="text-gray-600 font-light text-sm">4-6 hours: Main church, quick village walk</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-green-700 text-sm">Standard Visit</p>
+                  <p className="font-semibold text-primary-700 text-sm">Standard Visit</p>
                   <p className="text-gray-600 font-light text-sm">1-2 nights: All major churches, one hike, village experience</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-green-700 text-sm">Full Immersion</p>
+                  <p className="font-semibold text-primary-700 text-sm">Full Immersion</p>
                   <p className="text-gray-600 font-light text-sm">3+ days: Multiple hikes, photography, cultural engagement, day trips</p>
                 </div>
               </div>
@@ -545,12 +545,12 @@ export default function VisitPage() {
       </section>
 
       {/* Visitor Guidelines */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <AlertTriangle className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <AlertTriangle className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Visitor <span className="font-light text-green-600">Guidelines</span>
+              Visitor <span className="font-light text-primary-600">Guidelines</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Please respect these important guidelines to preserve Voskopojë's cultural heritage.
@@ -561,9 +561,9 @@ export default function VisitPage() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Church Visiting Etiquette</h3>
               <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
-                  <h4 className="font-semibold text-green-800 mb-2">Respectful Behavior</h4>
-                  <p className="text-green-700 text-sm">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-primary-500">
+                  <h4 className="font-semibold text-primary-800 mb-2">Respectful Behavior</h4>
+                  <p className="text-primary-700 text-sm">
                     Churches are active places of worship and cultural heritage. Speak quietly,
                     turn off phone ringers, and be mindful of other visitors.
                   </p>
@@ -614,7 +614,7 @@ export default function VisitPage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-green-50 p-8 rounded-2xl">
+          <div className="mt-12 bg-primary-50 p-8 rounded-card">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Accessibility Information</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -650,27 +650,27 @@ export default function VisitPage() {
             <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-8 tracking-tight">
               Final <span className="font-light">Tips</span>
             </h2>
-            <p className="text-xl lg:text-2xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-xl lg:text-2xl text-primary-50 max-w-3xl mx-auto font-light leading-relaxed">
               Make the most of your Voskopojë experience with these helpful reminders.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Recommended Stay Duration</h3>
-              <p className="text-green-100 mb-4">
+              <p className="text-primary-100 mb-4">
                 <strong>1-2 nights is ideal</strong> to experience churches, hiking, and village atmosphere without rush.
               </p>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Day 1: Main churches + village exploration</li>
                 <li>• Day 2: Hiking trails + remaining churches</li>
                 <li>• Combine with Korçë city visit</li>
               </ul>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Mobile & WiFi</h3>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Mobile coverage: Variable but generally available</li>
                 <li>• WiFi: Most guesthouses have internet</li>
                 <li>• Download maps offline before arriving</li>
@@ -679,9 +679,9 @@ export default function VisitPage() {
               </ul>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Language & Communication</h3>
-              <ul className="space-y-2 text-green-100 text-sm">
+              <ul className="space-y-2 text-primary-100 text-sm">
                 <li>• Albanian is primary language</li>
                 <li>• Some English in guesthouses</li>
                 <li>• Learn basic Albanian phrases</li>
@@ -691,21 +691,21 @@ export default function VisitPage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-green-700 p-8 rounded-2xl text-center">
+          <div className="mt-12 bg-primary-700 p-8 rounded-card text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Experience Voskopojë?</h3>
-            <p className="text-green-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
               Explore our accommodation options and contact information to plan your visit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/accommodation"
-                className="inline-flex items-center px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-green-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
               >
                 View Accommodation
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-800 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-800 transition-colors"
               >
                 Contact Us
               </a>

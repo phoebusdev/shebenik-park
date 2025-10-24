@@ -121,7 +121,7 @@ export default function TestImagesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-12 bg-gradient-to-r from-blue-600 to-green-600">
+      <section className="py-12 bg-gradient-to-r from-blue-600 to-primary-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Camera className="h-12 w-12 text-white mx-auto mb-4" />
@@ -146,7 +146,7 @@ export default function TestImagesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {testImages.map((image) => (
-              <div key={image.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div key={image.id} className="bg-white rounded-card shadow-lg overflow-hidden">
                 {/* Image */}
                 <div className="relative h-80">
                   <Image
@@ -162,7 +162,7 @@ export default function TestImagesPage() {
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyebhm5xrUViwTIlQ9k5KM4cXmWsQqvKPLgRvqLLXCx6MDi5KhTnG2/A="
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       {image.category}
                     </span>
                   </div>
@@ -219,32 +219,32 @@ export default function TestImagesPage() {
       </section>
 
       {/* Usage Instructions */}
-      <section className="py-12 bg-green-600">
+      <section className="py-12 bg-primary-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Download className="h-12 w-12 text-white mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-white mb-4">
             Implementation Notes
           </h2>
           <div className="bg-white/10 rounded-lg p-6 text-left">
-            <ul className="space-y-3 text-green-100">
+            <ul className="space-y-3 text-primary-100">
               <li className="flex items-start">
-                <span className="text-green-300 mr-2">•</span>
+                <span className="text-primary-300 mr-2">•</span>
                 <span><strong>All Images Verified:</strong> These are authentic Shebenik National Park photographs from Wikimedia Commons</span>
               </li>
               <li className="flex items-start">
-                <span className="text-green-300 mr-2">•</span>
+                <span className="text-primary-300 mr-2">•</span>
                 <span><strong>Proper Attribution:</strong> All images include photographer and source information</span>
               </li>
               <li className="flex items-start">
-                <span className="text-green-300 mr-2">•</span>
+                <span className="text-primary-300 mr-2">•</span>
                 <span><strong>Optimized Loading:</strong> Using Next.js Image component with blur placeholders</span>
               </li>
               <li className="flex items-start">
-                <span className="text-green-300 mr-2">•</span>
+                <span className="text-primary-300 mr-2">•</span>
                 <span><strong>High Quality:</strong> Original resolution images suitable for hero sections and galleries</span>
               </li>
               <li className="flex items-start">
-                <span className="text-green-300 mr-2">•</span>
+                <span className="text-primary-300 mr-2">•</span>
                 <span><strong>Categorized:</strong> Organized by type (Lakes, Mountains, Forest, Landscapes, Panoramas)</span>
               </li>
             </ul>

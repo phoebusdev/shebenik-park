@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-green-600 to-emerald-700">
+      <section className="relative py-24 bg-gradient-to-r from-primary-600 to-emerald-700">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
@@ -24,11 +24,11 @@ export default function NotFound() {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Lost in the Mountains?
           </h1>
-          <p className="text-xl md:text-2xl text-green-100 max-w-2xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-primary-100 max-w-2xl mx-auto mb-8">
             The page you're looking for doesn't exist, but the treasures of Voskopojë are just a click away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-white text-green-700 hover:bg-green-50">
+            <Button size="lg" asChild className="bg-white text-primary-700 hover:bg-primary-50">
               <Link href="/">
                 <Home className="mr-2 h-5 w-5" />
                 Return Home
@@ -59,15 +59,15 @@ export default function NotFound() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link 
               href="/about" 
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
+              className="group p-8 bg-white rounded-card shadow-lg hover:bg-primary-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
-                <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
-                  <TreePine className="h-8 w-8 text-green-600 mx-auto" />
+                <div className="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                  <TreePine className="h-8 w-8 text-primary-600 mx-auto" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">About Voskopojë</h3>
                 <p className="text-sm text-gray-600 mb-3">Learn about the legendary 18th-century city of Moscopole</p>
-                <div className="flex items-center justify-center text-green-600 text-sm font-medium">
+                <div className="flex items-center justify-center text-primary-600 text-sm font-medium">
                   Learn More <ChevronRight className="ml-1 h-4 w-4" />
                 </div>
               </div>
@@ -75,15 +75,15 @@ export default function NotFound() {
 
             <Link
               href="/attractions"
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
+              className="group p-8 bg-white rounded-card shadow-lg hover:bg-primary-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
-                <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                <div className="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
                   <span className="text-2xl">⛪</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Attractions</h3>
                 <p className="text-sm text-gray-600 mb-3">Explore Byzantine churches and historic monasteries</p>
-                <div className="flex items-center justify-center text-green-600 text-sm font-medium">
+                <div className="flex items-center justify-center text-primary-600 text-sm font-medium">
                   View Attractions <ChevronRight className="ml-1 h-4 w-4" />
                 </div>
               </div>
@@ -91,15 +91,15 @@ export default function NotFound() {
 
             <Link 
               href="/activities" 
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
+              className="group p-8 bg-white rounded-card shadow-lg hover:bg-primary-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
-                <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                <div className="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
                   <span className="text-2xl">🥾</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Activities</h3>
                 <p className="text-sm text-gray-600 mb-3">Hiking trails and outdoor adventures await</p>
-                <div className="flex items-center justify-center text-green-600 text-sm font-medium">
+                <div className="flex items-center justify-center text-primary-600 text-sm font-medium">
                   Plan Activities <ChevronRight className="ml-1 h-4 w-4" />
                 </div>
               </div>
@@ -107,15 +107,15 @@ export default function NotFound() {
 
             <Link 
               href="/visit" 
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:bg-green-50 hover:shadow-xl transition-all duration-300"
+              className="group p-8 bg-white rounded-card shadow-lg hover:bg-primary-50 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
-                <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
-                  <MapPin className="h-8 w-8 text-green-600 mx-auto" />
+                <div className="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                  <MapPin className="h-8 w-8 text-primary-600 mx-auto" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Plan Your Visit</h3>
                 <p className="text-sm text-gray-600 mb-3">Essential information for your trip</p>
-                <div className="flex items-center justify-center text-green-600 text-sm font-medium">
+                <div className="flex items-center justify-center text-primary-600 text-sm font-medium">
                   Visit Info <ChevronRight className="ml-1 h-4 w-4" />
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function NotFound() {
           <p className="text-lg text-gray-600 mb-8">
             Contact our park information center for personalized assistance with your visit.
           </p>
-          <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
+          <Button size="lg" asChild className="bg-primary-600 hover:bg-primary-700">
             <Link href="/contact">Contact Us</Link>
           </Button>
         </div>

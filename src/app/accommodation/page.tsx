@@ -46,19 +46,19 @@ export default function AccommodationPage() {
       </section>
 
       {/* Accommodation Types Overview */}
-      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-primary-50/30 to-white relative">
         <div className="absolute inset-0 mesh-gradient opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid-responsive-2">
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-4">
-                <Home className="h-10 w-10 text-green-600" />
+              <div className="bg-primary-100 icon-circle icon-circle-lg mx-auto mb-4">
+                <Home className="h-10 w-10 text-primary-600" />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-2">Traditional Bujtina in Voskopojë</h3>
               <p className="text-gray-600 font-light">Family-run guesthouses with authentic village atmosphere and home-cooked meals</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 icon-circle icon-circle-lg mx-auto mb-4">
+              <div className="bg-primary-100 icon-circle icon-circle-lg mx-auto mb-4">
                 <Bed className="h-10 w-10 text-emerald-600" />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-2">Hotels in Korçë</h3>
@@ -72,9 +72,9 @@ export default function AccommodationPage() {
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Home className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Home className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Traditional <span className="font-light text-green-600">Bujtina</span>
+              Traditional <span className="font-light text-primary-600">Bujtina</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Stay in traditional Albanian guesthouses (bujtina) right in Voskopojë village. Experience authentic hospitality with home-cooked meals and local insights.
@@ -82,14 +82,14 @@ export default function AccommodationPage() {
           </div>
 
           {/* What is a Bujtina */}
-          <div className="bg-green-50 p-8 rounded-2xl mb-12">
+          <div className="bg-primary-50 p-8 rounded-card mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">What is a Bujtina?</h3>
             <p className="text-gray-700 leading-relaxed font-light mb-6">
               A <strong>bujtina</strong> is a traditional Albanian guesthouse, typically family-run and located in the family home. Staying in a bujtina offers an authentic cultural experience with warm hospitality, traditional home-cooked meals, and insider knowledge of the village and surrounding area.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-green-800 mb-3">Typical Features:</h4>
+                <h4 className="font-semibold text-primary-800 mb-3">Typical Features:</h4>
                 <ul className="text-gray-700 text-sm space-y-2">
                   <li>• Private or shared rooms with clean bedding</li>
                   <li>• Traditional home-cooked breakfast included</li>
@@ -100,7 +100,7 @@ export default function AccommodationPage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-green-800 mb-3">What to Expect:</h4>
+                <h4 className="font-semibold text-primary-800 mb-3">What to Expect:</h4>
                 <ul className="text-gray-700 text-sm space-y-2">
                   <li>• Simple, clean, and comfortable accommodations</li>
                   <li>• Not luxury hotels - authentic village experience</li>
@@ -122,29 +122,29 @@ export default function AccommodationPage() {
               <div className="card-feature p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="text-xl font-bold text-gray-900">Hotel Bacelli</h4>
-                  <div className="flex items-center text-green-600">
+                  <div className="flex items-center text-primary-600">
                     <Euro className="h-5 w-5" />
                   </div>
                 </div>
                 <p className="text-gray-600 font-light mb-4 text-sm">
                   One of Voskopojë's established guesthouses with comfortable rooms and excellent traditional cuisine. Known for warm hospitality and good facilities.
                 </p>
-                <div className="bg-green-50 p-4 rounded-lg">
+                <div className="bg-primary-50 p-4 rounded-lg">
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="flex items-center text-gray-700">
-                      <Coffee className="h-4 w-4 text-green-600 mr-2" />
+                      <Coffee className="h-4 w-4 text-primary-600 mr-2" />
                       <span>Breakfast included</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <Wifi className="h-4 w-4 text-green-600 mr-2" />
+                      <Wifi className="h-4 w-4 text-primary-600 mr-2" />
                       <span>WiFi available</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <Users className="h-4 w-4 text-green-600 mr-2" />
+                      <Users className="h-4 w-4 text-primary-600 mr-2" />
                       <span>Family rooms</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <MapPin className="h-4 w-4 text-green-600 mr-2" />
+                      <MapPin className="h-4 w-4 text-primary-600 mr-2" />
                       <span>Village center</span>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ export default function AccommodationPage() {
               <div className="card-feature p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="text-xl font-bold text-gray-900">Vila Panorama</h4>
-                  <div className="flex items-center text-green-600">
+                  <div className="flex items-center text-primary-600">
                     <Euro className="h-5 w-5" />
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function AccommodationPage() {
               <div className="card-feature p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="text-xl font-bold text-gray-900">Vila Ime</h4>
-                  <div className="flex items-center text-green-600">
+                  <div className="flex items-center text-primary-600">
                     <Euro className="h-5 w-5" />
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export default function AccommodationPage() {
               <div className="card-feature p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="text-xl font-bold text-gray-900">Bujtina Liana</h4>
-                  <div className="flex items-center text-green-600">
+                  <div className="flex items-center text-primary-600">
                     <Euro className="h-5 w-5" />
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function AccommodationPage() {
           </div>
 
           {/* Pricing Info */}
-          <div className="bg-blue-50 p-8 rounded-2xl">
+          <div className="bg-blue-50 p-8 rounded-card">
             <div className="text-center mb-6">
               <Euro className="h-10 w-10 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Typical Pricing</h3>
@@ -280,12 +280,12 @@ export default function AccommodationPage() {
       </section>
 
       {/* Korçë Hotels */}
-      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-primary-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Bed className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <Bed className="h-12 w-12 text-primary-600 mx-auto mb-6" />
             <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-              Hotels in <span className="font-light text-green-600">Korçë</span>
+              Hotels in <span className="font-light text-primary-600">Korçë</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
               Prefer modern amenities? Stay in Korçë city (30 minutes away) with easy day trips to Voskopojë.
@@ -297,32 +297,32 @@ export default function AccommodationPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Stay in Korçë?</h3>
               <ul className="space-y-3 text-gray-600 mb-6 font-light">
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Modern hotel amenities (WiFi, heating, A/C, hot water)</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Restaurants, cafes, and shopping nearby</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>ATMs and banks (withdraw cash for Voskopojë!)</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Explore Korçë's museums and bazaar</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-1 mr-3 mt-1">
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="bg-primary-100 rounded-full p-1 mr-3 mt-1">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   </div>
                   <span>Easy 21km drive to Voskopojë (30-40 min)</span>
                 </li>
@@ -339,7 +339,7 @@ export default function AccommodationPage() {
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="font-semibold text-gray-800">Price Range</h4>
-                    <Euro className="h-5 w-5 text-green-600" />
+                    <Euro className="h-5 w-5 text-primary-600" />
                   </div>
                   <p className="text-gray-700 text-sm">€30-60 per night for standard rooms</p>
                   <p className="text-gray-600 text-xs">Prices vary by season and hotel category</p>
@@ -367,7 +367,7 @@ export default function AccommodationPage() {
       {/* Ski Resort Lodging */}
       <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-blue-50 p-8 rounded-2xl">
+          <div className="bg-blue-50 p-8 rounded-card">
             <div className="text-center mb-6">
               <AlertCircle className="h-10 w-10 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Ski Resort Accommodation</h3>
@@ -412,9 +412,9 @@ export default function AccommodationPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">How to Book Voskopojë Bujtina</h3>
-              <ul className="space-y-3 text-green-100">
+              <ul className="space-y-3 text-primary-100">
                 <li>• Call ahead (phone numbers from contact page)</li>
                 <li>• Book 1-2 weeks in advance in peak season</li>
                 <li>• Some guesthouses on booking platforms</li>
@@ -424,9 +424,9 @@ export default function AccommodationPage() {
               </ul>
             </div>
 
-            <div className="bg-green-700 p-6 rounded-xl">
+            <div className="bg-primary-700 p-6 rounded-xl">
               <h3 className="text-xl font-bold text-white mb-4">Seasonal Availability</h3>
-              <ul className="space-y-3 text-green-100">
+              <ul className="space-y-3 text-primary-100">
                 <li>• Peak season: June-August (book early!)</li>
                 <li>• Winter: December-March (ski season)</li>
                 <li>• Some guesthouses close off-season</li>
@@ -437,7 +437,7 @@ export default function AccommodationPage() {
             </div>
           </div>
 
-          <div className="bg-green-700 p-8 rounded-2xl">
+          <div className="bg-primary-700 p-8 rounded-card">
             <h3 className="text-2xl font-bold text-white mb-6 text-center">Important Reminders</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -445,7 +445,7 @@ export default function AccommodationPage() {
                   <Euro className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="font-semibold text-white mb-2">BRING CASH</h4>
-                <p className="text-green-100 text-sm">
+                <p className="text-primary-100 text-sm">
                   NO ATMs in Voskopojë! Withdraw cash in Korçë before arriving. Most guesthouses only accept cash payment.
                 </p>
               </div>
@@ -455,7 +455,7 @@ export default function AccommodationPage() {
                   <Phone className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="font-semibold text-white mb-2">Confirm Amenities</h4>
-                <p className="text-green-100 text-sm">
+                <p className="text-primary-100 text-sm">
                   Ask about WiFi, heating, private bathrooms, and meal options when booking. Facilities vary by guesthouse.
                 </p>
               </div>
@@ -465,7 +465,7 @@ export default function AccommodationPage() {
                   <AlertCircle className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="font-semibold text-white mb-2">Cancellation Policy</h4>
-                <p className="text-green-100 text-sm">
+                <p className="text-primary-100 text-sm">
                   Ask about cancellation policies when booking. Small guesthouses may have flexible policies but appreciate advance notice.
                 </p>
               </div>
@@ -474,12 +474,12 @@ export default function AccommodationPage() {
 
           <div className="mt-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Need Help Finding Accommodation?</h3>
-            <p className="text-green-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
               Contact us for recommendations, availability checks, and booking assistance.
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-green-50 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
             >
               Contact Us for Help
             </a>

@@ -184,7 +184,7 @@ export default function FAQPage() {
                 {category.questions.map((faq, index) => (
                   <details
                     key={index}
-                    className="group bg-white rounded-2xl shadow-lg p-6 hover:bg-green-50 hover:shadow-xl transition-all duration-300"
+                    className="group bg-white rounded-card shadow-lg p-6 hover:bg-primary-50 hover:shadow-xl transition-all duration-300"
                   >
                     <summary className="flex items-center justify-between cursor-pointer list-none">
                       <h3 className="text-lg font-semibold text-gray-900 pr-4">
@@ -217,14 +217,14 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-green-50 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
             >
               <Phone className="mr-2 h-5 w-5" />
               Contact Us
             </a>
             <a
               href="/visit"
-              className="inline-flex items-center px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-primary-700 text-white font-semibold rounded-lg hover:bg-primary-800 transition-colors"
             >
               <MapPin className="mr-2 h-5 w-5" />
               Plan Your Visit
