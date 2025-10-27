@@ -3,38 +3,38 @@
 :root {
   /* Light backgrounds */
   --background: #ffffff;
-  --background-alt: #f5ede4;
-  --background-subtle: #fffaf5;
+  --background-alt: #e8f4f8;
+  --background-subtle: #f5fbfd;
 
-  /* Text colors - Warm charcoal */
-  --foreground: #3e3631;
-  --foreground-muted: #5c5550;
-  --foreground-light: #8b8680;
+  /* Text colors - Cool charcoal */
+  --foreground: #2c3e50;
+  --foreground-muted: #546e7a;
+  --foreground-light: #78909c;
 
-  /* Primary color - Warm Terracotta */
-  --primary: #a45a3c;
-  --primary-light: #b87345;
-  --primary-dark: #8b4524;
+  /* Primary color - Mountain Lake Blue */
+  --primary: #1e7a8c;
+  --primary-light: #2596a8;
+  --primary-dark: #165f70;
   --primary-foreground: #ffffff;
 
-  /* Secondary - Sage Green (heritage accent) */
-  --secondary: #7a8d6e;
-  --secondary-light: #8b9d7e;
+  /* Secondary - Forest Green (nature accent) */
+  --secondary: #4a7c59;
+  --secondary-light: #5f9470;
   --secondary-foreground: #ffffff;
 
   /* Accent colors */
-  --accent: #f0dfd8;
-  --accent-foreground: #a45a3c;
-  --accent-gold: #c4a574;
-  --accent-brown: #8b7355;
+  --accent: #d4eef5;
+  --accent-foreground: #1e7a8c;
+  --accent-gold: #7cb5c0;
+  --accent-brown: #5a8d9a;
 
   /* Functional colors */
   --destructive: #c85a3b;
   --destructive-foreground: #ffffff;
-  --border: #ddd3c6;
-  --border-light: #ebe3d8;
-  --input: #f5ede4;
-  --ring: #a45a3c;
+  --border: #b8dce5;
+  --border-light: #d4eef5;
+  --input: #e8f4f8;
+  --ring: #1e7a8c;
 }
 
 @theme inline {
@@ -75,7 +75,7 @@ body {
   font-family: var(--font-lora), serif;
 }
 
-/* Playfair Display for all headings - classical serif for Byzantine heritage */
+/* Playfair Display for all headings - elegant serif for natural beauty */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair), serif;
 }
