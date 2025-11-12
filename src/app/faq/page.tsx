@@ -89,25 +89,25 @@ export default function FAQPage() {
       <Breadcrumb items={[{ label: "FAQ" }]} />
       
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-green-600 to-emerald-700">
-        <div 
+      <section className="relative py-32 lg:py-40 gradient-primary">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
             backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
             Frequently Asked Questions
           </h1>
-          <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
             Everything you need to know about visiting Shebenik National Park, Albania's pristine wilderness sanctuary.
           </p>
         </div>
       </section>
 
       {/* FAQ Content */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
             {faqData.map((faq, index) => (
@@ -122,7 +122,7 @@ export default function FAQPage() {
                   <ChevronDown className="h-5 w-5 text-gray-500 group-open:rotate-180 transition-transform duration-200" />
                 </summary>
                 <div className="mt-4 pt-4 border-t border-gray-200">
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed font-light">
                     {faq.answer}
                   </p>
                 </div>
@@ -133,12 +133,12 @@ export default function FAQPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-green-600">
+      <section className="py-32 lg:py-40 gradient-primary">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Still Have Questions?
+          <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-6 tracking-tight">
+            Still Have <span className="font-light">Questions?</span>
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-lg text-white/90 mb-12 font-light leading-relaxed">
             Our park rangers and visitor center staff are here to help plan your perfect visit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

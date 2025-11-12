@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import { Download, Camera, MapPin, Calendar } from "lucide-react"
+import { Download, Camera, Calendar } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Test Images - Shebenik National Park Photos",

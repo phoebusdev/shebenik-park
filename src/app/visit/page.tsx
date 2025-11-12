@@ -1,5 +1,6 @@
 import { Metadata } from "next"
-import { MapPin, Clock, Car, Info, Phone, Calendar, Thermometer, Backpack, AlertTriangle, CheckCircle } from "lucide-react"
+import { MapPin, Clock, Car, Info, Calendar, Thermometer, Backpack, AlertTriangle, CheckCircle } from "lucide-react"
+import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
   title: "Plan Your Visit to Shebenik National Park - Albania Tourism Guide | Practical Information",
@@ -34,53 +35,55 @@ export const metadata: Metadata = {
 export default function VisitPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Breadcrumb items={[{ label: "Visit" }]} />
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-emerald-600 to-teal-700">
-        <div 
+      <section className="relative py-32 lg:py-40 gradient-primary">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
             backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Plan Your Visit
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white mb-8 tracking-tight">
+            Plan Your <span className="font-light">Visit</span>
           </h1>
-          <p className="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl lg:text-3xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
             Everything you need to know for an unforgettable adventure in Shebenik National Park.
           </p>
         </div>
       </section>
 
       {/* Quick Info Cards */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <Clock className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Visitor Center Hours</h3>
-              <p className="text-gray-700">
-                Summer: Mon-Thu 9AM-5PM<br/>
-                Fri-Sun 9AM-7PM<br/>
-                Winter: Daily 9AM-4PM
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid-responsive-3">
+            <div className="card-interactive group card-padding-sm text-center">
+              <Clock className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Park Hours</h3>
+              <p className="text-gray-600">
+                Open year-round<br/>
+                Dawn to dusk<br/>
+                Check seasonal conditions
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Park Entrance</h3>
-              <p className="text-gray-700">
-                Fushë Studë Village<br/>
-                Elbasan County, Albania<br/>
-                64km from Tirana
+            <div className="card-interactive group card-padding-sm text-center">
+              <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
+              <p className="text-gray-600">
+                Elbasan County<br/>
+                Eastern Albania<br/>
+                Near Albanian-North Macedonian border
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <Phone className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Contact Information</h3>
-              <p className="text-gray-700">
-                Visitor Center: +355 69 6223130<br/>
-                Forest Directorate: +355 51 423 738<br/>
-                Emergency: +355 67 207 9658
+            <div className="card-interactive group card-padding-sm text-center">
+              <Info className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Park Information</h3>
+              <p className="text-gray-600">
+                345 km² protected area<br/>
+                Established 2008<br/>
+                IUCN Category II
               </p>
             </div>
           </div>
@@ -88,14 +91,14 @@ export default function VisitPage() {
       </section>
 
       {/* Getting There */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Car className="h-12 w-12 text-green-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Getting There
+          <div className="text-center mb-20">
+            <Car className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Getting <span className="font-light text-green-600">There</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Shebenik National Park is accessible by car from several routes. Public transport options are limited.
             </p>
           </div>
@@ -197,21 +200,22 @@ export default function VisitPage() {
       </section>
 
       {/* Best Time to Visit */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Calendar className="h-12 w-12 text-green-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Best Time to Visit
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white relative">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <Calendar className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Best Time to <span className="font-light text-green-600">Visit</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               The park offers different experiences throughout the year, with optimal conditions from May to October.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid-responsive-4">
             {/* Spring */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <div className="text-center mb-4">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-green-600" />
@@ -248,7 +252,7 @@ export default function VisitPage() {
             </div>
 
             {/* Summer */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-2 border-green-200">
+            <div className="card-interactive group card-padding-sm border-2 border-green-200">
               <div className="text-center mb-4">
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-orange-600" />
@@ -288,7 +292,7 @@ export default function VisitPage() {
             </div>
 
             {/* Autumn */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-2 border-amber-200">
+            <div className="card-interactive group card-padding-sm border-2 border-amber-200">
               <div className="text-center mb-4">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-amber-600" />
@@ -328,7 +332,7 @@ export default function VisitPage() {
             </div>
 
             {/* Winter */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card-interactive group card-padding-sm">
               <div className="text-center mb-4">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Thermometer className="h-8 w-8 text-blue-600" />
@@ -369,21 +373,21 @@ export default function VisitPage() {
       </section>
 
       {/* What to Bring */}
-      <section className="py-20 bg-white">
+      <section className="py-32 lg:py-40 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Backpack className="h-12 w-12 text-green-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              What to Bring
+          <div className="text-center mb-20">
+            <Backpack className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              What to <span className="font-light text-green-600">Bring</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Pack smart for your wilderness adventure with this comprehensive checklist.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid-responsive-3">
             {/* Essential Gear */}
-            <div className="bg-green-50 p-6 rounded-xl">
+            <div className="bg-green-50 card-padding-sm rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-green-600 mr-2" />
                 Essential Gear
@@ -401,7 +405,7 @@ export default function VisitPage() {
             </div>
 
             {/* Clothing */}
-            <div className="bg-blue-50 p-6 rounded-xl">
+            <div className="bg-blue-50 card-padding-sm rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-blue-600 mr-2" />
                 Clothing & Protection
@@ -419,7 +423,7 @@ export default function VisitPage() {
             </div>
 
             {/* Safety & Comfort */}
-            <div className="bg-amber-50 p-6 rounded-xl">
+            <div className="bg-amber-50 card-padding-sm rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-amber-600 mr-2" />
                 Safety & Comfort
@@ -440,14 +444,14 @@ export default function VisitPage() {
       </section>
 
       {/* Important Guidelines */}
-      <section className="py-20 bg-red-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <AlertTriangle className="h-12 w-12 text-red-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Important Guidelines
+          <div className="text-center mb-20">
+            <AlertTriangle className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Important <span className="font-light text-green-600">Guidelines</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Follow these essential guidelines for your safety and the protection of the park's pristine environment.
             </p>
           </div>
@@ -511,14 +515,14 @@ export default function VisitPage() {
       </section>
 
       {/* Contact & Resources */}
-      <section className="py-20 bg-green-600">
+      <section className="py-32 lg:py-40 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <Info className="h-12 w-12 text-white mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Need Help Planning?
+          <div className="text-center mb-16">
+            <Info className="h-12 w-12 text-white mx-auto mb-6" />
+            <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-8 tracking-tight">
+              Need Help <span className="font-light">Planning?</span>
             </h2>
-            <p className="text-xl text-green-100 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-green-50 max-w-3xl mx-auto font-light leading-relaxed">
               Our visitor center staff are ready to help you plan the perfect adventure.
             </p>
           </div>

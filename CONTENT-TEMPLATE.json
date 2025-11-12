@@ -1,0 +1,89 @@
+{
+  "location": {
+    "name": "Shebenik National Park",
+    "shortName": "Shebenik Park",
+    "country": "Albania",
+    "region": "Elbasan County",
+    "established": "2008",
+    "size": "345 km²",
+    "sizeHectares": "34,507.9",
+    "coordinates": {
+      "latitude": "41.2928",
+      "longitude": "20.5619"
+    },
+    "elevation": {
+      "min": "300m",
+      "max": "2,253m",
+      "highestPeak": "Mount Shebenik"
+    }
+  },
+  "unesco": {
+    "status": true,
+    "designation": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
+    "year": "Expanded recognition"
+  },
+  "contact": {
+    "visitorCenter": {
+      "name": "Fushë Studë Visitor Center",
+      "phone": "+355 69 6223130",
+      "email": "info@shebenik-park.al",
+      "address": "Fushë Studë Village, Elbasan County, Albania"
+    },
+    "administration": {
+      "name": "Librazhd Forest Directorate",
+      "phone": "+355 51 423 738",
+      "mobile": "+355 67 207 9658"
+    },
+    "emergency": "+355 67 207 9658"
+  },
+  "nearestCity": {
+    "name": "Librazhd",
+    "distance": "25-50km",
+    "population": "~30,000"
+  },
+  "keyFeatures": [
+    "14 glacial lakes",
+    "UNESCO World Heritage beech forests",
+    "Endangered Balkan lynx habitat",
+    "Ancient forests",
+    "Mountain peaks over 2,000m"
+  ],
+  "keyWildlife": [
+    {
+      "name": "Balkan Lynx",
+      "scientificName": "Lynx lynx balcanicus",
+      "status": "Critically Endangered",
+      "description": "One of Europe's most endangered wild cats"
+    },
+    {
+      "name": "European Brown Bear",
+      "scientificName": "Ursus arctos",
+      "status": "Least Concern",
+      "description": "Large predator inhabiting dense forests"
+    },
+    {
+      "name": "Gray Wolf",
+      "scientificName": "Canis lupus",
+      "status": "Near Threatened",
+      "description": "Social predator living in family packs"
+    }
+  ],
+  "mainActivities": [
+    "Hiking on marked trails",
+    "Wildlife watching",
+    "Photography",
+    "Lake swimming",
+    "Camping",
+    "Bird watching"
+  ],
+  "bestTimeToVisit": {
+    "peak": "July-August",
+    "recommended": "May-October",
+    "winter": "November-April (limited access)"
+  },
+  "images": {
+    "hero": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Shebenik-Jabllanice_National_Park_Wikivoyage_Banner.JPG",
+    "about": "https://upload.wikimedia.org/wikipedia/commons/6/68/Landscape_view_from_Shebenik_National_Park.jpg",
+    "wildlife": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Forest_in_Shebenik_Mountains.jpg"
+  }
+}

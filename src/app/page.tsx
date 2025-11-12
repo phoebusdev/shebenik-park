@@ -19,20 +19,20 @@ export default function Home() {
             sizes="100vw"
           />
         </div>
-        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight text-gray-900 mb-8 tracking-tight">
             Shebenik
-            <span className="block text-green-600">National Park</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 font-light">National Park</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Discover Albania's pristine wilderness. Ancient forests, glacial lakes, and rare wildlife 
+          <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+            Discover Albania's pristine wilderness. Ancient forests, glacial lakes, and rare wildlife
             await in this UNESCO World Heritage sanctuary.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button size="lg" asChild className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-6 text-lg font-light tracking-wide shadow-lg hover:shadow-xl transition-all duration-300">
               <Link href="/visit">Plan Your Visit</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-gray-400 px-8 py-6 text-lg font-light tracking-wide backdrop-blur-sm bg-white/50">
               <Link href="/gallery">View Gallery</Link>
             </Button>
           </div>
@@ -40,57 +40,58 @@ export default function Home() {
       </section>
 
       {/* Quick Facts */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid-responsive-4 text-center">
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <MapPin className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">345 km²</h3>
-              <p className="text-gray-600">Protected Wilderness</p>
+              <h3 className="text-3xl font-extralight text-gray-900 mb-2 tracking-tight">345 <span className="text-lg font-light">km²</span></h3>
+              <p className="text-gray-500 font-light tracking-wide uppercase text-sm">Protected Wilderness</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <Clock className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2008</h3>
-              <p className="text-gray-600">Established</p>
+              <h3 className="text-3xl font-extralight text-gray-900 mb-2 tracking-tight">2008</h3>
+              <p className="text-gray-500 font-light tracking-wide uppercase text-sm">Established</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <Mountain className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2,253m</h3>
-              <p className="text-gray-600">Highest Peak</p>
+              <h3 className="text-3xl font-extralight text-gray-900 mb-2 tracking-tight">2,253<span className="text-lg font-light">m</span></h3>
+              <p className="text-gray-500 font-light tracking-wide uppercase text-sm">Highest Peak</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="bg-green-100 icon-circle icon-circle-md mb-4">
                 <Award className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">UNESCO</h3>
-              <p className="text-gray-600">World Heritage</p>
+              <h3 className="text-3xl font-extralight text-gray-900 mb-2 tracking-tight">UNESCO</h3>
+              <p className="text-gray-500 font-light tracking-wide uppercase text-sm">World Heritage</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-32 lg:py-40 bg-gradient-to-b from-white via-green-50/30 to-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Visit Shebenik?
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
+              Why Visit <span className="font-light text-green-600">Shebenik?</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Experience one of Europe's last untouched wilderness areas, where ancient forests 
               meet pristine glacial lakes and rare wildlife roams freely.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid-responsive-3">
             <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+              <div className="card-feature card-padding-md group cursor-pointer mb-6">
                 <Trees className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ancient Forests</h3>
                 <p className="text-gray-600">
@@ -101,7 +102,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+              <div className="card-feature card-padding-md group cursor-pointer mb-6">
                 <Droplets className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Glacial Lakes</h3>
                 <p className="text-gray-600">
@@ -112,7 +113,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer mb-6">
+              <div className="card-feature card-padding-md group cursor-pointer mb-6">
                 <Users className="h-12 w-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Rare Wildlife</h3>
                 <p className="text-gray-600">
@@ -126,12 +127,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Explore?
+      <section className="py-32 lg:py-40 gradient-primary relative">
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-5xl lg:text-6xl font-extralight text-white mb-8 tracking-tight">
+            Ready to <span className="font-light">Explore?</span>
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl lg:text-2xl text-green-50 mb-12 font-light leading-relaxed">
             Plan your adventure to one of Albania's most spectacular natural treasures. 
             From hiking trails to wildlife watching, your wilderness experience awaits.
           </p>
